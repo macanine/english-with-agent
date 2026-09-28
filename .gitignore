@@ -1,0 +1,14 @@
+# OS noise
+.DS_Store
+
+# Heavy, regenerable media & intermediate outputs
+*/audio.m4a
+*/audio_16k.wav
+*/whisper_raw.json
+*/whisper_full.json
+*/whisper_raw.srt
+episodes/
+
+# Python
+__pycache__/
+*.pyc

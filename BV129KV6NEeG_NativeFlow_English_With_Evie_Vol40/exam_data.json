@@ -1,0 +1,724 @@
+{
+  "title": "IELTS Academic Listening Simulation",
+  "subtitle": "NativeFlow · English with Evie: 8-Minute Native Speed Challenge (Vol. 40)",
+  "total_questions": 40,
+  "time_limit_sec": 1800,
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part 1: Vlog Creator Milestone & Background Profile",
+      "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "audio_start": 0,
+      "sections": [
+        {
+          "title": "Channel Milestone & Recording Setup",
+          "time": 2,
+          "notes": [
+            {
+              "id": 1,
+              "prefix": "Principal objective: evaluate and sharpen candidates' ",
+              "suffix": " at native speed",
+              "time": 8
+            },
+            {
+              "id": 2,
+              "prefix": "Channel achievement: published as a special celebration for approaching ",
+              "suffix": " subscribers",
+              "time": 18
+            },
+            {
+              "id": 3,
+              "prefix": "Current deficit: creator is still approximately ",
+              "suffix": " users short of the benchmark",
+              "time": 46
+            },
+            {
+              "id": 4,
+              "prefix": "Format specification: full duration of rapid monologue comprises ",
+              "suffix": " without interruption",
+              "time": 24
+            }
+          ]
+        },
+        {
+          "title": "Retrospective on Creator's Journey",
+          "time": 57,
+          "notes": [
+            {
+              "id": 5,
+              "prefix": "Channel operational lifespan: active production has spanned exactly ",
+              "suffix": " to date",
+              "time": 59
+            },
+            {
+              "id": 6,
+              "prefix": "Filming location: video recorded outdoors on the exact identical ",
+              "suffix": " where her debut vlog was shot",
+              "time": 66
+            },
+            {
+              "id": 7,
+              "prefix": "Initial psychological distress: during her first vlog, her ",
+              "suffix": " due to extreme panic",
+              "time": 74
+            },
+            {
+              "id": 8,
+              "prefix": "Shooting complication: initial anxiety forced the speaker into continuously ",
+              "suffix": " footage",
+              "time": 77
+            }
+          ]
+        },
+        {
+          "title": "Key Presentation Themes",
+          "time": 92,
+          "notes": [
+            {
+              "id": 9,
+              "prefix": "Core Discussion 1: contrasting language nuances used with a native versus an ",
+              "suffix": "",
+              "time": 98
+            },
+            {
+              "id": 10,
+              "prefix": "Core Discussion 2: previewing prospective developments regarding the ",
+              "suffix": " of the vlog channel",
+              "time": 104
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "answers": [
+            "listening comprehension",
+            "comprehension"
+          ],
+          "quote": "My name is Evie and this is a video at native speed English to help you practice your listening comprehension.",
+          "analysis": "【核心考查目标】listening comprehension（听力理解能力）。"
+        },
+        {
+          "id": 2,
+          "answers": [
+            "100,000",
+            "100k",
+            "100,000 subscribers",
+            "100000"
+          ],
+          "quote": "...this is the 100,000 subscriber special, so I thought maybe I should mix it up a little bit.",
+          "analysis": "【粉丝里程碑】100,000 / 100k（十万订阅特辑）。"
+        },
+        {
+          "id": 3,
+          "answers": [
+            "1,000",
+            "1000",
+            "about 1,000",
+            "a thousand"
+          ],
+          "quote": "I'm about 1,000 away right now, but I wanted this video to be filmed and ready...",
+          "analysis": "【当前差距】1,000（还差约一千粉达到十万）。"
+        },
+        {
+          "id": 4,
+          "answers": [
+            "eight minutes",
+            "8 minutes"
+          ],
+          "quote": "Yeah, this is going to be eight minutes of me speaking at native speed.",
+          "analysis": "【挑战时长】eight minutes / 8 minutes（全程八分钟母语狂飙）。"
+        },
+        {
+          "id": 5,
+          "answers": [
+            "four months",
+            "4 months"
+          ],
+          "quote": "I've been running my channel now for about four months.",
+          "analysis": "【频道营运时长】four months / 4 months。"
+        },
+        {
+          "id": 6,
+          "answers": [
+            "beach",
+            "the beach"
+          ],
+          "quote": "...and this is the exact beach that I filmed in my very, very first vlog...",
+          "analysis": "【拍摄场地】beach（海滩），四个月前第一支 Vlog 的梦开始之地。"
+        },
+        {
+          "id": 7,
+          "answers": [
+            "voice was shaking",
+            "voice shaking",
+            "voice shook"
+          ],
+          "quote": "I was like, my voice was shaking and I had to keep retaking the video because I was so scared...",
+          "analysis": "【生理紧张体征】voice was shaking（声音在颤抖）。"
+        },
+        {
+          "id": 8,
+          "answers": [
+            "retaking",
+            "retaking the video",
+            "re-recording"
+          ],
+          "quote": "...and I had to keep retaking the video because I was so scared...",
+          "analysis": "【反复重录】retaking（不断重新拍摄）。"
+        },
+        {
+          "id": 9,
+          "answers": [
+            "advanced English learner",
+            "advanced learner",
+            "advanced student"
+          ],
+          "quote": "One, I wanted to speak about the difference between advanced, like how I speak to an advanced English learner and how I speak to a native...",
+          "analysis": "【核心主题一】advanced English learner / advanced learner（高阶英语学习者）。"
+        },
+        {
+          "id": 10,
+          "answers": [
+            "future",
+            "channel's future",
+            "the future"
+          ],
+          "quote": "...and I wanted to speak a little bit about the future of this channel as well.",
+          "analysis": "【核心主题二】future（频道未来规划）。"
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "title": "Part 2: The Linguistic Divide: Advanced Learners vs. Native Peers",
+      "instruction": "Questions 11–14: Choose the correct letter, A, B, or C. Questions 15–20: Match each phenomenon to its corresponding category (A–F).",
+      "audio_start": 120,
+      "mcq": [
+        {
+          "id": 11,
+          "time": 128,
+          "prompt": "What adjustment does Evie consciously make when conversing with C1 or C2 fluent non-native speakers?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She deliberately slows down her cadence to half tempo."
+            },
+            {
+              "key": "B",
+              "text": "She continues to intentionally modify and curate her lexical choices."
+            },
+            {
+              "key": "C",
+              "text": "She refuses to use any contractions or casual phrasal verbs."
+            }
+          ],
+          "answers": [
+            "B"
+          ],
+          "quote": "When I speak to an advanced English speaker, like even somebody who's like C1, C2, they're basically fluent, they can work in English, I do still change my language.",
+          "analysis": "【语言调整意识】即使面对能在英语环境下工作的 C1/C2 级流利学习者，母语者仍然会在潜意识中调整用词策略 (change my language)。"
+        },
+        {
+          "id": 12,
+          "time": 150,
+          "prompt": "What does Evie identify as the primary distinction between native-to-native and native-to-learner dialogue?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The syntactic complexity of dependent grammatical clauses."
+            },
+            {
+              "key": "B",
+              "text": "The specific selection of vocabulary and idiomatic phrasing rather than speed alone."
+            },
+            {
+              "key": "C",
+              "text": "The physiological volume and acoustic pitch of pronunciation."
+            }
+          ],
+          "answers": [
+            "B"
+          ],
+          "quote": "...and the main difference is not necessarily the speed but like the words that I choose and the words that I use.",
+          "analysis": "【核心分水岭】主要差异不在于说话语速本身 (not necessarily the speed)，而在于选词与用字 (the words that I choose and the words that I use)。"
+        },
+        {
+          "id": 13,
+          "time": 180,
+          "prompt": "Which interpersonal trait does Evie highlight as quintessentially defining British conversational culture?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A preference for elaborate formal deference and unyielding earnestness."
+            },
+            {
+              "key": "B",
+              "text": "A deeply ingrained habit of dry sarcasm, banter, and teasing close peers."
+            },
+            {
+              "key": "C",
+              "text": "Strict avoidance of colloquial irony in casual public settings."
+            }
+          ],
+          "answers": [
+            "B"
+          ],
+          "quote": "...like your Brits are very sarcastic, we're very dry. Like we like to take the piss out of each other.",
+          "analysis": "【英式幽默特质】英国人交际的核心特征是极度冷面讽刺与调侃 (very sarcastic, very dry) 以及相互揶揄开玩笑 (take the piss out of each other)。"
+        },
+        {
+          "id": 14,
+          "time": 205,
+          "prompt": "Under what life circumstance do advanced English learners most intensely experience this linguistic barrier?",
+          "options": [
+            {
+              "key": "A",
+              "text": "When reading formal academic textbooks and legal statutes."
+            },
+            {
+              "key": "B",
+              "text": "When physically relocating or moving abroad to an English-speaking country."
+            },
+            {
+              "key": "C",
+              "text": "When taking standardized computerized proficiency assessments."
+            }
+          ],
+          "answers": [
+            "B"
+          ],
+          "quote": "Now, I don't know if any of you have moved abroad at some point in your life to an English speaking country because I think this is one of the main times that people really feel that difference...",
+          "analysis": "【现实体验触发点】出国定居或留学生活 (moved abroad to an English speaking country) 是学习者真正感受到母语者与非母语者巨大落差的时刻。"
+        }
+      ],
+      "matching": {
+        "options": [
+          {
+            "key": "A",
+            "text": "Heavy Slang & Colloquialisms"
+          },
+          {
+            "key": "B",
+            "text": "Word Selection & Filtering"
+          },
+          {
+            "key": "C",
+            "text": "Dry Sarcasm & Banter"
+          },
+          {
+            "key": "D",
+            "text": "Taking the Piss"
+          },
+          {
+            "key": "E",
+            "text": "Moving Abroad Experience"
+          },
+          {
+            "key": "F",
+            "text": "One-on-One Interaction"
+          }
+        ],
+        "items": [
+          {
+            "id": 15,
+            "time": 148,
+            "prompt": "The decisive variable distinguishing native-to-native dialogue from learner communication",
+            "answers": [
+              "B"
+            ],
+            "analysis": "B: Word Selection & Filtering（词汇筛选而非语速）是区分母语者交际的关键变量。"
+          },
+          {
+            "id": 16,
+            "time": 165,
+            "prompt": "Expressive elements consciously eliminated by the speaker when talking to high-level students",
+            "answers": [
+              "A"
+            ],
+            "analysis": "A: Heavy Slang & Colloquialisms（厚重俚语与口语俗语）在与高阶学员沟通时被主动过滤。"
+          },
+          {
+            "id": 17,
+            "time": 178,
+            "prompt": "A cultural dynamic characterized by irony, understated humor, and witty banter",
+            "answers": [
+              "C"
+            ],
+            "analysis": "C: Dry Sarcasm & Banter（冷面讽刺与打趣闲聊）是英式文化中独特的沟通模式。"
+          },
+          {
+            "id": 18,
+            "time": 185,
+            "prompt": "A colloquial British idiom signifying good-natured mockery and mutual ridicule",
+            "answers": [
+              "D"
+            ],
+            "analysis": "D: Taking the Piss（调侃/戏谑）是英国人彼此开玩笑的地道俚语表达。"
+          },
+          {
+            "id": 19,
+            "time": 205,
+            "prompt": "The pivotal overseas transition where candidates first encounter profound communication friction",
+            "answers": [
+              "E"
+            ],
+            "analysis": "E: Moving Abroad Experience（移居海外经历）引发最剧烈的交际落差感。"
+          },
+          {
+            "id": 20,
+            "time": 215,
+            "prompt": "The interpersonal configuration where advanced learners feel comfortable and communicate smoothly",
+            "answers": [
+              "F"
+            ],
+            "analysis": "F: One-on-One Interaction（一对一交流）时高级学习者通常游刃有余。"
+          }
+        ]
+      }
+    },
+    {
+      "part": 3,
+      "title": "Part 3: Group Social Dynamics & The Reality TV Strategy",
+      "instruction": "Questions 21–26: Complete the summary with letters A–J. Questions 27–30: Complete the sentences (NO MORE THAN THREE WORDS AND/OR A NUMBER).",
+      "audio_start": 210,
+      "word_bank": [
+        {
+          "key": "A",
+          "word": "cultural understanding"
+        },
+        {
+          "key": "B",
+          "word": "reality TV"
+        },
+        {
+          "key": "C",
+          "word": "intonation"
+        },
+        {
+          "key": "D",
+          "word": "unscripted"
+        },
+        {
+          "key": "E",
+          "word": "comprehension"
+        },
+        {
+          "key": "F",
+          "word": "subtitles"
+        },
+        {
+          "key": "G",
+          "word": "dry"
+        },
+        {
+          "key": "H",
+          "word": "comedy"
+        },
+        {
+          "key": "I",
+          "word": "social gathering"
+        },
+        {
+          "key": "J",
+          "word": "academic"
+        }
+      ],
+      "summary_text": [
+        "While advanced non-native speakers handle private dialogues smoothly, their overall listening ",
+        " drops substantially the moment they attend a busy ",
+        " such as a pub or party. According to Evie, this sudden decline stems primarily from an acute shortage of ",
+        ", leaving learners unable to interpret subtle nuances in vocal ",
+        ", contextual jokes, and mutual banter. British communication proves uniquely challenging because speech is notoriously sarcastic and ",
+        ". To bridge this divide, learners should actively expose themselves to ",
+        ", which provides raw, unmediated peer interactions."
+      ],
+      "summary_questions": [
+        {
+          "id": 21,
+          "answers": [
+            "E"
+          ],
+          "time": 235,
+          "quote": "...that's actually when a lot of people find that their listening comprehension drops a lot even though they're like C1s...",
+          "analysis": "E: comprehension（听力理解能力）在群体社交场景下急剧跌落。"
+        },
+        {
+          "id": 22,
+          "answers": [
+            "I"
+          ],
+          "time": 220,
+          "quote": "...the minute that you end up going into like a bar or a group or like a big social event where there's lots of natives...",
+          "analysis": "I: social gathering（社交聚会/酒吧场景），多人母语者互动场景是高阶非母语者的滑铁卢。"
+        },
+        {
+          "id": 23,
+          "answers": [
+            "A"
+          ],
+          "time": 240,
+          "quote": "And the biggest problem there is a lack of cultural understanding.",
+          "analysis": "A: cultural understanding（文化理解匮乏）是听力理解断崖式下降的根本病因。"
+        },
+        {
+          "id": 24,
+          "answers": [
+            "C"
+          ],
+          "time": 250,
+          "quote": "...in order to necessarily like pick up on the jokes on the intonation, on the kind of banter that goes back and forth...",
+          "analysis": "C: intonation（语调/声调起伏）中蕴藏着玩笑与潜台词。"
+        },
+        {
+          "id": 25,
+          "answers": [
+            "G"
+          ],
+          "time": 260,
+          "quote": "And I think the UK is particularly bad for this because we're very dry, we're very sarcastic, like I said.",
+          "analysis": "G: dry（冷幽默/冷面讽刺），英国文化中标志性的冷淡调侃风格。"
+        },
+        {
+          "id": 26,
+          "answers": [
+            "B"
+          ],
+          "time": 270,
+          "quote": "So my advice for people who struggle with this or if you are like an advanced speaker... you need to watch reality TV.",
+          "analysis": "B: reality TV（真人秀节目），博主开出的突破听力瓶颈的最强处方。"
+        }
+      ],
+      "sentence_questions": [
+        {
+          "id": 27,
+          "prefix": "A widely watched sub-genre of reality programming highlighted by the speaker includes ",
+          "suffix": ".",
+          "answers": [
+            "dating shows",
+            "dating show"
+          ],
+          "time": 278,
+          "quote": "And I know it's not for everyone, like people don't always enjoy reality TV like dating shows.",
+          "analysis": "【真人秀细分类型】dating shows（相亲交友真人秀），生动展现母语者无修饰的闲聊。"
+        },
+        {
+          "id": 28,
+          "prefix": "Reality broadcasts capture authentic social conversation set within a ",
+          "suffix": " and getting-to-know-each-other atmosphere.",
+          "answers": [
+            "small-talky",
+            "small talky"
+          ],
+          "time": 290,
+          "quote": "...particularly in these like small-talky, getting-to-know-each-other context without having like their language changed at all.",
+          "analysis": "【日常寒暄情境】small-talky（充满寒暄闲聊氛围的）。"
+        },
+        {
+          "id": 29,
+          "prefix": "To build autonomous listening skills, candidates are strongly urged to watch broadcasts with ",
+          "suffix": " at the beginning.",
+          "answers": [
+            "no subtitles",
+            "without subtitles"
+          ],
+          "time": 304,
+          "quote": "So watch reality TV, if you want to be like conversational, making friends in English, watch reality TV, no subtitles, you already know the drill.",
+          "analysis": "【核心跟练法则】no subtitles（盲听无字幕），唯有遇到无法理解的生词才打开字幕。"
+        },
+        {
+          "id": 30,
+          "prefix": "Once unscripted television is mastered, learners should transition into watching ",
+          "suffix": " to decode deeper cultural humor.",
+          "answers": [
+            "comedies",
+            "comedy shows",
+            "comedy"
+          ],
+          "time": 322,
+          "quote": "...once you're comfortable with that, then start watching comedies because that will give you like the kind of cultural understanding...",
+          "analysis": "【进阶听力阶梯】comedies（喜剧），攻克文化包袱与幽默的最高阶台阶。"
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "title": "Part 4: Language Acquisition Methodology & Channel Evolution",
+      "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+      "audio_start": 335,
+      "sections": [
+        {
+          "title": "Critique of Conventional Instructional Formats",
+          "time": 350,
+          "notes": [
+            {
+              "id": 31,
+              "prefix": "Traditional instructional creators frequently stage staged visits to a ",
+              "suffix": " to label physical objects",
+              "time": 362
+            }
+          ]
+        },
+        {
+          "title": "The Habit Substitution & Immersion Framework",
+          "time": 375,
+          "notes": [
+            {
+              "id": 32,
+              "prefix": "True linguistic competence demands that the target language becomes an indispensable ",
+              "suffix": "",
+              "time": 380
+            },
+            {
+              "id": 33,
+              "prefix": "Learners must systematically replace their habitual morning content with English ",
+              "suffix": "",
+              "time": 402
+            },
+            {
+              "id": 34,
+              "prefix": "Consistent behavioral substitution guarantees that personal fluency will dramatically ",
+              "suffix": "",
+              "time": 405
+            },
+            {
+              "id": 35,
+              "prefix": "Rapid cognitive acquisition necessitates genuine perceptual ",
+              "suffix": " rather than rote memorization",
+              "time": 412
+            }
+          ]
+        },
+        {
+          "title": "Editorial Vision & Operational Constraints",
+          "time": 420,
+          "notes": [
+            {
+              "id": 36,
+              "prefix": "To provide relaxing evening viewing, the producer intentionally crafts vlogs and ",
+              "suffix": "",
+              "time": 425
+            },
+            {
+              "id": 37,
+              "prefix": "The channel deliberately avoids packaging discrete ",
+              "suffix": " to maintain natural narrative flow",
+              "time": 440
+            },
+            {
+              "id": 38,
+              "prefix": "Her overarching editorial philosophy centers on generating native media that remains broadly ",
+              "suffix": "",
+              "time": 446
+            },
+            {
+              "id": 39,
+              "prefix": "Due to sole-operator scheduling limits, current output is capped at producing ",
+              "suffix": "",
+              "time": 454
+            },
+            {
+              "id": 40,
+              "prefix": "Prospective production projects are concealed until the creator verifies whether she can ",
+              "suffix": "",
+              "time": 468
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 31,
+          "answers": [
+            "supermarket",
+            "a supermarket"
+          ],
+          "quote": "I noticed that they do a lot of stuff like, Oh, let's go to a supermarket, and I'm going to like tell you what all of these words are.",
+          "analysis": "【场景词听写】supermarket（超市教学），代表脱离真实生活语境的刻板应试教学法。"
+        },
+        {
+          "id": 32,
+          "answers": [
+            "part of your life",
+            "part of life"
+          ],
+          "quote": "But I am of the opinion that if you want amazing English or to learn any language, it needs to become a part of your life.",
+          "analysis": "【核心学习哲学】part of your life（融入生活的一部分）。"
+        },
+        {
+          "id": 33,
+          "answers": [
+            "habits",
+            "daily habits"
+          ],
+          "quote": "And as soon as you start like replacing all of your habits with habits in English...",
+          "analysis": "【生活习惯置换】habits（用英语习惯全面替换母语输入习惯）。"
+        },
+        {
+          "id": 34,
+          "answers": [
+            "go through the roof",
+            "through the roof"
+          ],
+          "quote": "...your fluency is going to go through the roof.",
+          "analysis": "【高分地道习语】go through the roof（一飞冲天/暴涨），极度生动形容流利度的爆发式飞跃。"
+        },
+        {
+          "id": 35,
+          "answers": [
+            "immersion",
+            "kind of immersion"
+          ],
+          "quote": "Like, because your brain needs to be kind of immersed, it's immersed, sorry, it's like this kind of immersion.",
+          "analysis": "【认知浸润原则】immersion（全情沉浸/浸泡式输入）。"
+        },
+        {
+          "id": 36,
+          "answers": [
+            "lifestyle content"
+          ],
+          "quote": "Like, at least for me, when I finished work, I like watching vlogs or I like watching lifestyle content.",
+          "analysis": "【内容细分定位】lifestyle content（生活方式类内容），打造让学员下班后主动想看的素材。"
+        },
+        {
+          "id": 37,
+          "answers": [
+            "vocabulary builds",
+            "vocabulary videos"
+          ],
+          "quote": "And, you know, that's why I've not done any like vocabulary builds or videos or anything like this.",
+          "analysis": "【词汇清单避忌】vocabulary builds（孤立的词汇堆砌/背单词短视频）。"
+        },
+        {
+          "id": 38,
+          "answers": [
+            "accessible",
+            "accessible content"
+          ],
+          "quote": "I'm more trying to make native content that's accessible, basically.",
+          "analysis": "【编辑核心原则】accessible（平易近人/容易理解获取的）。"
+        },
+        {
+          "id": 39,
+          "answers": [
+            "one video a week",
+            "1 video a week",
+            "one video per week"
+          ],
+          "quote": "And, you know, I'm trying to make one video a week at the minute, so I just don't have time to do anything else...",
+          "analysis": "【产能频率限定】one video a week（每周更新一期）。"
+        },
+        {
+          "id": 40,
+          "answers": [
+            "pull them off",
+            "pull it off"
+          ],
+          "quote": "I have lots of plans for the future. I'll keep them quiet for now, because I don't know if I can pull them off.",
+          "analysis": "【高难度口语动词短语】pull them off（顺利完成/成功办到）。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+# Audio Transcript: English with Evie · 8-Minute Native Speed Challenge (Vol. 40)
+
+> **Source Material**: Bilibili `BV129KV6NEeG` / YouTube `@English with Evie`  
+> **Speaker**: Evie (Native British English Speaker & Educator)  
+> **Topic**: 100k Subscriber Special · 8-Minute Native Speed Challenge  
+> **Format**: Pristine, full-sentence dialogue transcript with timestamped sections  
+
+---
+
+### Section 1: Introduction, 100k Celebration & 4-Month Vlog Retrospective `[00:00 - 02:00]`
+
+**[Evie]** `[00:00:00,000 - 00:00:57,000]`  
+Hello. My name is Evie and this is a video at native speed English to help you practice your listening comprehension. It feels funny to say that at normal speed, but this is the 100,000 subscriber special, so I thought maybe I should mix it up a little bit. Yeah, this is going to be eight minutes of me speaking at native speed. I would love to know how much you can understand, so watch the whole thing and comment down below if you could understand me or not. So I am making this video because I am about to hit 100,000 subscribers. I'm about 1,000 away right now, but I wanted this video to be filmed and ready so that I could upload it. Upload it for when I hit 100k because that is so freaking cool.
+
+**[Evie]** `[00:00:57,000 - 00:02:03,000]`  
+I've been running my channel now for about four months. I think it's actually four months today since my first upload and this is the exact beach that I filmed in my very, very first vlog and I was so nervous. I was so nervous in that video. I was like, my voice was shaking and I had to keep retaking the video because I was so scared and that was just four months ago. So it feels pretty cool to be here now and hopefully I come across a little bit more relaxed. In this video I wanted to talk about a couple things. One, I wanted to speak about the difference between advanced, like how I speak to an advanced English learner and how I speak to a native and I wanted to speak a little bit about the future of this channel as well. So, you know, see if you can follow it. So the first thing I wanted to talk about was the difference between the way I speak to an advanced English learner and the way I speak to a native because these are actually two different things.
+
+---
+
+### Section 2: The Linguistic Divide: How I Speak to Learners vs. Fellow Natives `[02:00 - 03:33]`
+
+**[Evie]** `[02:03:000 - 03:33:040]`  
+When I speak to an advanced English speaker, like even somebody who's like C1, C2, they're basically fluent, they can work in English, I do still change my language. Even when I've made friends with people from other countries, my English is completely different. Oh Christ, that dog scared me. My English is completely different compared to how I would speak with a native speaker and the main difference is not necessarily the speed but like the words that I choose and the words that I use. 
+
+So when I speak to an advanced English speaker, I will avoid like really heavy slang. I'll avoid heavy slang, I'll avoid using too many expressions or colloquialisms or kind of leaning too much into the sarcasm. For example, like if I'm speaking to another Brit, I will literally be like "shut up". I'll just be like your banter, like your Brits are very sarcastic, we're very dry. Like we like to take the piss out of each other. Sometimes I speak to like my advanced students and they might even find this video a bit difficult because I'm speaking faster and I'm using more specific words and phrases in here as well. Now, I don't know if any of you have moved abroad at some point in your life to an English speaking country because I think this is one of the main times that people really feel that difference between an advanced English speaker and a native speaker.
+
+---
+
+### Section 3: The Group Social Dilemma & The Reality TV Prescription `[03:33 - 05:37]`
+
+**[Evie]** `[03:33:040 - 04:35:310]`  
+In particular, if you make friends with natives, it's fine when you're one on one but the minute that you end up going into like a bar or a group or like a big social event where there's lots of natives who are speaking to each other, that's actually when a lot of people find that their listening comprehension drops a lot even though they're like C1s, maybe like C1 speakers, like super advanced speakers, B2C1. And the biggest problem there is a lack of cultural understanding. You need to understand like the jokes and the culture and the background of the country that you're in, I think, in order to necessarily like pick up on the jokes on the intonation, on the kind of banter that goes back and forth between people. And I think the UK is particularly bad for this because we're very dry, we're very sarcastic, like I said. 
+
+**[Evie]** `[04:35:310 - 05:37:160]`  
+So my advice for people who struggle with this or if you are like an advanced speaker, maybe my videos are too slow for you or you want something more challenging, you need to watch reality TV. And I know it's not for everyone, like people don't always enjoy reality TV like dating shows. But they are so important to watch because that is one of the only times that you will hear natives speaking to each other, particularly in these like small-talky, getting-to-know-each-other context without having like their language changed at all. So watch reality TV, if you want to be like conversational, making friends in English, watch reality TV, no subtitles, you already know the drill. If there's like a word or a phrase that you don't get, then just turn them on then. So that would be my advice. If you want to make friends or if you're trying to go from that kind of advanced to like kind of native level, like banter, watch reality TV, once you're comfortable with that, then start watching comedies because that will give you like the kind of cultural understanding to, if you can get the joke, you're going to be fine. You're going to be like C2, no worries.
+
+---
+
+### Section 4: Language Acquisition Philosophy: Habit Replacement, Immersion & Future Plans `[05:37 - 08:34]`
+
+**[Evie]** `[05:37:160 - 07:00:640]`  
+Okay, it's now about six minutes. So I want to talk a little bit for the last couple minutes here, just kind of reflect on my channel and everything that's gone on in the last few months. So I started this back in January because I noticed that a lot of videos that help you learn English are very educational. And by that I mean, there's nothing wrong with this. Okay, if you're a creator that does this or you like channels that do this, I noticed that they do a lot of stuff like, "Oh, let's go to a supermarket, and I'm going to like tell you what all of these words are." And that's fine. And it's very useful, right? You need that sort of content. But I am of the opinion that if you want amazing English or to learn any language, it needs to become a part of your life. If you need to be every single morning, watching whatever you would normally watch in Spanish or Korean or Portuguese, you need to be watching that in English. And as soon as you start like replacing all of your habits with habits in English, your fluency is going to go through the roof. Like, because your brain needs to be kind of immersed, it's immersed, sorry, it's like this kind of immersion.
+
+**[Evie]** `[07:00:640 - 08:34:280]`  
+So, you know, I wanted to make content that you would actually want to sit and watch after a day of work. Like, at least for me, when I finished work, I like watching vlogs or I like watching lifestyle content. That's just me. So I tried to make content like that in English, but just for people who are learning. And that was kind of my idea behind, behind my channel. And, you know, that's why I've not done any like vocabulary builds or videos or anything like this. I'm more trying to make native content that's accessible, basically. And, you know, I'm trying to make one video a week at the minute, so I just don't have time to do anything else at the moment. But yeah, in the future, it would be great to do a little bit more. I have lots of plans for the future. I'll keep them quiet for now, because I don't know if I can pull them off. But I just really wanted to say thanks to you guys. I mean, this has been really, really quick growth in four months, and I know that a lot of my videos suck. But they're getting better. I try and make every video a little bit better than the last. And I hope you can see that and you can feel that. And I just really appreciate your patience and all of your comments and all of your support. It really means a lot to me, and, you know, just thanks so much for watching and for subscribing and for getting me to 100,000 subscribers. How much could you understand? Let me know. But that is everything from me today, and I will see you in the next video. Bye!

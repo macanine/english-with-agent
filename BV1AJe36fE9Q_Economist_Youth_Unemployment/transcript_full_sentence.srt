@@ -1,0 +1,835 @@
+1
+00:00:00,000 --> 00:00:02,800
+[Host 1] Young people are having an increasingly tough time.
+
+2
+00:00:02,800 --> 00:00:06,200
+[Host 1] Unemployment is becoming a way of life for China's young.
+
+3
+00:00:06,200 --> 00:00:07,520
+[Host 2] Wait, a way of life?
+
+4
+00:00:07,520 --> 00:00:08,520
+[Host 2] Like, how bad is it?
+
+5
+00:00:08,520 --> 00:00:14,200
+[Host 2] I mean, unemployment happens everywhere, but calling it a way of life sounds really permanent.
+
+6
+00:00:14,200 --> 00:00:15,480
+[Host 1] It is, it's a massive shift.
+
+7
+00:00:15,480 --> 00:00:21,680
+[Host 1] I mean, 10 years ago, getting a university degree there was seen as a guaranteed ticket to a decent career.
+
+8
+00:00:21,680 --> 00:00:25,880
+[Host 1] You study hard, you graduate, and society basically hands you a roadmap.
+
+9
+00:00:25,880 --> 00:00:31,920
+[Host 1] But right now, we are looking at a harsh new reality, where that roadmap is just, it's just vanished.
+
+10
+00:00:31,920 --> 00:00:34,440
+[Host 2] Oh, wow, that's a huge change.
+
+11
+00:00:34,440 --> 00:00:43,360
+[Host 1] Yeah, and if you've ever felt the anxiety of a tough job market, imagine stepping into an arena where all the traditional rules you were taught simply no longer apply.
+
+12
+00:00:43,360 --> 00:00:49,400
+[Host 1] Today, we're looking at what happens to a whole generation when the promises of the modern economy are suddenly broken.
+
+13
+00:00:49,400 --> 00:00:51,000
+[Host 2] Okay, I'm definitely interested.
+
+14
+00:00:51,000 --> 00:00:53,560
+[Host 2] Where do we even start with something so huge?
+
+15
+00:00:53,560 --> 00:00:58,680
+[Host 1] Well, to really see how tough it is, we have to look at a specific case study.
+
+16
+00:00:58,680 --> 00:01:01,680
+[Host 1] It illustrates just how abruptly the ground is shifting.
+
+17
+00:01:01,680 --> 00:01:03,960
+[Host 1] So there's this company called Xingyu Automotive Lighting.
+
+18
+00:01:03,960 --> 00:01:05,480
+[Host 2] Xingyu Automotive Lighting.
+
+19
+00:01:05,480 --> 00:01:10,240
+[Host 1] Okay, right, they are a major car-parts maker located in Eastern China.
+
+20
+00:01:10,240 --> 00:01:13,880
+[Host 1] And over the summer, they went on this massive hiring spree.
+
+21
+00:01:13,880 --> 00:01:18,560
+[Host 1] But then almost immediately, they decided they had hired way too many people.
+
+22
+00:01:18,560 --> 00:01:20,960
+[Host 2] Oh no, so they misjudged the market.
+
+23
+00:01:20,960 --> 00:01:24,080
+[Host 2] But I mean, they didn't just quietly freeze hiring, did they?
+
+24
+00:01:24,080 --> 00:01:26,800
+[Host 1] No, it was much worse than the standard hiring freeze.
+
+25
+00:01:26,800 --> 00:01:30,240
+[Host 1] They specifically targeted about 140 fresh graduates.
+
+26
+00:01:30,240 --> 00:01:31,800
+[Host 2] Just the new graduates.
+
+27
+00:01:31,800 --> 00:01:38,840
+[Host 1] Exactly, kids who had only been employed there for just a few weeks, and the company gave them a really brutal ultimatum.
+
+28
+00:01:38,840 --> 00:01:39,920
+[Host 2] Wait, an ultimatum?
+
+29
+00:01:39,920 --> 00:01:43,640
+[Host 2] I know that word means like a final demand, but what did they actually say to them?
+
+30
+00:01:43,640 --> 00:01:46,120
+[Host 1] Let me think how to phrase this clearly.
+
+31
+00:01:46,120 --> 00:01:49,520
+[Host 1] They basically pulled these kids into a room and said, here are your two choices.
+
+32
+00:01:49,520 --> 00:01:54,200
+[Host 1] Choice one, resign right now, and we will give you half a month's salary as severance.
+
+33
+00:01:54,200 --> 00:02:03,040
+[Host 2] Half a month, so you're saying they basically forced them to quit, and half a month's pay is, I mean, that's nothing when you've just relocated to start your adult life.
+
+34
+00:02:03,040 --> 00:02:04,200
+[Host 2] What was the second choice?
+
+35
+00:02:04,200 --> 00:02:12,000
+[Host 1] Choice two was pick up a screwdriver and take a poorly paid manual labor job down on the actual factory floor.
+
+36
+00:02:12,000 --> 00:02:13,120
+[Host 2] Ah, that clicks.
+
+37
+00:02:13,120 --> 00:02:21,600
+[Host 2] So they offer a factory floor job to a university graduate who was hired for like a corporate role, because they know the graduate will refuse it.
+
+38
+00:02:21,600 --> 00:02:22,920
+[Host 1] Right, exactly.
+
+39
+00:02:22,920 --> 00:02:26,200
+[Host 2] It is a mechanism to push them out the door without officially laying them off.
+
+40
+00:02:26,200 --> 00:02:29,600
+[Host 1] You got it, it's a highly calculated move, and, well, it worked.
+
+41
+00:02:29,600 --> 00:02:32,200
+[Host 1] More than 100 of those graduates chose to leave.
+
+42
+00:02:32,200 --> 00:02:34,680
+[Host 1] They took the tiny payout and just walked away.
+
+43
+00:02:34,680 --> 00:02:35,640
+[Host 2] That is so rough.
+
+44
+00:02:35,640 --> 00:02:39,320
+[Host 2] Did they protest or, I mean, did the public get involved at all?
+
+45
+00:02:39,320 --> 00:02:40,160
+[Host 1] Oh, they did.
+
+46
+00:02:40,160 --> 00:02:46,800
+[Host 1] Now, suddenly losing your job isn't entirely unheard of, but what happened next was unprecedented.
+
+47
+00:02:46,800 --> 00:02:49,320
+[Host 1] The public backlash was massive.
+
+48
+00:02:49,320 --> 00:02:53,160
+[Host 1] It sparked this incredible outpouring of outrage across social media.
+
+49
+00:02:53,160 --> 00:02:55,840
+[Host 2] Really, just over 140 jobs.
+
+50
+00:02:55,840 --> 00:02:58,360
+[Host 1] Yeah, and it wasn't just ordinary people getting angry.
+
+51
+00:02:58,360 --> 00:03:02,800
+[Host 1] The People's Daily, which is a major official newspaper, slammed the company.
+
+52
+00:03:02,800 --> 00:03:07,400
+[Host 1] They actually accused Xingyu of trampling on society's trust.
+
+53
+00:03:07,400 --> 00:03:08,880
+[Host 2] Let me make sure I grasped the weight of that.
+
+54
+00:03:08,880 --> 00:03:12,400
+[Host 2] Trampling on society's trust that is very strong phrasing.
+
+55
+00:03:12,400 --> 00:03:15,840
+[Host 2] It implies they didn't just break an employment contract, right?
+
+56
+00:03:15,840 --> 00:03:17,960
+[Host 2] They broke an unwritten social contract.
+
+57
+00:03:17,960 --> 00:03:19,000
+[Host 1] Precisely.
+
+58
+00:03:19,000 --> 00:03:22,840
+[Host 1] The unwritten rule was always, you get the degree, we provide the desk.
+
+59
+00:03:22,840 --> 00:03:29,400
+[Host 1] The company shattered that illusion, and it caused such a shockwave that Volkswagen, the German car maker, stepped in.
+
+60
+00:03:29,400 --> 00:03:30,720
+[Host 2] Wait, Volkswagen.
+
+61
+00:03:30,720 --> 00:03:32,440
+[Host 1] Yeah, because they are supplied by Xingyu.
+
+62
+00:03:32,440 --> 00:03:36,000
+[Host 1] Volkswagen actually launched their own investigation into these dismissals.
+
+63
+00:03:36,000 --> 00:03:49,280
+[Host 2] Wait, it makes sense that a localized firing would spark anger on social media, but for a massive international brand like Volkswagen to step in, that level of corporate panic suggests this isn't an isolated incident.
+
+64
+00:03:49,280 --> 00:03:51,440
+[Host 2] They must have feared a massive PR disaster.
+
+65
+00:03:51,440 --> 00:03:55,360
+[Host 2] They absolutely did, and it forced the lighting company to fold completely.
+
+66
+00:03:55,360 --> 00:04:02,680
+[Host 2] They issued a public apology, they fired their head of human resources, and they even cut the salaries of their top executives to show they were taking responsibility.
+
+67
+00:04:02,680 --> 00:04:03,880
+[Host 1] Wow.
+
+68
+00:04:03,880 --> 00:04:10,760
+[Host 1] But honestly, how bad is the national data that a company would face this level of heat over just 140 entry level jobs?
+
+69
+00:04:10,760 --> 00:04:13,080
+[Host 2] Okay, so why the massive fuss over one company?
+
+70
+00:04:13,080 --> 00:04:14,680
+[Host 2] Well, that is the perfect question.
+
+71
+00:04:14,680 --> 00:04:20,720
+[Host 2] It tapped into a deep well of public sympathy because of the broader numbers, the macro math, if you will.
+
+72
+00:04:20,720 --> 00:04:21,920
+[Host 1] Okay, lay the math on me.
+
+73
+00:04:21,920 --> 00:04:23,160
+[Host 2] Let's break it down.
+
+74
+00:04:23,160 --> 00:04:27,880
+[Host 2] This year, a record 12.7 million students graduated from university.
+
+75
+00:04:27,880 --> 00:04:29,240
+[Host 1] 12.7 million.
+
+76
+00:04:29,240 --> 00:04:33,960
+[Host 1] Okay, just to put that in perspective, that is the population of a small country entering the job market all at once.
+
+77
+00:04:33,960 --> 00:04:38,920
+[Host 2] Exactly, and it's nearly 500,000 more graduates than just last year.
+
+78
+00:04:38,920 --> 00:04:40,760
+[Host 2] But here is the real issue.
+
+79
+00:04:40,760 --> 00:04:46,200
+[Host 2] 12.7 million is exactly double the number of students who graduated a decade ago.
+
+80
+00:04:46,200 --> 00:04:47,040
+[Host 1] Double.
+
+81
+00:04:47,040 --> 00:04:50,760
+[Host 2] Double, so we have doubled the supply of highly educated labor.
+
+82
+00:04:50,760 --> 00:04:54,240
+[Host 2] But demand for those workers has completely plummeted.
+
+83
+00:04:54,240 --> 00:04:55,160
+[Host 1] Okay, I'm following.
+
+84
+00:04:55,160 --> 00:04:58,000
+[Host 1] So there are twice as many graduates, but what about the jobs?
+
+85
+00:04:58,000 --> 00:05:00,080
+[Host 1] Why did the demand plummet so sharply?
+
+86
+00:05:00,080 --> 00:05:03,240
+[Host 2] Right, so there are two main economic engines that are stalling out here.
+
+87
+00:05:03,240 --> 00:05:07,520
+[Host 2] First, there is a severe slump in the property market and second, flagging consumption.
+
+88
+00:05:09,160 --> 00:05:11,040
+[Host 2] Let me rephrase, flagging consumption.
+
+89
+00:05:11,040 --> 00:05:12,200
+[Host 1] Yeah, what does that mean?
+
+90
+00:05:12,200 --> 00:05:15,440
+[Host 2] Basically, people are tightening their belts and spending much less money.
+
+91
+00:05:15,440 --> 00:05:18,280
+[Host 1] Ah, okay, so people are just buying less stuff.
+
+92
+00:05:18,280 --> 00:05:21,760
+[Host 1] But let me ask about the property slump.
+
+93
+00:05:21,760 --> 00:05:26,840
+[Host 1] Because when we talk about a property slump, I think people just imagine construction workers losing jobs.
+
+94
+00:05:26,840 --> 00:05:31,920
+[Host 1] How does that directly eliminate opportunities for university graduates?
+
+95
+00:05:31,920 --> 00:05:34,920
+[Host 2] It's a really great distinction to make.
+
+96
+00:05:34,920 --> 00:05:38,040
+[Host 2] The property sector doesn't just employ builders.
+
+97
+00:05:38,040 --> 00:05:42,160
+[Host 2] You have to think about the entire white-collar ecosystem built around real estate.
+
+98
+00:05:42,160 --> 00:05:43,480
+[Host 1] Oh, like the offices and stuff.
+
+99
+00:05:43,480 --> 00:05:51,960
+[Host 2] Yeah, when developers aren't building, they aren't hiring architects or civil engineers or urban planners, but it cascades further than that.
+
+100
+00:05:51,960 --> 00:05:54,760
+[Host 2] They aren't hiring marketing agencies to sell the apartments.
+
+101
+00:05:54,760 --> 00:05:55,600
+[Host 1] Right, right.
+
+102
+00:05:55,600 --> 00:06:07,000
+[Host 2] The banks aren't hiring financial analysts to underwrite the mortgages, the interior design firms, the legal teams, that entire sprawling web of educated middle-class jobs just evaporates.
+
+103
+00:06:07,000 --> 00:06:09,200
+[Host 1] Oh, I see, it's like a domino effect.
+
+104
+00:06:09,200 --> 00:06:18,680
+[Host 1] And the flagging consumption, the spending less money if consumers are scared about the future, they stop spending, which means businesses don't grow, which means they freeze hiring.
+
+105
+00:06:18,680 --> 00:06:25,200
+[Host 2] Exactly, if you're listening to this and you've ever watched your own company go through a hiring freeze, you know the logic.
+
+106
+00:06:25,200 --> 00:06:31,600
+[Host 2] Why bring on a new marketing graduate when sales are down 20%, the math simply does not work in the graduate's favor?
+
+107
+00:06:31,600 --> 00:06:37,840
+[Host 1] That makes total sense, but I mean, if the traditional corporate path is blocked, where do young people usually turn?
+
+108
+00:06:37,840 --> 00:06:40,040
+[Host 1] There are alternative industries, right?
+
+109
+00:06:40,040 --> 00:06:45,320
+[Host 1] What about entertainment or the tech sector, or even like the gig economy?
+
+110
+00:06:45,320 --> 00:06:50,200
+[Host 2] Well, let's unpack those safety nets because this is where the situation gets really stark.
+
+111
+00:06:50,200 --> 00:06:56,520
+[Host 2] The industries that once soaked up this young talent are now struggling themselves, or they're actively shutting them out.
+
+112
+00:06:56,520 --> 00:06:57,560
+[Host 1] Okay, how so?
+
+113
+00:06:57,560 --> 00:06:58,760
+[Host 2] Let's start with entertainment.
+
+114
+00:06:58,760 --> 00:07:03,640
+[Host 2] It's not just that they aren't hiring, they are rapidly adopting artificial intelligence.
+
+115
+00:07:03,640 --> 00:07:09,760
+[Host 2] They are churning out shows using AI, which is basically removing the need for human actors or producers.
+
+116
+00:07:09,760 --> 00:07:10,760
+[Host 1] Wait, really?
+
+117
+00:07:10,760 --> 00:07:16,480
+[Host 2] Entirely bypassing humans, like generative AI, writing scripts and creating digital avatars.
+
+118
+00:07:16,480 --> 00:07:18,440
+[Host 1] Yes, precisely.
+
+119
+00:07:18,440 --> 00:07:21,800
+[Host 1] They aren't just using AI for special effects anymore.
+
+120
+00:07:21,800 --> 00:07:25,360
+[Host 1] They're using it to replace the entry level grunt work.
+
+121
+00:07:25,360 --> 00:07:29,040
+[Host 1] The production assistants, the background actors, the junior copywriters.
+
+122
+00:07:29,040 --> 00:07:32,880
+[Host 2] Wow, that is terrifying for anyone trying to break into that field.
+
+123
+00:07:32,880 --> 00:07:33,880
+[Host 1] It is a profound shift.
+
+124
+00:07:33,880 --> 00:07:43,400
+[Host 1] And speaking of the tech sector, which for a long time was the absolute gold rush for ambitious graduates right now, major tech firms are quietly laying off engineers.
+
+125
+00:07:43,400 --> 00:07:45,280
+[Host 2] Quietly, quietly.
+
+126
+00:07:45,280 --> 00:07:51,040
+[Host 1] Because loud massive layoffs hurt stock prices and they damage consumer confidence.
+
+127
+00:07:51,040 --> 00:07:55,320
+[Host 1] So they just quietly shed staff and freeze entry level roles without making a big announcement.
+
+128
+00:07:55,320 --> 00:08:01,880
+[Host 2] Okay, so entertainment is automated, tech is shrinking, but you mentioned the gig economy, driving for ride share apps or delivering food.
+
+129
+00:08:01,880 --> 00:08:04,760
+[Host 2] That has historically been the ultimate fallback plan.
+
+130
+00:08:04,760 --> 00:08:05,960
+[Host 2] Does that still work?
+
+131
+00:08:05,960 --> 00:08:08,520
+[Host 1] It used to be a reliable last resort.
+
+132
+00:08:08,520 --> 00:08:11,360
+[Host 1] But right now the gig economy is completely overstuffed.
+
+133
+00:08:11,360 --> 00:08:13,520
+[Host 2] Wait, overstuffed, mean too many drivers?
+
+134
+00:08:13,520 --> 00:08:14,360
+[Host 1] Exactly.
+
+135
+00:08:14,360 --> 00:08:18,080
+[Host 1] There are simply too many drivers on the road for the amount of people ordering food.
+
+136
+00:08:18,080 --> 00:08:21,920
+[Host 1] And the consequence of being overstuffed isn't just that it's hard to find a fare.
+
+137
+00:08:21,920 --> 00:08:25,120
+[Host 1] Average earnings for gig workers have severely slumped.
+
+138
+00:08:25,120 --> 00:08:28,040
+[Host 2] Oh, let me rephrase that to see if I grasp the mechanics.
+
+139
+00:08:28,040 --> 00:08:32,400
+[Host 2] The algorithm basically sees that there are 100 drivers for 10 orders, right?
+
+140
+00:08:32,400 --> 00:08:36,200
+[Host 2] So it drops the pay, knowing someone will be desperate enough to take it.
+
+141
+00:08:36,200 --> 00:08:38,040
+[Host 1] That is exactly what happens.
+
+142
+00:08:38,040 --> 00:08:40,480
+[Host 1] It's an auction that punishes the worker.
+
+143
+00:08:40,480 --> 00:08:50,840
+[Host 1] So you have graduates who spend four years studying engineering and now they find themselves driving 12 hours a day just to make a fraction of what gig workers made five years ago.
+
+144
+00:08:50,840 --> 00:08:52,480
+[Host 2] It sounds incredibly bleak.
+
+145
+00:08:52,480 --> 00:08:57,800
+[Host 2] So if no one wants their labor and they're dropping out of the rat race, what are they doing all day?
+
+146
+00:08:57,800 --> 00:08:59,880
+[Host 1] That is the logical next question.
+
+147
+00:08:59,880 --> 00:09:02,240
+[Host 1] And the coping mechanisms that are emerging are fascinating.
+
+148
+00:09:02,240 --> 00:09:04,160
+[Host 1] We're seeing a new demographic emerge.
+
+149
+00:09:04,160 --> 00:09:06,920
+[Host 1] They openly refer to themselves as full-time children.
+
+150
+00:09:06,920 --> 00:09:09,840
+[Host 1] Wait, full-time children, hmm.
+
+151
+00:09:09,840 --> 00:09:13,440
+[Host 1] That sounds so different from what we usually expect.
+
+152
+00:09:13,440 --> 00:09:15,040
+[Host 1] What does that actually mean?
+
+153
+00:09:15,040 --> 00:09:21,640
+[Host 2] It means young adults are staying home, cooking and cleaning for their parents in exchange for pocket money or a monthly allowance.
+
+154
+00:09:21,640 --> 00:09:24,360
+[Host 1] Oh, that clicks.
+
+155
+00:09:24,360 --> 00:09:28,760
+[Host 1] So it is a way to contribute and maintain some dignity within the family structure.
+
+156
+00:09:28,760 --> 00:09:33,440
+[Host 1] But still, you don't study advanced mathematics for four years to become your parents' housekeeper.
+
+157
+00:09:33,440 --> 00:09:34,280
+[Host 2] You don't.
+
+158
+00:09:34,280 --> 00:09:40,840
+[Host 2] And the isolation of that arrangement leads us to the most bizarre coping mechanism we found in the sources.
+
+159
+00:09:40,840 --> 00:09:41,680
+[Host 1] Well, what is it?
+
+160
+00:09:41,680 --> 00:09:43,080
+[Host 2] The Pretend-to-Work Company.
+
+161
+00:09:43,080 --> 00:09:44,680
+[Host 1] The Pretend-to-Work Company, you're kidding.
+
+162
+00:09:44,680 --> 00:09:45,600
+[Host 2] I'm not.
+
+163
+00:09:45,600 --> 00:09:50,840
+[Host 2] Over the past year, physical spaces have opened up, designed exclusively for this.
+
+164
+00:09:50,840 --> 00:09:58,000
+[Host 2] For a small daily fee of about 30 yuan, which is roughly $4.50, young people rent a desk.
+
+165
+00:09:58,000 --> 00:10:00,400
+[Host 1] Wait, they rent a desk to pretend to work?
+
+166
+00:10:00,400 --> 00:10:01,240
+[Host 2] Yes.
+
+167
+00:10:01,240 --> 00:10:11,200
+[Host 2] They go in, they hang out by the water cooler, they submit job applications or they just scroll on their phones, all to enjoy the routine of office life and avoid family pressure.
+
+168
+00:10:11,200 --> 00:10:13,280
+[Host 1] Okay, I'm trying to process the psychology of this.
+
+169
+00:10:13,280 --> 00:10:18,720
+[Host 1] They are paying out of their own pockets just to have a destination to uphold this societal illusion.
+
+170
+00:10:18,720 --> 00:10:19,600
+[Host 2] Exactly.
+
+171
+00:10:19,600 --> 00:10:21,680
+[Host 2] The actual productivity doesn't matter.
+
+172
+00:10:21,680 --> 00:10:23,360
+[Host 2] What matters is the routine.
+
+173
+00:10:24,280 --> 00:10:29,800
+[Host 2] And you see this desire for a structured environment playing out in free spaces, too.
+
+174
+00:10:29,800 --> 00:10:30,680
+[Host 1] Like where?
+
+175
+00:10:30,680 --> 00:10:32,360
+[Host 2] Public libraries.
+
+176
+00:10:32,360 --> 00:10:34,200
+[Host 2] Let me paint a picture for you.
+
+177
+00:10:34,200 --> 00:10:39,160
+[Host 2] The sources detailed a scene at Beijing's Capital Library on a recent Thursday afternoon.
+
+178
+00:10:39,160 --> 00:10:42,520
+[Host 1] A Thursday afternoon, normally a library should be pretty empty then, right?
+
+179
+00:10:42,520 --> 00:10:43,640
+[Host 1] Just retirees and--
+
+180
+00:10:43,640 --> 00:10:45,600
+[Host 2] Not anymore, it was packed with young people.
+
+181
+00:10:45,600 --> 00:10:46,920
+[Host 2] And it's a mix of activity.
+
+182
+00:10:46,920 --> 00:10:55,320
+[Host 2] Some are polishing their CVs, trying to find a job, but right next to them, you have people just playing computer games on their laptops for hours straight.
+
+183
+00:10:55,320 --> 00:10:57,720
+[Host 1] It sounds like they just need a place to belong.
+
+184
+00:10:57,720 --> 00:11:02,200
+[Host 1] A place that gets them out of the house during business hours so their parents or neighbors don't ask why they are home.
+
+185
+00:11:02,200 --> 00:11:09,960
+[Host 2] Exactly, there was a specific anecdote that really captured the mood, a laid off tech worker sitting there in a t-shirt and shorts.
+
+186
+00:11:09,960 --> 00:11:15,560
+[Host 2] And he openly claimed he was taking a voluntary break to read books and write his own software.
+
+187
+00:11:15,560 --> 00:11:17,600
+[Host 1] A voluntary break, wow.
+
+188
+00:11:17,600 --> 00:11:24,640
+[Host 1] When the macroeconomic environment completely rejects you, you have to reframe it as a choice to protect your own sanity, I guess.
+
+189
+00:11:24,640 --> 00:11:26,400
+[Host 2] Yeah, try to take back some agency.
+
+190
+00:11:26,400 --> 00:11:30,600
+[Host 2] Even if that agency is reduced to just choosing which library table you sit at.
+
+191
+00:11:30,600 --> 00:11:44,040
+[Host 1] So synthesizing everything we've unpacked here, we are looking at a situation where a localized firing of 140 graduates sparks national outrage because it mirrors the anxiety of 12.7 million graduates.
+
+192
+00:11:44,040 --> 00:11:44,880
+[Host 2] Exactly.
+
+193
+00:11:44,880 --> 00:11:52,880
+[Host 1] The property market is down, the gig economy is overstuffed and people are so desperate for dignity that they are paying to pretend they have a desk.
+
+194
+00:11:52,880 --> 00:11:55,480
+[Host 2] You've captured the core theme perfectly.
+
+195
+00:11:55,480 --> 00:12:03,320
+[Host 2] This isn't just about a temporary dip in hiring, it's a fundamental upending of what it takes to succeed and how young people spend their days.
+
+196
+00:12:03,320 --> 00:12:06,920
+[Host 1] It really fundamentally changes how you look at a simple office desk.
+
+197
+00:12:06,920 --> 00:12:08,360
+[Host 1] It's not just furniture anymore.
+
+198
+00:12:08,360 --> 00:12:09,360
+[Host 2] Right, it's a symbol.
+
+199
+00:12:09,360 --> 00:12:14,400
+[Host 2] And it makes you wonder about the psychological toll of the pretend work routine.
+
+200
+00:12:14,400 --> 00:12:16,640
+[Host 2] If you are listening to this, consider this.
+
+201
+00:12:16,640 --> 00:12:26,720
+[Host 2] If a whole generation's identity is tied to an office chair that no longer exists, how will they ultimately redefine what a successful life actually looks like outside of traditional employment?
+
+202
+00:12:26,720 --> 00:12:28,640
+[Host 1] That is a huge question.
+
+203
+00:12:28,640 --> 00:12:32,960
+[Host 1] If the old road map is burned, they are going to have to draw a completely new one.
+
+204
+00:12:32,960 --> 00:12:34,400
+[Host 2] And that is the reality.
+
+205
+00:12:34,400 --> 00:12:37,360
+[Host 2] They are waking up to face every single morning.
+
+206
+00:12:37,360 --> 00:12:38,960
+[Host 2] We'll leave you to mull that over.
+
+207
+00:12:38,960 --> 00:12:40,520
+[Host 2] Thanks for joining us for this deep dive.
+
+208
+00:12:40,520 --> 00:12:42,560
+[Host 1] Always a pleasure to break these topics down.
+
+209
+00:12:42,560 --> 00:12:43,640
+[Host 1] Catch you all next time.

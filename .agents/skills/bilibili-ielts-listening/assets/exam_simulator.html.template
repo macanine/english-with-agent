@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS on Computer · Academic Listening Simulator</title>
+<!-- __GENERATED__ : built by .agents/skills/bilibili-ielts-listening/scripts/build_exam_assets.py — do not hand-edit; edit exam_data.json and rebuild. Zero external dependencies: fully offline capable. -->
+<style>
+  :root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-subtle: #eff6ff;
+    --red: #e11d48;
+    --red-subtle: #fef2f2;
+    --green: #059669;
+    --green-subtle: #f0fdf4;
+    --amber: #d97706;
+    --amber-subtle: #fffbeb;
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --line: #e2e8f0;
+    --line-strong: #cbd5e1;
+    --ink: #0f172a;
+    --ink-2: #334155;
+    --ink-3: #64748b;
+    --ink-4: #94a3b8;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --shadow-1: 0 1px 2px rgba(15, 23, 42, 0.05);
+    --shadow-2: 0 4px 16px -2px rgba(15, 23, 42, 0.08);
+    --topbar-h: 52px;
+    --audiobar-h: 54px;
+    --dock-h: 60px;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+  body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.6;
+    padding-top: calc(var(--topbar-h) + var(--audiobar-h) + 14px);
+    padding-bottom: calc(var(--dock-h) + 26px);
+    -webkit-font-smoothing: antialiased;
+  }
+  button { font-family: inherit; }
+  :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
+  .icon { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.125em; flex-shrink: 0; }
+
+  /* ============ Top Bar ============ */
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0; height: var(--topbar-h);
+    background: rgba(255,255,255,0.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line); z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+  .topbar { overflow: hidden; }
+  .ielts-badge {
+    background: var(--red); color: #fff; font-weight: 800; font-size: 12px; letter-spacing: 0.6px;
+    padding: 3px 8px; border-radius: 5px; font-style: italic; flex-shrink: 0;
+  }
+  .brand-title { font-weight: 700; font-size: 13.5px; line-height: 1.25; white-space: nowrap; }
+  .brand-sub { font-size: 11.5px; color: var(--ink-3); line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 420px; }
+  .mode-chip {
+    font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    padding: 2px 7px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--ink-3); flex-shrink: 0;
+  }
+  body.mode-exam .mode-chip { background: var(--red-subtle); border-color: #fecdd3; color: var(--red); }
+  .top-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  .save-label { font-size: 12px; color: var(--ink-4); display: inline-flex; align-items: center; gap: 4px; }
+  .timer-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--mono); font-weight: 700; font-size: 14.5px; font-variant-numeric: tabular-nums;
+    color: var(--primary-dark); background: var(--primary-subtle); border: 1px solid #bfdbfe;
+    padding: 4px 10px; border-radius: 7px;
+  }
+  .timer-pill.warn { color: #92400e; background: var(--amber-subtle); border-color: #fde68a; }
+  .timer-pill.danger { color: var(--red); background: var(--red-subtle); border-color: #fecdd3; animation: pulse 1.2s infinite; }
+  @keyframes pulse { 50% { opacity: 0.65; } }
+
+  /* ============ Buttons ============ */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink-2);
+    border-radius: 8px; font-size: 13px; font-weight: 600; padding: 6px 12px; cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.1s; white-space: nowrap;
+  }
+  .btn:hover { background: var(--bg); border-color: var(--ink-4); }
+  .btn:active { transform: translateY(1px); }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+  .btn-primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); }
+  .btn-danger { background: var(--red); border-color: var(--red); color: #fff; }
+  .btn-danger:hover { background: #be123c; border-color: #be123c; }
+  .btn-ghost { border-color: transparent; background: transparent; }
+  .btn-sm { font-size: 12px; padding: 4px 9px; border-radius: 7px; }
+
+  .btn-group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 7px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .btn-group button, .btn-group .btn {
+    border: none;
+    border-right: 1px solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-2);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.12s;
+  }
+  .btn-group button:last-child, .btn-group .btn:last-child { border-right: none; }
+  .btn-group button:hover, .btn-group .btn:hover { background: var(--bg); color: var(--ink); }
+  .btn-group button.btn-group-main { background: var(--primary); color: #fff; }
+  .btn-group button.btn-group-main:hover { background: var(--primary-dark); }
+
+  /* ============ Audio Bar ============ */
+  .audiobar {
+    position: fixed; top: var(--topbar-h); left: 0; right: 0; height: var(--audiobar-h);
+    background: rgba(255,255,255,0.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line); z-index: 990;
+    display: flex; align-items: center; gap: 10px; padding: 0 16px;
+  }
+  .abtn {
+    width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line);
+    background: var(--surface); color: var(--ink-2); display: inline-flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: all 0.15s; flex-shrink: 0; font-size: 15px;
+  }
+  .abtn:hover { background: var(--bg); color: var(--ink); }
+  .abtn-main { width: 38px; height: 38px; background: var(--primary); border-color: var(--primary); color: #fff; font-size: 16px; box-shadow: 0 2px 8px rgba(37,99,235,0.3); }
+  .abtn-main:hover { background: var(--primary-dark); border-color: var(--primary-dark); color: #fff; }
+  .time-text { font-family: var(--mono); font-size: 12.5px; color: var(--ink-3); min-width: 44px; text-align: center; font-variant-numeric: tabular-nums; }
+  .seek {
+    -webkit-appearance: none; appearance: none; flex: 1 1 60px; height: 5px; min-width: 60px;
+    background: var(--line); border-radius: 5px; outline: none; cursor: pointer;
+  }
+  .seek::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--primary); border: none; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .seek:disabled { opacity: 0.4; cursor: not-allowed; }
+  .speed-btns { display: flex; gap: 3px; }
+  .speed-btn {
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink-3);
+    border-radius: 6px; font-size: 11.5px; font-weight: 700; padding: 3px 7px; cursor: pointer;
+  }
+  .speed-btn:hover { border-color: var(--ink-4); color: var(--ink); }
+  .speed-btn.active { background: var(--primary-subtle); border-color: var(--primary); color: var(--primary); }
+  .exam-note { display: none; align-items: center; gap: 6px; font-size: 12.5px; color: var(--red); font-weight: 600; }
+  body.mode-exam:not(.is-graded) .exam-only-hide { display: none !important; }
+  body.mode-exam:not(.is-graded) .exam-note { display: inline-flex; }
+  body.mode-exam:not(.is-graded) .seek { pointer-events: none; opacity: 0.4; }
+  body.mode-exam:not(.is-graded) .transcript-tab { display: none !important; }
+  .volume-wrap { display: flex; align-items: center; gap: 6px; color: var(--ink-4); }
+  .volume-wrap input { width: 64px; accent-color: var(--primary); }
+
+  /* ============ Main ============ */
+  .main-wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  .part-tabs {
+    position: sticky; top: calc(var(--topbar-h) + var(--audiobar-h)); z-index: 900;
+    display: flex; gap: 4px; padding: 8px 0; margin-bottom: 4px;
+    background: rgba(246,248,250,0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none;
+  }
+  .part-tabs::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    border: none; background: transparent; color: var(--ink-3); font-weight: 600; font-size: 13px;
+    padding: 7px 13px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+    white-space: nowrap; transition: all 0.15s;
+  }
+  .tab-btn:hover { background: var(--line); color: var(--ink); }
+  .tab-btn.active { background: var(--primary-subtle); color: var(--primary); font-weight: 700; }
+  .tab-btn.transcript-tab { margin-left: auto; }
+  .tab-btn.transcript-tab.active { background: var(--primary); color: #fff; }
+  .tab-count {
+    font-size: 10.5px; font-weight: 700; font-family: var(--mono); background: var(--line); color: var(--ink-3);
+    border-radius: 999px; padding: 0 6px; line-height: 16px;
+  }
+  .tab-btn.active .tab-count { background: #bfdbfe; color: var(--primary-dark); }
+
+  .instruction-banner {
+    background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--primary);
+    border-radius: var(--radius); padding: 13px 16px; margin: 14px 0;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; box-shadow: var(--shadow-1);
+  }
+  .instruction-banner .pt { font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .instruction-banner .pi { font-size: 13px; color: var(--ink-3); }
+  .clue-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: var(--surface); border: 1px solid var(--line); color: var(--primary);
+    padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; cursor: pointer;
+    transition: all 0.15s; white-space: nowrap;
+  }
+  .clue-btn:hover { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+  /* ============ Question Sheets ============ */
+  .sheet {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 26px 30px; margin-bottom: 18px; box-shadow: var(--shadow-1);
+  }
+  .sheet-title { font-size: 17px; font-weight: 800; letter-spacing: -0.2px; border-bottom: 2px solid var(--line); padding-bottom: 9px; margin-bottom: 18px; }
+  .sheet-subtitle {
+    font-size: 14px; font-weight: 700; margin: 20px 0 10px; padding-left: 9px; border-left: 3px solid var(--primary);
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  .note-list { list-style: none; padding: 0; margin: 0; line-height: 2.2; }
+  .note-item { position: relative; padding-left: 15px; font-size: 14.5px; color: var(--ink-2); }
+  .note-item::before { content: "•"; position: absolute; left: 1px; color: var(--ink-4); }
+  .note-item > .fb { line-height: 1.55; }
+  .summary-p { font-size: 14.5px; line-height: 2.3; color: var(--ink-2); margin: 6px 0 4px; }
+
+  .blank-wrap { display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; margin: 0 3px; }
+  .q-badge {
+    display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px;
+    background: var(--ink); color: #fff; border-radius: 5px; font-weight: 700; font-size: 11.5px; font-family: var(--mono);
+    cursor: pointer; border: none; padding: 0; transition: all 0.15s; flex-shrink: 0; position: relative;
+  }
+  .q-badge:hover { background: var(--primary); }
+  .q-badge.flagged { background: var(--amber); }
+  .q-badge.graded-ok { background: var(--green); }
+  .q-badge.graded-no { background: var(--red); }
+
+  .cdi-input {
+    border: 1.5px solid var(--line-strong); background: #f8fafc; border-radius: 6px;
+    padding: 4px 10px; font-family: inherit; font-weight: 600; color: var(--ink); font-size: 14px;
+    height: 32px; min-width: 170px; transition: all 0.15s;
+  }
+  .cdi-input::placeholder { color: var(--ink-4); font-weight: 400; }
+  .cdi-input:focus { background: #fff; border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(37,99,235,0.14); }
+  .cdi-input.graded-ok { border-color: var(--green); background: var(--green-subtle); }
+  .cdi-input.graded-no { border-color: var(--red); background: var(--red-subtle); }
+  .ans-select {
+    border: 1.5px solid var(--line-strong); background: #f8fafc; border-radius: 6px; height: 30px;
+    font-family: inherit; font-weight: 700; font-size: 13px; color: var(--ink); padding: 0 6px; cursor: pointer;
+  }
+  .ans-select:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(37,99,235,0.14); }
+  .ans-select.graded-ok { border-color: var(--green); background: var(--green-subtle); }
+  .ans-select.graded-no { border-color: var(--red); background: var(--red-subtle); }
+
+  .mcq-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; box-shadow: var(--shadow-1); }
+  .mcq-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-weight: 700; font-size: 14.5px; }
+  .mcq-head .q-num { color: var(--primary); font-family: var(--mono); margin-right: 6px; }
+  .option-btn {
+    display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left;
+    padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; margin-top: 7px;
+    cursor: pointer; background: var(--surface); font-size: 14px; color: var(--ink-2); line-height: 1.55;
+    transition: all 0.15s;
+  }
+  .option-btn:hover { background: #f8fafc; border-color: var(--line-strong); }
+  .option-btn.active { background: var(--primary-subtle); border-color: var(--primary); color: var(--primary-dark); font-weight: 600; }
+  .option-btn.graded-ok { background: var(--green-subtle); border-color: var(--green); }
+  .option-btn.graded-no { background: var(--red-subtle); border-color: var(--red); }
+  .option-key {
+    width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--line-strong);
+    display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 1px;
+  }
+  .option-btn.active .option-key { background: var(--primary); border-color: var(--primary); color: #fff; }
+  .option-btn.graded-ok .option-key { background: var(--green); border-color: var(--green); color: #fff; }
+  .option-btn.graded-no .option-key { background: var(--red); border-color: var(--red); color: #fff; }
+
+  .word-bank {
+    background: var(--surface); border: 1.5px dashed var(--line-strong); border-radius: 8px;
+    padding: 10px 14px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  }
+  .word-bank .wb-label { width: 100%; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ink-3); margin-bottom: 2px; }
+  .word-chip { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); }
+  .word-chip b { background: var(--primary-subtle); color: var(--primary); padding: 1px 5px; border-radius: 4px; margin-right: 5px; font-family: var(--mono); }
+
+  .match-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; padding: 4px 0; }
+  .match-row .fb { flex-basis: 100%; }
+  .match-controls { display: flex; align-items: center; gap: 8px; }
+
+  /* ============ Feedback ============ */
+  .fb {
+    margin-top: 8px; padding: 10px 13px; background: #f8fafc; border-radius: 0 8px 8px 0;
+    border-left: 3px solid var(--primary); font-size: 13px; line-height: 1.6; color: var(--ink-2);
+  }
+  .fb.ok { border-left-color: var(--green); background: var(--green-subtle); }
+  .fb.no { border-left-color: var(--red); background: var(--red-subtle); }
+  .fb-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+  .fb-verdict { font-weight: 800; font-size: 12.5px; display: inline-flex; align-items: center; gap: 5px; }
+  .fb.ok .fb-verdict { color: var(--green); }
+  .fb.no .fb-verdict { color: var(--red); }
+  .fb-list { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+  .fb-list > li { list-style: none; }
+
+  /* ============ Transcript ============ */
+  .transcript-item {
+    display: flex; gap: 10px; align-items: flex-start; padding: 8px 12px; border-radius: 7px;
+    margin-bottom: 3px; cursor: pointer; line-height: 1.65; transition: background 0.15s; font-size: 14px;
+  }
+  .transcript-item:hover { background: var(--line); }
+  .transcript-item.active-line { background: var(--primary-subtle); box-shadow: inset 3px 0 0 var(--primary); font-weight: 600; color: #1e3a8a; }
+  .spk-badge { font-size: 10.5px; font-weight: 800; padding: 2px 7px; border-radius: 4px; text-transform: uppercase; white-space: nowrap; margin-top: 3px; letter-spacing: 0.3px; }
+  .spk-h1 { background: var(--primary-subtle); color: var(--primary-dark); border: 1px solid #bfdbfe; }
+  .spk-h2 { background: var(--green-subtle); color: var(--green); border: 1px solid #bbf7d0; }
+  .ts-mono { font-family: var(--mono); font-size: 11.5px; color: var(--ink-4); min-width: 42px; margin-top: 4px; }
+  .transcript-scroll { max-height: calc(100vh - var(--topbar-h) - var(--audiobar-h) - var(--dock-h) - 170px); overflow-y: auto; padding-right: 4px; }
+  .transcript-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+  .switch-label { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-3); cursor: pointer; user-select: none; }
+  .switch-label input { accent-color: var(--primary); }
+
+  /* ============ Bottom Dock ============ */
+  .dock {
+    position: fixed; bottom: 0; left: 0; right: 0; height: var(--dock-h); z-index: 990;
+    background: rgba(255,255,255,0.96); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid var(--line); box-shadow: 0 -2px 12px rgba(15,23,42,0.04);
+    display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 16px;
+  }
+  .palette { display: flex; align-items: center; gap: 4px; overflow-x: auto; max-width: 700px; padding: 4px 2px; scrollbar-width: thin; }
+  .palette-group { display: flex; gap: 4px; }
+  .palette-gap { width: 10px; flex-shrink: 0; border-left: 1px dashed var(--line-strong); margin: 4px 0; }
+  .dock-num {
+    min-width: 28px; height: 28px; border: 1px solid var(--line); background: var(--surface); border-radius: 6px;
+    font-size: 12px; font-weight: 700; font-family: var(--mono); color: var(--ink-3); cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; position: relative; transition: all 0.12s; padding: 0; flex-shrink: 0;
+  }
+  .dock-num:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-1px); }
+  .dock-num.answered { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .dock-num.flagged::after { content: ""; position: absolute; top: 3px; right: 3px; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
+  .dock-num.graded-ok { background: var(--green) !important; color: #fff !important; border-color: var(--green) !important; }
+  .dock-num.graded-no { background: var(--red) !important; color: #fff !important; border-color: var(--red) !important; }
+  .dock-num.current { box-shadow: 0 0 0 2px var(--primary); border-color: var(--primary); }
+  .answered-counter { font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
+  .answered-counter b { color: var(--ink); font-family: var(--mono); }
+  body.is-graded .answered-counter { display: none; }
+
+  /* ============ Overlays & Modals ============ */
+  .overlay { position: fixed; inset: 0; z-index: 2000; background: rgba(15,23,42,0.45); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); display: none; align-items: flex-start; justify-content: center; padding: 4vh 16px; overflow-y: auto; }
+  .overlay.open { display: flex; }
+  .overlay-card { background: var(--surface); border-radius: 16px; box-shadow: var(--shadow-2); width: 100%; max-width: 660px; padding: 30px 34px; margin: auto 0; }
+  .overlay-card.wide { max-width: 860px; }
+  .overlay-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .overlay-head h2 { margin: 0; font-size: 19px; font-weight: 800; }
+  .overlay-head .btn-close-x { border: none; background: transparent; font-size: 20px; color: var(--ink-4); cursor: pointer; line-height: 1; padding: 4px; border-radius: 6px; }
+  .overlay-head .btn-close-x:hover { color: var(--ink); background: var(--bg); }
+
+  .start-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .start-title { font-size: 22px; font-weight: 800; letter-spacing: -0.3px; margin: 8px 0 2px; }
+  .start-sub { color: var(--ink-3); font-size: 13.5px; margin-bottom: 18px; }
+  .start-rules { border: 1px solid var(--line); border-radius: 10px; padding: 13px 16px; margin-bottom: 18px; font-size: 13.5px; color: var(--ink-2); }
+  .start-rules ul { margin: 6px 0 0; padding-left: 18px; }
+  .start-rules li { margin: 3px 0; }
+  .mode-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+  .mode-card {
+    border: 1.5px solid var(--line); border-radius: 12px; padding: 16px; cursor: pointer; text-align: left;
+    background: var(--surface); transition: all 0.15s; display: flex; flex-direction: column; gap: 5px;
+  }
+  .mode-card:hover { border-color: var(--primary); box-shadow: var(--shadow-2); transform: translateY(-1px); }
+  .mode-card .mc-name { font-weight: 800; font-size: 15px; display: flex; align-items: center; gap: 7px; }
+  .mode-card .mc-name .icon { color: var(--primary); }
+  .mode-card.exam .mc-name .icon { color: var(--red); }
+  .mode-card .mc-desc { font-size: 12.5px; color: var(--ink-3); line-height: 1.55; }
+  .resume-strip {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+    border: 1px dashed var(--line-strong); background: var(--bg); border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; font-size: 13px;
+  }
+  .kbd-hint { font-size: 12px; color: var(--ink-4); text-align: center; margin-top: 4px; }
+  kbd {
+    font-family: var(--mono); font-size: 11px; background: var(--bg); border: 1px solid var(--line-strong);
+    border-bottom-width: 2px; border-radius: 5px; padding: 1px 5px; color: var(--ink-2);
+  }
+
+  .review-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .review-table th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ink-3); padding: 8px 10px; border-bottom: 2px solid var(--line); position: sticky; top: 0; background: var(--surface); }
+  .review-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  .review-table tr:hover td { background: #f8fafc; }
+  .review-q { font-family: var(--mono); font-weight: 700; color: var(--ink); cursor: pointer; background: none; border: none; font-size: 13.5px; padding: 0; text-decoration: underline dotted var(--ink-4); }
+  .review-q:hover { color: var(--primary); }
+  .review-ans { font-weight: 600; }
+  .review-ans.blank { color: var(--ink-4); font-style: italic; font-weight: 400; }
+  .status-icon { display: inline-flex; align-items: center; gap: 5px; font-weight: 700; font-size: 12px; }
+  .status-icon.ok { color: var(--green); }
+  .status-icon.no { color: var(--red); }
+  .status-icon.un { color: var(--ink-4); }
+  .mini-flag { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; width: 28px; height: 26px; cursor: pointer; color: var(--ink-4); display: inline-flex; align-items: center; justify-content: center; }
+  .mini-flag:hover { border-color: var(--amber); color: var(--amber); }
+  .mini-flag.on { background: var(--amber-subtle); border-color: var(--amber); color: var(--amber); }
+  .review-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 16px; padding-top: 14px; border-top: 2px solid var(--line); }
+
+  .modal-backdrop { position: fixed; inset: 0; z-index: 2100; background: rgba(15,23,42,0.45); display: none; align-items: center; justify-content: center; padding: 16px; }
+  .modal-backdrop.open { display: flex; }
+  .modal-card { background: var(--surface); border-radius: 14px; box-shadow: var(--shadow-2); max-width: 420px; width: 100%; padding: 24px; text-align: center; }
+  .modal-card h3 { margin: 8px 0 6px; font-size: 17px; font-weight: 800; }
+  .modal-card p { margin: 0 0 18px; font-size: 13.5px; color: var(--ink-3); }
+  .modal-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .modal-icon { font-size: 30px; color: var(--red); }
+  .modal-icon.warn { color: var(--amber); }
+
+  /* ============ Results ============ */
+  .report-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 26px; margin: 14px 0 18px; box-shadow: var(--shadow-2); display: none; }
+  body.is-graded .report-card { display: block; }
+  .report-grid { display: flex; gap: 24px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .score-number { font-size: 44px; font-weight: 800; color: var(--primary); line-height: 1; font-variant-numeric: tabular-nums; }
+  .part-breakdown { display: grid; gap: 7px; min-width: 240px; flex: 1; max-width: 380px; }
+  .pb-row { display: grid; grid-template-columns: 58px 1fr 52px; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-3); }
+  .pb-bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+  .pb-bar i { display: block; height: 100%; background: var(--primary); border-radius: 99px; }
+  .report-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+
+  /* ============ Toast ============ */
+  .toast {
+    position: fixed; bottom: calc(var(--dock-h) + 14px); left: 50%; transform: translateX(-50%) translateY(8px);
+    background: var(--ink); color: #fff; font-size: 13px; font-weight: 600; padding: 9px 18px; border-radius: 9px;
+    box-shadow: var(--shadow-2); z-index: 2200; opacity: 0; pointer-events: none; transition: all 0.25s; max-width: 90vw; text-align: center;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  .flash { animation: flash-bg 1.6s ease-out; }
+  @keyframes flash-bg { 0%, 40% { background-color: var(--primary-subtle); } 100% { background-color: transparent; } }
+
+  /* ============ Stage Switcher & Cloze (Stage 1) ============ */
+  .stage-nav {
+    display: inline-flex; background: #e2e8f0; border-radius: 9px; padding: 2px; gap: 2px; flex-shrink: 0;
+  }
+  .stage-nav-btn {
+    border: none; background: transparent; padding: 4px 11px; border-radius: 7px;
+    font-size: 12px; font-weight: 700; color: var(--ink-2); cursor: pointer;
+    display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s; white-space: nowrap;
+  }
+  .stage-nav-btn:hover { color: var(--ink); }
+  .stage-nav-btn.active {
+    background: var(--surface); color: var(--primary); box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .cloze-badge-pill {
+    font-size: 11.5px; font-weight: 700; color: var(--ink-3); background: var(--bg);
+    border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; display: inline-flex; align-items: center; gap: 4px;
+  }
+  .cloze-badge-pill b { color: var(--primary); font-family: var(--mono); }
+  
+  .passage-card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 24px 28px; margin-bottom: 18px; box-shadow: var(--shadow-1);
+  }
+  .passage-head {
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    border-bottom: 2px solid var(--line); padding-bottom: 12px; margin-bottom: 18px;
+  }
+  .passage-title { font-size: 16.5px; font-weight: 800; color: var(--ink); letter-spacing: -0.2px; }
+  .passage-time { font-family: var(--mono); font-size: 12px; color: var(--ink-4); margin-left: 6px; font-weight: 600; }
+  .passage-actions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .passage-score-pill {
+    font-size: 12.5px; font-weight: 800; font-family: var(--mono); color: var(--green);
+    background: var(--green-subtle); border: 1px solid #bbf7d0; padding: 3px 9px; border-radius: 7px;
+  }
+  
+  .passage-para {
+    font-size: 15px; line-height: 2.3; color: var(--ink); margin-bottom: 16px;
+  }
+  .para-spk {
+    font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--primary); background: var(--primary-subtle); border: 1px solid #bfdbfe;
+    padding: 1px 6px; border-radius: 4px; margin-right: 8px; vertical-align: 1px; display: inline-block;
+  }
+  .sent-block {
+    display: inline; padding: 3px 4px; border-radius: 6px; transition: background 0.15s, box-shadow 0.15s;
+  }
+  .sent-block:hover { background: rgba(226, 232, 240, 0.45); }
+  .sent-block.active-sent {
+    background: #eff6ff; box-shadow: inset 0 -2px 0 var(--primary); font-weight: 500;
+  }
+  .sent-play-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--line-strong);
+    background: var(--surface); color: var(--primary); font-size: 9px; cursor: pointer;
+    vertical-align: 1px; margin-right: 3px; padding: 0; line-height: 1; transition: all 0.12s;
+  }
+  .sent-play-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: scale(1.1); }
+  .cloze-wrapper {
+    display: inline-flex; align-items: center; vertical-align: middle; margin: 0 3px;
+  }
+  .cloze-num {
+    font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--ink-3);
+    background: var(--bg); border: 1.5px solid var(--line-strong); border-right: none;
+    border-radius: 6px 0 0 6px; padding: 0 5px; height: 28px; display: inline-flex; align-items: center;
+  }
+  .cloze-input {
+    border: 1.5px solid var(--line-strong); border-radius: 0 6px 6px 0; background: #f8fafc;
+    padding: 2px 8px; font-family: inherit; font-size: 13.5px; font-weight: 600; color: var(--ink);
+    height: 28px; min-width: 130px; transition: all 0.15s;
+  }
+  .cloze-input:focus { background: #fff; border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(37,99,235,0.14); }
+  .cloze-input.cloze-ok { border-color: var(--green); background: var(--green-subtle); color: var(--green); font-weight: 700; }
+  .cloze-input.cloze-no { border-color: var(--red); background: var(--red-subtle); color: var(--red); font-weight: 700; }
+  .cloze-peek {
+    font-size: 11.5px; font-weight: 700; color: var(--primary-dark); background: #dbeafe;
+    border-radius: 4px; padding: 1px 6px; margin-left: 4px; white-space: nowrap;
+  }
+
+  /* ============ Responsive ============ */
+  @media (max-width: 1020px) { .volume-wrap { display: none; } }
+  @media (max-width: 860px) {
+    .brand-sub { display: none; }
+    .save-label { display: none; }
+    .sheet { padding: 20px 18px; }
+  }
+  @media (max-width: 680px) {
+    .time-text[hidden-mobile], .speed-btns { display: none; }
+    .brand-title { font-size: 12px; max-width: 30vw; overflow: hidden; text-overflow: ellipsis; }
+    .mode-chip { display: none; }
+    #btnHelp, #btnReset { display: none; }
+    #btnReview .btn-label { display: none; }
+    .mode-cards { grid-template-columns: 1fr; }
+    .cdi-input { min-width: 120px; }
+    .dock { padding: 0 10px; }
+    .sheet { padding: 18px 14px; }
+  }
+  @media print { .topbar, .audiobar, .dock, .part-tabs { display: none !important; } body { padding: 0; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-play" viewBox="0 0 16 16"><path d="M4 2.5v11l9-5.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 16 16"><path d="M4 2.5h3v11H4zM9 2.5h3v11H9z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-ccw" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9M2.5 1.8v3h3"/></symbol>
+    <symbol id="i-cw" viewBox="0 0 16 16"><path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 1.8v3h-3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 16 16"><path d="M3.5 14.5v-12M3.5 3h8l-2 2.5 2 2.5h-8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.2"/><path d="M5.2 8.2l2 2 3.6-4"/></symbol>
+    <symbol id="i-x" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.2"/><path d="M5.8 5.8l4.4 4.4M10.2 5.8l-4.4 4.4"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 16 16"><path d="M6 13.5h4M6.5 11.2C5 10.2 4 8.8 4 7a4 4 0 1 1 8 0c0 1.8-1 3.2-2.5 4.2l-.3 1.3H6.8z"/></symbol>
+    <symbol id="i-vol" viewBox="0 0 16 16"><path d="M2.5 6v4h2.5L9 13V3L5 6z"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-list" viewBox="0 0 16 16"><path d="M5.5 4h8M5.5 8h8M5.5 12h8M2.5 4h.01M2.5 8h.01M2.5 12h.01"/></symbol>
+    <symbol id="i-left" viewBox="0 0 16 16"><path d="M10 3L5 8l5 5"/></symbol>
+    <symbol id="i-right" viewBox="0 0 16 16"><path d="M6 3l5 5-5 5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 16 16"><path d="M4 1.5h5.5L13 5v9.5H4zM9.5 1.5V5H13M6 8h4M6 11h4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></symbol>
+    <symbol id="i-restart" viewBox="0 0 16 16"><path d="M13.5 8a5.5 5.5 0 1 1-1.7-4M13.5 2v3h-3"/></symbol>
+    <symbol id="i-target" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><circle cx="8" cy="8" r="2.6"/></symbol>
+    <symbol id="i-send" viewBox="0 0 16 16"><path d="M14 2L7.5 8.5M14 2L9.8 14l-2.3-5.5L2 6.2z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ Top Bar ============ -->
+<header class="topbar">
+  <div class="brand">
+    <span class="ielts-badge">IELTS</span>
+    <div>
+      <div class="brand-title">Academic Listening</div>
+      <div class="brand-sub" id="brandSub"></div>
+    </div>
+    <span class="mode-chip" id="modeChip" style="display:none;"></span>
+  </div>
+  <div class="stage-nav" id="stageNav" role="tablist" aria-label="Learning Stages">
+    <button type="button" class="stage-nav-btn active" id="btnStageCloze" role="tab" title="环节一：整段原文精听复现">
+      <svg class="icon"><use href="#i-target"/></svg>
+      <span>环节一：精听复现</span>
+    </button>
+    <button type="button" class="stage-nav-btn" id="btnStageExam" role="tab" title="环节二：雅思全真模考">
+      <svg class="icon"><use href="#i-doc"/></svg>
+      <span>环节二：全真模考</span>
+    </button>
+  </div>
+  <div class="top-actions">
+    <!-- Stage 1 Actions -->
+    <div id="clozeTopActions" style="display:flex;align-items:center;gap:8px;">
+      <span class="cloze-badge-pill" id="clozeStatsPill">已填: <b id="clozeStatsCount">0</b>/<span id="clozeStatsTotal">0</span></span>
+      <div class="btn-group">
+        <button type="button" id="btnTopCheckCloze">检查本段</button>
+        <button type="button" id="btnTopRevealCloze">原文对照</button>
+      </div>
+    </div>
+    <!-- Stage 2 Actions -->
+    <div id="examTopActions" style="display:none;align-items:center;gap:6px;">
+      <span class="save-label" id="saveLabel"></span>
+      <span class="timer-pill" id="timerPill" title="Time remaining"><svg class="icon"><use href="#i-clock"/></svg><span id="clockDisplay">30:00</span></span>
+      <button class="btn btn-sm" id="btnReview" title="Review all answers (R)"><svg class="icon"><use href="#i-list"/></svg><span class="btn-label"> Review</span></button>
+      <button class="btn btn-danger btn-sm" id="btnFinish" title="Submit and grade"><svg class="icon"><use href="#i-send"/></svg> Finish</button>
+    </div>
+    <!-- Common Actions -->
+    <button class="btn btn-ghost btn-sm" id="btnHelp" title="Keyboard shortcuts (?)"><kbd>?</kbd></button>
+    <button class="btn btn-ghost btn-sm" id="btnReset" title="Reset test"><svg class="icon"><use href="#i-restart"/></svg></button>
+  </div>
+</header>
+
+<!-- ============ Audio Bar ============ -->
+<div class="audiobar">
+  <button class="abtn exam-only-hide" id="btnBack5" title="Back 5s (←)"><svg class="icon"><use href="#i-ccw"/></svg></button>
+  <button class="abtn abtn-main" id="btnPlay" title="Play / Pause (Space)"><svg class="icon" id="playIcon"><use href="#i-play"/></svg></button>
+  <button class="abtn exam-only-hide" id="btnFwd5" title="Forward 5s (→)"><svg class="icon"><use href="#i-cw"/></svg></button>
+  <span class="time-text" id="timeCur">00:00</span>
+  <input type="range" class="seek" id="seekSlider" min="0" max="0" step="0.5" value="0" aria-label="Seek audio">
+  <span class="time-text" id="timeEnd">--:--</span>
+  <div class="speed-btns exam-only-hide" role="group" aria-label="Playback speed">
+    <button class="speed-btn" data-spd="0.75">0.75x</button>
+    <button class="speed-btn active" data-spd="1">1.0x</button>
+    <button class="speed-btn" data-spd="1.25">1.25x</button>
+    <button class="speed-btn" data-spd="1.5">1.5x</button>
+  </div>
+  <span class="exam-note"><svg class="icon"><use href="#i-lock"/></svg> Exam audio · one play-through</span>
+  <div class="volume-wrap exam-only-hide">
+    <svg class="icon"><use href="#i-vol"/></svg>
+    <input type="range" id="volSlider" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+  </div>
+  <audio id="audio" preload="metadata"></audio>
+</div>
+
+<!-- ============ Main ============ -->
+<main class="main-wrap">
+  <!-- STAGE 1: 原文精听复现与听写 -->
+  <div id="stageClozeWrap">
+    <nav class="part-tabs" id="clozePartTabs" aria-label="Passage parts"></nav>
+    <div id="passageArea"></div>
+  </div>
+
+  <!-- STAGE 2: 雅思全真40题模考 -->
+  <div id="stageExamWrap" style="display:none;">
+    <nav class="part-tabs" id="partTabs" aria-label="Test parts"></nav>
+
+    <section class="report-card" id="reportCard" aria-label="Score report">
+      <div class="report-grid">
+        <div>
+          <div style="font-size:11px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:var(--primary);margin-bottom:4px;">Cambridge Band Assessment</div>
+          <div style="font-weight:800;font-size:17px;">Diagnostic Report</div>
+          <div style="font-size:12.5px;color:var(--ink-3);margin-top:2px;">Raw score: <b id="rawDisplay">0</b> / 40 (<span id="pctDisplay">0%</span>) — official 40-item Academic scale</div>
+          <div class="report-actions">
+            <button class="btn btn-sm" data-filter="all">All questions</button>
+            <button class="btn btn-sm" data-filter="wrong" style="color:var(--red);">Wrong only (<span id="wrongTotal">0</span>)</button>
+            <button class="btn btn-sm" data-filter="correct" style="color:var(--green);">Correct only (<span id="correctTotal">0</span>)</button>
+            <button class="btn btn-sm" id="btnRetake"><svg class="icon"><use href="#i-restart"/></svg> Retake</button>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <div class="score-number" id="bandDisplay">0.0</div>
+          <div style="font-size:11.5px;color:var(--ink-4);margin-top:4px;">Band score</div>
+        </div>
+      </div>
+      <div class="part-breakdown" id="partBreakdown" style="margin-top:16px;"></div>
+    </section>
+
+    <div id="questionsArea"></div>
+    <div id="transcriptArea" style="display:none;">
+      <div class="sheet">
+        <div class="transcript-toolbar">
+          <div style="font-weight:800;font-size:15px;display:flex;align-items:center;gap:8px;"><svg class="icon"><use href="#i-doc"/></svg> Full Sentence Transcript</div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <label class="switch-label"><input type="checkbox" id="autoscrollToggle" checked> Auto-scroll</label>
+            <span style="font-size:12px;color:var(--ink-4);">Click a line to jump the audio</span>
+          </div>
+        </div>
+        <div class="transcript-scroll" id="transcriptList"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ============ Bottom Dock ============ -->
+<footer class="dock">
+  <div style="display:flex;gap:8px;">
+    <button class="btn btn-sm" id="btnPrevPart"><svg class="icon"><use href="#i-left"/></svg> Prev</button>
+    <button class="btn btn-sm" id="btnNextPart">Next <svg class="icon"><use href="#i-right"/></svg></button>
+  </div>
+  <!-- Stage 1 Cloze Part buttons -->
+  <div class="palette" id="clozePaletteBox" style="display:flex;align-items:center;gap:6px;"></div>
+  <!-- Stage 2 1-40 Question Palette -->
+  <div class="palette" id="paletteBox" aria-label="Question navigator" style="display:none;"></div>
+  <div class="answered-counter" id="dockCounter"><b id="ansCounter">0</b>/40 answered</div>
+</footer>
+
+<!-- ============ Start Overlay ============ -->
+<div class="overlay open" id="startOverlay" role="dialog" aria-modal="true" aria-label="Test instructions">
+  <div class="overlay-card" style="max-width:720px;">
+    <div class="start-brand"><span class="ielts-badge">IELTS</span><span style="font-weight:700;font-size:13px;color:var(--ink-3);">Academic Listening Two-Stage Training</span></div>
+    <h1 class="start-title">雅思听力双阶训练系统</h1>
+    <div class="start-sub" id="startSub"></div>
+    <div class="resume-strip" id="resumeStrip" style="display:none;"></div>
+    
+    <div class="mode-cards" style="grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;">
+      <!-- Stage 1 Card -->
+      <div class="mode-card" style="border-color:#93c5fd;background:#f0f9ff;cursor:default;">
+        <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--primary);">推荐先练 · Stage 1</div>
+        <div class="mc-name" style="color:var(--ink);margin:4px 0;"><svg class="icon" style="color:var(--primary);"><use href="#i-target"/></svg> 原文精听复现与听写</div>
+        <div class="mc-desc" style="color:var(--ink-2);font-size:12.5px;line-height:1.6;">
+          降低听力门槛！整段听写补全搭配，支持单句反复点击播放与影子跟读（Shadowing），专治语速过快与连读弱读。
+        </div>
+        <button class="btn btn-primary" id="btnStartClozeStage" style="margin-top:14px;width:100%;font-weight:700;">
+          <svg class="icon"><use href="#i-play"/></svg> 进入环节一：精听复现
+        </button>
+      </div>
+
+      <!-- Stage 2 Card -->
+      <div class="mode-card" style="cursor:default;">
+        <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink-3);">进阶实战 · Stage 2</div>
+        <div class="mc-name" style="color:var(--ink);margin:4px 0;"><svg class="icon" style="color:var(--red);"><use href="#i-doc"/></svg> 雅思全真40题模考</div>
+        <div class="mc-desc" style="color:var(--ink-2);font-size:12.5px;line-height:1.6;">
+          剑桥标准40题全真机考，涵盖笔记填空、选择配对与短文总结，评定官方 Band 9 诊断成绩。
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;">
+          <button class="btn" id="btnStartPractice" style="font-weight:700;">练习模式</button>
+          <button class="btn btn-danger" id="btnStartExam" style="font-weight:700;">全真机考</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="kbd-hint"><kbd>Space</kbd> 播放/暂停 &nbsp;·&nbsp; <kbd>←</kbd><kbd>→</kbd> 快退/快进5s &nbsp;·&nbsp; <kbd>Enter</kbd> 下一空 &nbsp;·&nbsp; <kbd>R</kbd> 答案审查 &nbsp;·&nbsp; <kbd>?</kbd> 快捷键</div>
+  </div>
+</div>
+
+<!-- ============ Review Overlay ============ -->
+<div class="overlay" id="reviewOverlay" role="dialog" aria-modal="true" aria-label="Review answers">
+  <div class="overlay-card wide">
+    <div class="overlay-head">
+      <h2>Review your answers</h2>
+      <button class="btn-close-x" data-close="reviewOverlay" aria-label="Close">&times;</button>
+    </div>
+    <div style="overflow-y:auto;max-height:62vh;">
+      <table class="review-table">
+        <thead><tr><th style="width:52px;">Q#</th><th style="width:64px;">Part</th><th>Status</th><th>Your answer</th><th style="width:52px;">Flag</th></tr></thead>
+        <tbody id="reviewBody"></tbody>
+      </table>
+    </div>
+    <div class="review-foot">
+      <span id="reviewSummary" style="font-size:13px;color:var(--ink-3);"></span>
+      <div style="display:flex;gap:10px;">
+        <button class="btn" data-close="reviewOverlay">Keep working</button>
+        <button class="btn btn-danger" id="btnReviewFinish"><svg class="icon"><use href="#i-send"/></svg> Submit &amp; grade</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Help Overlay ============ -->
+<div class="overlay" id="helpOverlay" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+  <div class="overlay-card" style="max-width:480px;">
+    <div class="overlay-head"><h2>Keyboard shortcuts</h2><button class="btn-close-x" data-close="helpOverlay" aria-label="Close">&times;</button></div>
+    <table class="review-table">
+      <tbody>
+        <tr><td><kbd>Space</kbd></td><td>Play / pause audio</td></tr>
+        <tr><td><kbd>←</kbd> / <kbd>→</kbd></td><td>Back / forward 5 seconds <span style="color:var(--ink-4);">(practice mode)</span></td></tr>
+        <tr><td><kbd>Enter</kbd></td><td>Jump to the next blank in this part</td></tr>
+        <tr><td><kbd>1</kbd> – <kbd>4</kbd></td><td>Switch to Part 1 – 4</td></tr>
+        <tr><td><kbd>T</kbd></td><td>Toggle the interactive transcript</td></tr>
+        <tr><td><kbd>R</kbd></td><td>Open the review screen</td></tr>
+        <tr><td>Click a number badge</td><td>Flag / unflag a question</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>Close any overlay</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ============ Modals ============ -->
+<div class="modal-backdrop" id="finishModal" role="dialog" aria-modal="true">
+  <div class="modal-card">
+    <div class="modal-icon warn"><svg class="icon" style="width:34px;height:34px;"><use href="#i-send"/></svg></div>
+    <h3>Submit test for grading?</h3>
+    <p id="finishPrompt">Are you ready to submit?</p>
+    <div class="modal-actions">
+      <button class="btn" data-close="finishModal">Keep working</button>
+      <button class="btn" id="btnGotoReview" style="display:none;">Review answers</button>
+      <button class="btn btn-danger" id="btnConfirmFinish">Confirm &amp; grade</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="resetModal" role="dialog" aria-modal="true">
+  <div class="modal-card">
+    <div class="modal-icon"><svg class="icon" style="width:34px;height:34px;"><use href="#i-restart"/></svg></div>
+    <h3>Reset examination?</h3>
+    <p>All answers, flags and progress will be cleared. This cannot be undone.</p>
+    <div class="modal-actions">
+      <button class="btn" data-close="resetModal">Cancel</button>
+      <button class="btn btn-danger" id="btnConfirmReset">Reset test</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+"use strict";
+/* ================= Data (injected at build time) ================= */
+const EXAM = __EXAM_JSON__;
+const TRANSCRIPT = __TRANSCRIPT_JSON__;
+const QMETA = __QMETA_JSON__;   // {qid: {id, part, type, time, answers, quote, analysis, labels}}
+const PASSAGE_DATA = __PASSAGE_JSON__;
+const AUDIO_FILE = __AUDIO_FILE__;
+const PART_RANGES = { 1: [1, 10], 2: [11, 20], 3: [21, 30], 4: [31, 40] };
+const TIME_LIMIT = EXAM.time_limit_sec || 1800;
+const LS_KEY = "ielts_cdi_v7";
+
+/* ================= State ================= */
+let S = {
+  stage: "cloze",        // 'cloze' | 'exam'
+  mode: null,            // 'practice' | 'exam' (for Stage 2)
+  started: false,
+  answers: {},           // qid -> string
+  flagged: [],           // [qid]
+  evaluated: false,
+  remain: TIME_LIMIT,
+  furthest: 0,
+  transient: false,      // true for ?demo/?grade QA runs — never persist
+
+  // Stage 1 cloze state
+  clozeAnswers: {},      // bid -> string
+  clozeCheckedParts: {}, // partNum -> bool
+  clozeRevealedParts: {},// partNum -> bool
+  activeClozePart: 1
+};
+let activePart = 1;
+let currentTid = null;
+let activeSentId = null;
+let autoScroll = true;
+let toastTimer = null;
+
+/* ================= DOM handles ================= */
+const $ = (id) => document.getElementById(id);
+const audio = $("audio");
+
+/* ================= Utilities ================= */
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+}
+function secToStr(s) {
+  s = Math.max(0, Math.floor(s));
+  return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0");
+}
+function norm(s) {
+  return String(s || "").trim().toLowerCase()
+    .replace(/[\u2019\u2018`]/g, "'").replace(/&/g, "and")
+    .replace(/[.,!?;:]+$/, "").replace(/\s+/g, " ");
+}
+function toast(msg, ms) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), ms || 2600);
+}
+function qmeta(qid) { return QMETA[qid] || null; }
+function partOf(qid) { return qid <= 10 ? 1 : qid <= 20 ? 2 : qid <= 30 ? 3 : 4; }
+function labelFor(m, val) {
+  if (!m || m.type !== "option" || !val) return val;
+  const src = m.labels && m.labels[val] ? m.labels[val] : val;
+  return src.length > 64 ? src.slice(0, 61) + "…" : src;
+}
+function isAnswered(qid) { const v = S.answers[qid]; return v !== undefined && v !== null && String(v).trim() !== ""; }
+
+/* ================= Persistence ================= */
+function persist() {
+  if (S.transient) return;
+  try {
+    localStorage.setItem(LS_KEY, JSON.stringify({
+      stage: S.stage, mode: S.mode, started: S.started, answers: S.answers, flagged: S.flagged,
+      evaluated: S.evaluated, remain: S.remain, furthest: S.furthest,
+      clozeAnswers: S.clozeAnswers, clozeCheckedParts: S.clozeCheckedParts,
+      clozeRevealedParts: S.clozeRevealedParts, activeClozePart: S.activeClozePart,
+      savedAt: Date.now()
+    }));
+    $("saveLabel").innerHTML = '<svg class="icon" style="color:var(--green)"><use href="#i-check"/></svg> Saved ' +
+      new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  } catch (e) { /* storage unavailable — run in memory */ }
+}
+function restore() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return false;
+    const st = JSON.parse(raw);
+    if (!st || !st.started) return false;
+    S.stage = st.stage || "cloze";
+    S.mode = st.mode === "exam" ? "exam" : "practice";
+    S.started = true;
+    S.answers = st.answers || {};
+    S.flagged = Array.isArray(st.flagged) ? st.flagged : [];
+    S.evaluated = !!st.evaluated;
+    S.remain = typeof st.remain === "number" ? st.remain : TIME_LIMIT;
+    S.furthest = st.furthest || 0;
+    S.clozeAnswers = st.clozeAnswers || {};
+    S.clozeCheckedParts = st.clozeCheckedParts || {};
+    S.clozeRevealedParts = st.clozeRevealedParts || {};
+    S.activeClozePart = st.activeClozePart || 1;
+    return true;
+  } catch (e) { return false; }
+}
+
+/* ================= Stage 1: Passage Cloze Logic ================= */
+function getClozeBlanks(pNum) {
+  const p = (PASSAGE_DATA || []).find(x => x.part === pNum);
+  if (!p) return [];
+  const blanks = [];
+  (p.sentences || []).forEach(s => { if (s.blanks) blanks.push(...s.blanks); });
+  return blanks;
+}
+
+function renderClozeTabs() {
+  const tabs = $("clozePartTabs");
+  if (!tabs || !PASSAGE_DATA || !PASSAGE_DATA.length) return;
+  let html = "";
+  PASSAGE_DATA.forEach(p => {
+    const blanks = getClozeBlanks(p.part);
+    const bMin = blanks.length ? blanks[0].id : 0;
+    const bMax = blanks.length ? blanks[blanks.length - 1].id : 0;
+    let done = 0;
+    blanks.forEach(b => { if ((S.clozeAnswers[b.id] || "").trim()) done++; });
+    const isAct = S.activeClozePart === p.part;
+    html += `<button type="button" class="tab-btn${isAct ? " active" : ""}" onclick="jumpClozePart(${p.part})">
+      Part ${p.part} (${bMin}–${bMax}) <span class="tab-count">${done}/${blanks.length}</span>
+    </button>`;
+  });
+  tabs.innerHTML = html;
+}
+
+function renderClozePart() {
+  const container = $("passageArea");
+  if (!container) return;
+  if (!PASSAGE_DATA || !PASSAGE_DATA.length) {
+    container.innerHTML = '<div class="sheet"><p>未找到原文精听复现数据。</p></div>';
+    return;
+  }
+  const pData = PASSAGE_DATA.find(p => p.part === S.activeClozePart) || PASSAGE_DATA[0];
+  const isChecked = !!S.clozeCheckedParts[pData.part];
+  const isRevealed = !!S.clozeRevealedParts[pData.part];
+
+  renderClozeTabs();
+
+  const blanks = getClozeBlanks(pData.part);
+  let done = 0, correct = 0;
+  blanks.forEach(b => {
+    const val = (S.clozeAnswers[b.id] || "").trim();
+    if (val) done++;
+    if (norm(val) === norm(b.answer)) correct++;
+  });
+
+  const pct = blanks.length > 0 ? Math.round(correct / blanks.length * 100) : 0;
+  const scoreHtml = isChecked ? `<span class="passage-score-pill">本段得分: ${correct}/${blanks.length} (${pct}%)</span>` : "";
+
+  let html = `<div class="passage-card">
+    <div class="passage-head">
+      <div>
+        <span class="passage-title">${esc(pData.title)}</span>
+        <span class="passage-time">(${secToStr(pData.audio_start)} – ${secToStr(pData.audio_end)})</span>
+      </div>
+      <div class="passage-actions">
+        ${scoreHtml}
+        <div class="btn-group">
+          <button type="button" class="btn-group-main" onclick="seekPlay(${pData.audio_start})">播放整段</button>
+          <button type="button" onclick="checkClozePart(${pData.part})">检查填空</button>
+          <button type="button" onclick="toggleRevealCloze(${pData.part})">${isRevealed ? "隐藏原文" : "对照原文"}</button>
+          <button type="button" onclick="resetClozePart(${pData.part})" title="重置本段">重置</button>
+        </div>
+      </div>
+    </div>`;
+
+  let currentSpeaker = null;
+  let paraOpen = false;
+
+  pData.sentences.forEach(s => {
+    if (s.speaker !== currentSpeaker) {
+      if (paraOpen) html += `</p>`;
+      currentSpeaker = s.speaker;
+      html += `<p class="passage-para"><span class="para-spk">${esc(currentSpeaker)}</span>`;
+      paraOpen = true;
+    }
+
+    let sentHtml = esc(s.cloze_text);
+    (s.blanks || []).forEach(b => {
+      const uVal = esc(S.clozeAnswers[b.id] || "");
+      let cls = "cloze-input";
+      if (isChecked) {
+        cls += norm(S.clozeAnswers[b.id]) === norm(b.answer) ? " cloze-ok" : " cloze-no";
+      }
+      const peekStyle = isRevealed ? "" : "display:none;";
+      const repl = `<span class="cloze-wrapper" id="cw-${b.id}">
+        <span class="cloze-num">${b.id}</span>
+        <input type="text" class="${cls}" data-bid="${b.id}" id="cloze-${b.id}"
+               placeholder="${esc(b.hint)}" value="${uVal}"
+               autocomplete="off" autocapitalize="off" spellcheck="false"
+               oninput="onClozeInput(${b.id}, this.value)"
+               onkeydown="onClozeKeydown(event, ${b.id})" aria-label="Blank ${b.id}">
+        <span class="cloze-peek" id="peek-${b.id}" style="${peekStyle}">${esc(b.answer)}</span>
+      </span>`;
+      sentHtml = sentHtml.replace(`[[${esc(b.answer)}]]`, repl);
+    });
+
+    html += `<span class="sent-block" id="sent-${s.id}" data-start="${s.start}" data-end="${s.end}">
+      <button type="button" class="sent-play-btn" onclick="seekPlay(${s.start})" title="播放此句 (${secToStr(s.start)})">▶</button>
+      ${sentHtml}
+    </span> `;
+  });
+
+  if (paraOpen) html += `</p>`;
+  html += `</div>`;
+  container.innerHTML = html;
+  refreshClozeCounts();
+}
+
+function onClozeInput(bid, val) {
+  S.clozeAnswers[bid] = val;
+  const input = $("cloze-" + bid);
+  if (input) input.classList.remove("cloze-ok", "cloze-no");
+  refreshClozeCounts();
+  persist();
+}
+
+function onClozeKeydown(e, bid) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    const inputs = Array.from(document.querySelectorAll("#stageClozeWrap .cloze-input"));
+    const idx = inputs.findIndex(el => el.dataset.bid === String(bid));
+    if (idx >= 0 && idx + 1 < inputs.length) {
+      inputs[idx + 1].focus();
+    } else if (S.activeClozePart < PASSAGE_DATA.length) {
+      jumpClozePart(S.activeClozePart + 1);
+    }
+  }
+}
+
+function checkClozePart(pNum) {
+  S.clozeCheckedParts[pNum] = true;
+  const blanks = getClozeBlanks(pNum);
+  let correct = 0;
+  blanks.forEach(b => {
+    const isOk = norm(S.clozeAnswers[b.id]) === norm(b.answer);
+    if (isOk) correct++;
+    const input = $("cloze-" + b.id);
+    if (input) {
+      input.classList.remove("cloze-ok", "cloze-no");
+      input.classList.add(isOk ? "cloze-ok" : "cloze-no");
+    }
+  });
+  renderClozePart();
+  const pct = blanks.length > 0 ? Math.round(correct / blanks.length * 100) : 0;
+  toast(`Part ${pNum} 检查完成：${correct}/${blanks.length} 正确 (${pct}%)`, 3600);
+  persist();
+}
+
+function toggleRevealCloze(pNum) {
+  S.clozeRevealedParts[pNum] = !S.clozeRevealedParts[pNum];
+  renderClozePart();
+  persist();
+}
+
+function resetClozePart(pNum) {
+  const blanks = getClozeBlanks(pNum);
+  blanks.forEach(b => { delete S.clozeAnswers[b.id]; });
+  delete S.clozeCheckedParts[pNum];
+  delete S.clozeRevealedParts[pNum];
+  renderClozePart();
+  toast(`Part ${pNum} 填空已重置`);
+  persist();
+}
+
+function jumpClozePart(pNum) {
+  S.activeClozePart = Math.min(PASSAGE_DATA.length, Math.max(1, parseInt(pNum, 10)));
+  renderClozePart();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function refreshClozeCounts() {
+  let totalAll = 0, filledAll = 0;
+  (PASSAGE_DATA || []).forEach(p => {
+    const blanks = getClozeBlanks(p.part);
+    totalAll += blanks.length;
+    blanks.forEach(b => { if ((S.clozeAnswers[b.id] || "").trim()) filledAll++; });
+  });
+  if ($("clozeStatsCount")) $("clozeStatsCount").textContent = filledAll;
+  if ($("clozeStatsTotal")) $("clozeStatsTotal").textContent = totalAll;
+  renderClozeDock();
+}
+
+function renderClozeDock() {
+  const box = $("clozePaletteBox");
+  if (!box || !PASSAGE_DATA) return;
+  let html = "";
+  PASSAGE_DATA.forEach(p => {
+    const blanks = getClozeBlanks(p.part);
+    let done = 0;
+    blanks.forEach(b => { if ((S.clozeAnswers[b.id] || "").trim()) done++; });
+    const isAct = S.activeClozePart === p.part;
+    html += `<button type="button" class="btn btn-sm${isAct ? " btn-primary" : ""}" onclick="jumpClozePart(${p.part})">
+      Part ${p.part} (${done}/${blanks.length})
+    </button>`;
+  });
+  box.innerHTML = html;
+  if (S.stage === "cloze" && $("dockCounter")) {
+    const blanks = getClozeBlanks(S.activeClozePart);
+    let done = 0;
+    blanks.forEach(b => { if ((S.clozeAnswers[b.id] || "").trim()) done++; });
+    $("dockCounter").innerHTML = `本段: <b>${done}</b>/${blanks.length} 已填`;
+  }
+}
+
+function syncClozeSentence(cur) {
+  const pData = (PASSAGE_DATA || []).find(p => p.part === S.activeClozePart);
+  if (!pData) return;
+  const match = pData.sentences.find(s => cur >= s.start && cur <= s.end);
+  if (!match || match.id === activeSentId) return;
+
+  const prev = $("sent-" + activeSentId);
+  if (prev) prev.classList.remove("active-sent");
+  const curEl = $("sent-" + match.id);
+  if (curEl) {
+    curEl.classList.add("active-sent");
+    if (autoScroll) curEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+  activeSentId = match.id;
+}
+
+function switchStage(stageName) {
+  S.stage = stageName;
+  const isCloze = stageName === "cloze";
+  $("stageClozeWrap").style.display = isCloze ? "" : "none";
+  $("stageExamWrap").style.display = isCloze ? "none" : "";
+  $("clozeTopActions").style.display = isCloze ? "flex" : "none";
+  $("examTopActions").style.display = isCloze ? "none" : "flex";
+  $("clozePaletteBox").style.display = isCloze ? "flex" : "none";
+  $("paletteBox").style.display = isCloze ? "none" : "flex";
+
+  $("btnStageCloze").classList.toggle("active", isCloze);
+  $("btnStageExam").classList.toggle("active", !isCloze);
+
+  if (isCloze) {
+    renderClozePart();
+  } else {
+    renderPartView();
+    refreshCounts();
+  }
+  persist();
+}
+
+/* ================= Rendering ================= */
+function renderTabs() {
+  const tabs = $("partTabs");
+  let html = "";
+  for (let p = 1; p <= 4; p++) {
+    const [a, b] = PART_RANGES[p];
+    let done = 0;
+    for (let i = a; i <= b; i++) if (isAnswered(i)) done++;
+    html += `<button class="tab-btn${activePart === p ? " active" : ""}" data-part="${p}" id="tab-${p}">Part ${p} (Q${a}–${b}) <span class="tab-count">${done}/10</span></button>`;
+  }
+  html += `<button class="tab-btn transcript-tab${activePart === 5 ? " active" : ""}" data-part="5" id="tab-5"><svg class="icon"><use href="#i-doc"/></svg> Transcript</button>`;
+  tabs.innerHTML = html;
+  tabs.querySelectorAll(".tab-btn").forEach(b => b.addEventListener("click", () => jumpPart(parseInt(b.dataset.part, 10))));
+}
+
+function instructionBanner(pData) {
+  return `<div class="instruction-banner">
+    <div><div class="pt">${esc(pData.title)}</div><div class="pi">${esc(pData.instruction)}</div></div>
+    <button class="clue-btn exam-only-hide" onclick="seekPlay(${pData.audio_start})"><svg class="icon"><use href="#i-play"/></svg> Play Part Audio (${secToStr(pData.audio_start)})</button>
+  </div>`;
+}
+
+function blankHtml(qid, wide) {
+  const m = qmeta(qid);
+  const flagged = S.flagged.includes(qid) ? " flagged" : "";
+  const badgeCls = S.evaluated && m ? (m._ok ? " graded-ok" : " graded-no") : flagged;
+  const val = esc(S.answers[qid] || "");
+  return `<span class="blank-wrap">
+    <button type="button" class="q-badge${badgeCls}" onclick="toggleFlag(${qid})" title="Question ${qid} — click to flag" aria-label="Flag question ${qid}">${qid}</button>
+    <input type="text" class="cdi-input" data-qid="${qid}" id="ctrl-${qid}" value="${val}" ${wide ? 'style="min-width:210px"' : ""}
+      placeholder="…" autocomplete="off" autocapitalize="off" spellcheck="false"
+      oninput="recordText(${qid}, this.value)" onkeydown="handleInputKey(event, ${qid})" aria-label="Answer for question ${qid}">
+  </span>`;
+}
+
+function letterSelect(qid, keys, labels) {
+  const m = qmeta(qid);
+  const flagged = S.flagged.includes(qid) ? " flagged" : "";
+  const badgeCls = S.evaluated && m ? (m._ok ? " graded-ok" : " graded-no") : flagged;
+  const cur = esc(S.answers[qid] || "");
+  let opts = `<option value="">…</option>`;
+  keys.forEach((k, i) => { opts += `<option value="${k}"${cur === k ? " selected" : ""}>${k} — ${esc(labels[i])}</option>`; });
+  return `<span class="blank-wrap">
+    <button type="button" class="q-badge${badgeCls}" onclick="toggleFlag(${qid})" title="Question ${qid} — click to flag" aria-label="Flag question ${qid}">${qid}</button>
+    <select class="ans-select" data-qid="${qid}" id="ctrl-${qid}" onchange="recordSelect(${qid}, this.value)" aria-label="Answer for question ${qid}">${opts}</select>
+  </span>`;
+}
+
+function fbSlot(qid) { return `<div class="fb" id="fb-${qid}" hidden></div>`; }
+
+function renderPartView() {
+  const qArea = $("questionsArea");
+  const tArea = $("transcriptArea");
+  renderTabs();
+  if (activePart === 5) {
+    qArea.style.display = "none";
+    tArea.style.display = "";
+    return;
+  }
+  qArea.style.display = "";
+  tArea.style.display = "none";
+  const pData = EXAM.parts.find(p => p.part === activePart);
+  if (!pData) return;
+  let html = instructionBanner(pData);
+
+  if (pData.sections) { // Parts 1 & 4 — Cambridge note sheets
+    html += `<div class="sheet"><div class="sheet-title">${esc(pData.sheet_title || pData.title.replace(/^Part \d+: /, ""))}</div>`;
+    pData.sections.forEach(sec => {
+      html += `<div class="sheet-subtitle"><span>${esc(sec.title)}</span>
+        <button class="clue-btn exam-only-hide" onclick="seekPlay(${sec.time})"><svg class="icon"><use href="#i-play"/></svg> Listen (${secToStr(sec.time)})</button></div>
+        <ul class="note-list">`;
+      sec.notes.forEach(n => {
+        if (!n.id) { html += `<li class="note-item">${esc(n.prefix)}</li>`; return; }
+        html += `<li class="note-item">${esc(n.prefix)}${blankHtml(n.id)}${esc(n.suffix || "")}${fbSlot(n.id)}</li>`;
+      });
+      html += `</ul>`;
+    });
+    html += `</div>`;
+
+  } else if (pData.mcq) { // Part 2 — MCQ + matching
+    pData.mcq.forEach(q => {
+      html += `<div class="mcq-card" id="qwrap-${q.id}">
+        <div class="mcq-head"><span><span class="q-num">${q.id}.</span>${esc(q.prompt)}</span>
+        <button class="clue-btn exam-only-hide" onclick="seekPlay(${q.time})"><svg class="icon"><use href="#i-play"/></svg> ${secToStr(q.time)}</button></div>`;
+      q.options.forEach(o => {
+        const cls = S.answers[q.id] === o.key ? " active" : "";
+        html += `<button type="button" class="option-btn${cls}" data-qid="${q.id}" id="ctrl-${q.id}" onclick="recordOption(${q.id},'${o.key}')">
+          <span class="option-key">${o.key}</span><span>${esc(o.text)}</span></button>`;
+      });
+      html += fbSlot(q.id) + `</div>`;
+    });
+    html += `<div class="sheet" id="qwrap-matching"><div class="sheet-title">Questions 15–20: Match each phenomenon to its sector (A–F)</div>
+      <div class="word-bank"><span class="wb-label">Available sectors</span>
+      ${pData.matching.options.map(o => `<span class="word-chip"><b>${o.key}</b>${esc(o.text)}</span>`).join("")}</div>
+      <ul class="note-list">`;
+    pData.matching.items.forEach(it => {
+      html += `<li class="note-item"><div class="match-row">
+        <span><b style="font-family:var(--mono);color:var(--primary);margin-right:6px;">${it.id}.</b>${esc(it.prompt)}</span>
+        <div class="match-controls">${letterSelect(it.id, pData.matching.options.map(o => o.key), pData.matching.options.map(o => o.text))}
+        <button class="clue-btn exam-only-hide" onclick="seekPlay(${it.time})"><svg class="icon"><use href="#i-play"/></svg> ${secToStr(it.time)}</button></div>
+        ${fbSlot(it.id)}</div></li>`;
+    });
+    html += `</ul></div>`;
+
+  } else if (pData.word_bank) { // Part 3 — summary (word bank) + sentences
+    html += `<div class="sheet"><div class="sheet-title">Academic Summary: complete with letters ${pData.word_bank[0].key}–${pData.word_bank[pData.word_bank.length - 1].key}</div>
+      <div class="word-bank"><span class="wb-label">Word bank</span>
+      ${pData.word_bank.map(w => `<span class="word-chip"><b>${w.key}</b>${esc(w.word)}</span>`).join("")}</div>
+      <p class="summary-p">`;
+    pData.summary_text.forEach((chunk, i) => {
+      html += esc(chunk);
+      const sq = pData.summary_questions[i];
+      if (sq) html += letterSelect(sq.id, pData.word_bank.map(w => w.key), pData.word_bank.map(w => w.word));
+    });
+    html += `</p><ul class="fb-list" id="fbList"></ul></div>`;
+    html += `<div class="sheet"><div class="sheet-title">Questions 27–30: Complete the sentences</div><ul class="note-list">`;
+    pData.sentence_questions.forEach(sq => {
+      html += `<li class="note-item">${esc(sq.prefix)}${blankHtml(sq.id)}${esc(sq.suffix || "")}
+        <button class="clue-btn exam-only-hide" style="margin-left:8px" onclick="seekPlay(${sq.time})"><svg class="icon"><use href="#i-play"/></svg> ${secToStr(sq.time)}</button>${fbSlot(sq.id)}</li>`;
+    });
+    html += `</ul></div>`;
+  }
+  qArea.innerHTML = html;
+  if (S.evaluated) applyGrading(false);
+  refreshCounts();
+}
+
+/* ================= Answers & flags ================= */
+function recordText(qid, val) {
+  S.answers[qid] = val.trim();
+  refreshCounts();
+  persist();
+}
+function recordSelect(qid, val) {
+  S.answers[qid] = val;
+  refreshCounts();
+  persist();
+}
+function recordOption(qid, key) {
+  S.answers[qid] = key;
+  const card = $("qwrap-" + qid);
+  if (card) card.querySelectorAll(".option-btn").forEach(b => b.classList.toggle("active", b.getAttribute("onclick").includes("'" + key + "'")));
+  refreshCounts();
+  persist();
+}
+function toggleFlag(qid) {
+  const i = S.flagged.indexOf(qid);
+  if (i >= 0) S.flagged.splice(i, 1); else S.flagged.push(qid);
+  document.querySelectorAll(`.q-badge[onclick="toggleFlag(${qid})"]`).forEach(b => b.classList.toggle("flagged", i < 0));
+  const mf = document.getElementById("mflag-" + qid);
+  if (mf) mf.classList.toggle("on", i < 0);
+  refreshCounts();
+  persist();
+}
+function handleInputKey(e, qid) {
+  if (e.key !== "Enter") return;
+  e.preventDefault();
+  const inputs = Array.from(document.querySelectorAll("#questionsArea .cdi-input"));
+  const idx = inputs.findIndex(el => el.dataset.qid === String(qid));
+  if (idx >= 0 && idx + 1 < inputs.length) inputs[idx + 1].focus();
+  else if (activePart < 4) jumpPart(activePart + 1);
+}
+
+/* ================= Palette / navigation ================= */
+function buildPalette() {
+  const box = $("paletteBox");
+  let html = "";
+  for (let p = 1; p <= 4; p++) {
+    const [a, b] = PART_RANGES[p];
+    html += `<span class="palette-group">`;
+    for (let i = a; i <= b; i++) html += `<button class="dock-num" id="dock-${i}" title="Question ${i}" onclick="jumpQuestion(${i})">${i}</button>`;
+    html += `</span>`;
+    if (p < 4) html += `<span class="palette-gap"></span>`;
+  }
+  box.innerHTML = html;
+}
+function refreshCounts() {
+  let done = 0;
+  for (let i = 1; i <= 40; i++) {
+    const btn = $("dock-" + i);
+    if (!btn) continue;
+    const ans = isAnswered(i);
+    if (ans) done++;
+    btn.classList.toggle("answered", ans && !S.evaluated);
+    btn.classList.toggle("flagged", S.flagged.includes(i));
+    if (S.evaluated) {
+      const m = qmeta(i);
+      btn.classList.toggle("graded-ok", !!(m && m._ok));
+      btn.classList.toggle("graded-no", !!(m && !m._ok));
+    }
+  }
+  $("ansCounter").textContent = done;
+  document.querySelectorAll(".tab-btn[data-part]").forEach(b => {
+    const p = parseInt(b.dataset.part, 10);
+    if (p < 1 || p > 4) return;
+    const [a, x] = PART_RANGES[p];
+    let c = 0;
+    for (let i = a; i <= x; i++) if (isAnswered(i)) c++;
+    const tc = b.querySelector(".tab-count");
+    if (tc) tc.textContent = c + "/10";
+  });
+}
+function jumpPart(p) {
+  if (p === 5 && S.mode === "exam" && !S.evaluated) {
+    toast("The transcript is locked during the exam — it unlocks after grading.");
+    return;
+  }
+  activePart = Math.min(5, Math.max(1, p));
+  renderPartView();
+  if (activePart !== 5) window.scrollTo({ top: 0, behavior: "smooth" });
+  else syncTranscriptActive(audio.currentTime);
+}
+function jumpQuestion(qid) {
+  const targetPart = partOf(qid);
+  if (activePart !== targetPart) jumpPart(targetPart);
+  setTimeout(() => {
+    const el = $("qwrap-" + qid) || $("ctrl-" + qid) || $("fb-" + qid);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+    const ctrl = $("ctrl-" + qid);
+    if (ctrl && ctrl.tagName === "INPUT") ctrl.focus({ preventScroll: true });
+    document.querySelectorAll(".dock-num.current").forEach(d => d.classList.remove("current"));
+    const dock = $("dock-" + qid);
+    if (dock) { dock.classList.add("current"); dock.scrollIntoView({ block: "nearest", inline: "nearest" }); }
+  }, 60);
+}
+
+/* ================= Audio engine ================= */
+function bindAudio() {
+  const playIcon = $("playIcon");
+  $("btnPlay").addEventListener("click", togglePlay);
+  audio.addEventListener("play", () => { playIcon.innerHTML = '<use href="#i-pause"/>'; });
+  audio.addEventListener("pause", () => { playIcon.innerHTML = '<use href="#i-play"/>'; });
+  audio.addEventListener("ended", () => {
+    playIcon.innerHTML = '<use href="#i-play"/>';
+    if (S.mode === "exam" && !S.evaluated) toast("Recording finished. Use the remaining time to complete your answers.");
+  });
+  audio.addEventListener("timeupdate", () => {
+    $("timeCur").textContent = secToStr(audio.currentTime);
+    if (S.mode === "exam" && !S.evaluated) {
+      S.furthest = Math.max(S.furthest, audio.currentTime);
+      if (Math.floor(audio.currentTime) % 5 === 0) persist();
+    }
+    $("seekSlider").value = audio.currentTime;
+    if (S.stage === "cloze") {
+      syncClozeSentence(audio.currentTime);
+    } else if (activePart === 5) {
+      syncTranscriptActive(audio.currentTime);
+    }
+  });
+  audio.addEventListener("loadedmetadata", () => {
+    $("seekSlider").max = audio.duration || 0;
+    $("timeEnd").textContent = secToStr(audio.duration || 0);
+  });
+  audio.addEventListener("seeking", () => {
+    if (S.mode === "exam" && !S.evaluated && Math.abs(audio.currentTime - S.furthest) > 0.35) {
+      audio.currentTime = S.furthest;
+      toast("The recording cannot be rewound during the test.");
+    }
+  });
+  $("seekSlider").addEventListener("input", (e) => {
+    if (S.mode === "exam" && !S.evaluated) { e.target.value = audio.currentTime; return; }
+    audio.currentTime = parseFloat(e.target.value);
+  });
+  $("btnBack5").addEventListener("click", () => { if (canSeek()) audio.currentTime = Math.max(0, audio.currentTime - 5); });
+  $("btnFwd5").addEventListener("click", () => { if (canSeek()) audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 5); });
+  document.querySelectorAll(".speed-btn").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".speed-btn").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    audio.playbackRate = parseFloat(b.dataset.spd);
+  }));
+  $("volSlider").addEventListener("input", (e) => { audio.volume = parseFloat(e.target.value); });
+}
+function canSeek() { return !(S.mode === "exam" && !S.evaluated); }
+function togglePlay() {
+  if (audio.paused) { audio.play().catch(() => toast("Audio could not start — click the play button again.")); }
+  else audio.pause();
+}
+function seekPlay(sec) {
+  if (S.mode === "exam" && !S.evaluated) return;
+  audio.currentTime = sec;
+  audio.play().catch(() => {});
+}
+
+/* ================= Transcript ================= */
+function renderTranscript() {
+  $("transcriptList").innerHTML = TRANSCRIPT.map(t => `
+    <div class="transcript-item" id="titem-${t.id}" data-start="${t.start}" onclick="seekPlay(${t.start})">
+      <span class="spk-badge ${t.speaker === "Host 1" ? "spk-h1" : "spk-h2"}">${esc(t.speaker)}</span>
+      <span class="ts-mono">${secToStr(t.start)}</span>
+      <span style="flex:1">${esc(t.text)}</span>
+    </div>`).join("");
+}
+function syncTranscriptActive(cur) {
+  if (activePart !== 5) return;
+  const match = TRANSCRIPT.find(t => cur >= t.start && cur <= t.end);
+  if (!match || match.id === currentTid) return;
+  const prev = $("titem-" + currentTid);
+  if (prev) prev.classList.remove("active-line");
+  const el = $("titem-" + match.id);
+  if (el) {
+    el.classList.add("active-line");
+    if (autoScroll) el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+  currentTid = match.id;
+}
+
+/* ================= Review screen ================= */
+function openReview() {
+  const body = $("reviewBody");
+  let rows = "", unanswered = 0;
+  for (let i = 1; i <= 40; i++) {
+    const m = qmeta(i);
+    const ans = S.answers[i] || "";
+    if (!isAnswered(i)) unanswered++;
+    let status;
+    if (S.evaluated) status = m._ok
+      ? '<span class="status-icon ok"><svg class="icon"><use href="#i-check"/></svg>Correct</span>'
+      : '<span class="status-icon no"><svg class="icon"><use href="#i-x"/></svg>Incorrect</span>';
+    else status = isAnswered(i)
+      ? '<span class="status-icon" style="color:var(--primary)"><svg class="icon"><use href="#i-check"/></svg>Answered</span>'
+      : '<span class="status-icon un">— Unanswered</span>';
+    const display = ans ? esc(labelFor(m, ans)) : "";
+    rows += `<tr>
+      <td><button class="review-q" onclick="closeOverlay('reviewOverlay');jumpQuestion(${i})">${i}</button></td>
+      <td style="color:var(--ink-4);font-family:var(--mono);">P${partOf(i)}</td>
+      <td>${status}</td>
+      <td class="review-ans${ans ? "" : " blank"}">${display || "not answered"}</td>
+      <td><button class="mini-flag${S.flagged.includes(i) ? " on" : ""}" id="mflag-${i}" onclick="toggleFlag(${i})" aria-label="Flag question ${i}"><svg class="icon"><use href="#i-flag"/></svg></button></td>
+    </tr>`;
+  }
+  body.innerHTML = rows;
+  $("reviewSummary").innerHTML = S.evaluated
+    ? `Graded: <b style="color:var(--ink)">${Object.values(QMETA).filter(m => m._ok).length}</b>/40 correct`
+    : `<b style="color:${unanswered ? "var(--red)" : "var(--green)"}">${unanswered}</b> of 40 questions unanswered`;
+  $("btnReviewFinish").style.display = S.evaluated ? "none" : "";
+  openOverlay("reviewOverlay");
+}
+
+/* ================= Finish & grading ================= */
+function openFinishModal() {
+  let unanswered = 0;
+  for (let i = 1; i <= 40; i++) if (!isAnswered(i)) unanswered++;
+  $("finishPrompt").innerHTML = unanswered > 0
+    ? `You still have <b style="color:var(--red)">${unanswered}</b> unanswered question${unanswered === 1 ? "" : "s"}. Unanswered questions score zero.`
+    : "All 40 questions are complete. Ready for your band score?";
+  $("btnGotoReview").style.display = unanswered > 0 ? "" : "none";
+  openModal("finishModal");
+}
+function scoreToBand(score) {
+  if (score >= 39) return 9.0;
+  if (score >= 37) return 8.5;
+  if (score >= 35) return 8.0;
+  if (score >= 32) return 7.5;
+  if (score >= 30) return 7.0;
+  if (score >= 26) return 6.5;
+  if (score >= 23) return 6.0;
+  if (score >= 18) return 5.5;
+  if (score >= 16) return 5.0;
+  if (score >= 13) return 4.5;
+  if (score >= 10) return 4.0;
+  if (score >= 8) return 3.5;
+  if (score >= 6) return 3.0;
+  if (score >= 4) return 2.5;
+  return 2.0;
+}
+function recomputeGrades() {
+  let correct = 0;
+  for (let i = 1; i <= 40; i++) {
+    const m = qmeta(i);
+    if (!m) continue;
+    const u = norm(S.answers[i]);
+    m._ok = u !== "" && m.answers.some(a => norm(a) === u);
+    if (m._ok) correct++;
+  }
+  return correct;
+}
+function updateReportUI(correct) {
+  const band = scoreToBand(correct);
+  document.body.classList.add("is-graded");
+  $("bandDisplay").textContent = band.toFixed(1);
+  $("rawDisplay").textContent = correct;
+  $("pctDisplay").textContent = Math.round(correct / 40 * 100) + "%";
+  $("wrongTotal").textContent = 40 - correct;
+  $("correctTotal").textContent = correct;
+  $("partBreakdown").innerHTML = Object.keys(PART_RANGES).map(p => {
+    const [a, b] = PART_RANGES[p];
+    let c = 0;
+    for (let i = a; i <= b; i++) if (qmeta(i) && qmeta(i)._ok) c++;
+    const pct = Math.round(c / (b - a + 1) * 100);
+    return `<div class="pb-row"><span>Part ${p}</span><span class="pb-bar"><i style="width:${pct}%"></i></span><span style="text-align:right;font-family:var(--mono)">${c}/${b - a + 1}</span></div>`;
+  }).join("");
+}
+function evaluateExam() {
+  closeOverlay("reviewOverlay");
+  closeModal("finishModal");
+  S.evaluated = true;
+  const correct = recomputeGrades();
+  updateReportUI(correct);
+  renderPartView();          // re-renders questions with grading applied + feedback injected
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  toast(`Test graded — ${correct}/40 correct, Band ${scoreToBand(correct).toFixed(1)}`, 4200);
+  persist();
+}
+function applyGrading(scrollToReport) {
+  document.body.classList.add("is-graded");
+  for (let i = 1; i <= 40; i++) {
+    const m = qmeta(i);
+    if (!m || m._ok === undefined) continue;
+    const ctrl = $("ctrl-" + i);
+    if (ctrl) {
+      ctrl.classList.remove("graded-ok", "graded-no");
+      ctrl.classList.add(m._ok ? "graded-ok" : "graded-no");
+      if (ctrl.tagName === "BUTTON") ctrl.disabled = true;
+      if (ctrl.tagName === "SELECT") ctrl.disabled = true;
+    }
+    document.querySelectorAll(`.q-badge[onclick="toggleFlag(${i})"]`).forEach(b => {
+      b.classList.remove("flagged", "graded-ok", "graded-no");
+      b.classList.add(m._ok ? "graded-ok" : "graded-no");
+    });
+    fillFeedback(i, m);
+  }
+  if (scrollToReport) $("reportCard").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+function feedbackHtml(qid, m, prefix) {
+  const ok = m._ok;
+  const yourAns = S.answers[qid];
+  return `<div class="fb-head">
+      <span class="fb-verdict">${prefix ? `<b style="font-family:var(--mono);margin-right:5px;">${prefix}</b>` : ""}<svg class="icon"><use href="#${ok ? "i-check" : "i-x"}"/></svg>${ok ? "Correct" : "Incorrect — your answer: " + esc(labelFor(m, yourAns) || "blank")}</span>
+      <button class="clue-btn" onclick="seekPlay(${m.time})"><svg class="icon"><use href="#i-vol"/></svg> Clue (${secToStr(m.time)})</button>
+    </div>
+    ${ok ? "" : `<div style="margin-bottom:3px;"><b>Acceptable:</b> <span style="color:var(--primary);font-weight:600;">${esc(m.answers.join(" / "))}</span></div>`}
+    ${m.quote ? `<div style="color:var(--ink-3);margin-bottom:3px;"><i>Evidence:</i> “${esc(m.quote)}”</div>` : ""}
+    <div style="color:var(--ink-2);"><svg class="icon" style="color:var(--amber)"><use href="#i-bulb"/></svg> ${esc(m.analysis)}</div>`;
+}
+function fillFeedback(qid, m) {
+  const slot = $("fb-" + qid);
+  if (slot) {
+    slot.className = "fb " + (m._ok ? "ok" : "no");
+    slot.innerHTML = feedbackHtml(qid, m, "");
+    slot.hidden = false;
+  }
+  if (qid >= 21 && qid <= 26) { // summary blanks: feedback list under the paragraph
+    const list = $("fbList");
+    if (list && !list.querySelector("#sfb-" + qid)) {
+      const li = document.createElement("li");
+      li.id = "sfb-" + qid;
+      li.innerHTML = feedbackHtml(qid, m, "Q" + qid);
+      list.appendChild(li);
+    }
+  }
+}
+function setFilter(mode) {
+  for (let i = 1; i <= 40; i++) {
+    const m = qmeta(i);
+    if (!m) continue;
+    const slot = $("fb-" + i);
+    if (slot) slot.hidden = mode === "wrong" ? !!m._ok : mode === "correct" ? !m._ok : false;
+    if (i >= 21 && i <= 26) {
+      const li = $("sfb-" + i);
+      if (li) li.style.display = mode === "wrong" ? (m._ok ? "none" : "") : mode === "correct" ? (m._ok ? "" : "none") : "";
+    }
+  }
+  document.querySelectorAll("[data-filter]").forEach(b => {
+    b.style.borderColor = b.dataset.filter === mode ? "var(--primary)" : "";
+    b.style.background = b.dataset.filter === mode ? "var(--primary-subtle)" : "";
+  });
+}
+
+/* ================= Timer ================= */
+function initTimer() {
+  updateTimerPill();
+  setInterval(() => {
+    if (!S.started || S.evaluated) return;
+    if (S.remain > 0) {
+      S.remain--;
+      updateTimerPill();
+      if (S.remain % 10 === 0) persist();
+      if (S.remain === 300) toast("5 minutes remaining.");
+      if (S.remain === 60) toast("1 minute remaining!");
+    }
+    if (S.remain <= 0) {
+      toast("Time is up — submitting automatically.", 4000);
+      evaluateExam();
+    }
+  }, 1000);
+}
+function updateTimerPill() {
+  const pill = $("timerPill");
+  $("clockDisplay").textContent = secToStr(S.remain);
+  pill.classList.toggle("warn", S.remain <= 300 && S.remain > 60);
+  pill.classList.toggle("danger", S.remain <= 60);
+}
+
+/* ================= Overlays & modals ================= */
+function openOverlay(id) { $(id).classList.add("open"); }
+function closeOverlay(id) { $(id).classList.remove("open"); }
+function openModal(id) { $(id).classList.add("open"); }
+function closeModal(id) { $(id).classList.remove("open"); }
+
+/* ================= Start flow ================= */
+function beginTest(mode) {
+  S.mode = mode;
+  S.started = true;
+  $("startOverlay").classList.remove("open");
+  document.body.classList.add(mode === "exam" ? "mode-exam" : "mode-practice");
+  $("modeChip").textContent = mode === "exam" ? "Exam Mode" : "Practice Mode";
+  renderTabs();
+  if (mode === "exam") {
+    audio.play().then(() => toast("Recording started — it plays once, exactly like the real test.", 3600))
+      .catch(() => toast("Press play (Space) to start the recording.", 3600));
+  }
+  persist();
+}
+function showStartOverlay(resumable) {
+  $("startSub").textContent = EXAM.subtitle ? EXAM.title + " · " + EXAM.subtitle : EXAM.title;
+  if (resumable) {
+    const strip = $("resumeStrip");
+    let done = 0;
+    for (let i = 1; i <= 40; i++) if (isAnswered(i)) done++;
+    let clozeDone = 0, clozeTotal = 0;
+    (PASSAGE_DATA || []).forEach(p => {
+      const blanks = getClozeBlanks(p.part);
+      clozeTotal += blanks.length;
+      blanks.forEach(b => { if ((S.clozeAnswers[b.id] || "").trim()) clozeDone++; });
+    });
+    strip.style.display = "";
+    strip.innerHTML = `<span>检测到学习进度 — <b>环节一精听:</b> ${clozeDone}/${clozeTotal} 空 | <b>环节二模考:</b> ${done}/40 题.</span>
+      <button type="button" class="btn btn-primary btn-sm" id="btnResume">继续训练</button>`;
+    $("btnResume").addEventListener("click", () => {
+      $("startOverlay").classList.remove("open");
+      switchStage(S.stage || "cloze");
+      if (S.stage === "exam" && S.mode) beginTest(S.mode);
+      if (S.evaluated) evaluateExam();
+    });
+  }
+  openOverlay("startOverlay");
+}
+
+/* ================= Demo/QA hooks (?demo=1 &grade=1 &part=2 &view=… &stage=…) ================= */
+function fillDemo() {
+  for (let i = 1; i <= 40; i++) {
+    const m = qmeta(i);
+    if (!m) continue;
+    if (i % 5 === 0) { // every 5th question wrong, for visual QA
+      if (m.type === "option") {
+        const keys = Object.keys(m.labels || {});
+        const wrong = keys.find(k => norm(k) !== norm(m.answers[0])) || "A";
+        S.answers[i] = wrong;
+      } else S.answers[i] = "deliberately wrong";
+    } else S.answers[i] = m.answers[0];
+  }
+  refreshCounts();
+}
+function applyQueryParams() {
+  const qs = new URLSearchParams(location.search);
+  if (!(qs.has("demo") || qs.has("grade") || qs.has("skipstart") || qs.has("part") || qs.has("view") || qs.has("stage") || qs.has("mode"))) return;
+  S.transient = true;
+  if (qs.get("stage") === "1" || qs.get("stage") === "cloze") {
+    switchStage("cloze");
+    $("startOverlay").classList.remove("open");
+    S.started = true;
+  } else if (qs.get("stage") === "2" || qs.get("stage") === "exam") {
+    switchStage("exam");
+    $("startOverlay").classList.remove("open");
+    beginTest(qs.get("mode") || "practice");
+  } else if (qs.get("mode") === "exam" || qs.get("mode") === "practice") {
+    switchStage("exam");
+    $("startOverlay").classList.remove("open");
+    beginTest(qs.get("mode"));
+  }
+  if (qs.has("demo")) fillDemo();
+  if (qs.get("part")) {
+    const p = Math.min(5, Math.max(1, parseInt(qs.get("part"), 10) || 1));
+    if (S.stage === "cloze") jumpClozePart(p);
+    else jumpPart(p);
+  }
+  if (qs.get("view") === "transcript") { switchStage("exam"); jumpPart(5); }
+  if (qs.get("view") === "review") { switchStage("exam"); openReview(); }
+  if (qs.has("grade")) { switchStage("exam"); if (!S.evaluated) evaluateExam(); }
+}
+
+/* ================= Reset ================= */
+function resetTest() {
+  try { localStorage.removeItem(LS_KEY); } catch (e) {}
+  location.replace(location.pathname); // strip query params too
+}
+
+/* ================= Keyboard ================= */
+function bindKeys() {
+  window.addEventListener("keydown", (e) => {
+    const tag = document.activeElement ? document.activeElement.tagName : "";
+    const typing = tag === "INPUT" && document.activeElement.type === "text" || tag === "SELECT" || tag === "TEXTAREA";
+    if (e.key === "Escape") {
+      document.querySelectorAll(".overlay.open, .modal-backdrop.open").forEach(o => o.classList.remove("open"));
+      return;
+    }
+    if ($("startOverlay").classList.contains("open")) return;
+    if (typing) return;
+    if (e.code === "Space") { e.preventDefault(); togglePlay(); }
+    else if (e.key === "ArrowLeft" && canSeek()) audio.currentTime = Math.max(0, audio.currentTime - 5);
+    else if (e.key === "ArrowRight" && canSeek()) audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 5);
+    else if (e.key >= "1" && e.key <= "4") {
+      if (S.stage === "cloze") jumpClozePart(parseInt(e.key, 10));
+      else jumpPart(parseInt(e.key, 10));
+    }
+    else if (e.key === "t" || e.key === "T") {
+      if (S.stage === "exam") jumpPart(activePart === 5 ? 1 : 5);
+    }
+    else if (e.key === "r" || e.key === "R") {
+      if (S.stage === "exam") {
+        if ($("reviewOverlay").classList.contains("open")) closeOverlay("reviewOverlay"); else openReview();
+      }
+    }
+    else if (e.key === "?") openOverlay("helpOverlay");
+  });
+}
+
+/* ================= Boot ================= */
+document.addEventListener("DOMContentLoaded", () => {
+  audio.src = AUDIO_FILE;
+  document.title = (EXAM.subtitle ? EXAM.subtitle : EXAM.title) + " · IELTS Listening Training";
+  $("brandSub").textContent = EXAM.subtitle || EXAM.title;
+  const restored = restore();
+  buildPalette();
+  renderTabs();
+  renderTranscript();
+  bindAudio();
+  bindKeys();
+  initTimer();
+
+  // Stage Switcher
+  $("btnStageCloze").addEventListener("click", () => switchStage("cloze"));
+  $("btnStageExam").addEventListener("click", () => switchStage("exam"));
+
+  // Stage 1 Top Actions
+  $("btnTopCheckCloze").addEventListener("click", () => checkClozePart(S.activeClozePart));
+  $("btnTopRevealCloze").addEventListener("click", () => toggleRevealCloze(S.activeClozePart));
+
+  // Start Overlay actions
+  $("btnStartClozeStage").addEventListener("click", () => {
+    switchStage("cloze");
+    $("startOverlay").classList.remove("open");
+    S.started = true;
+    toast("已进入环节一：整段原文精听复现。点击任意句子播放磨耳朵，补全核心表达！", 4200);
+    persist();
+  });
+  $("btnStartPractice").addEventListener("click", () => {
+    switchStage("exam");
+    beginTest("practice");
+  });
+  $("btnStartExam").addEventListener("click", () => {
+    switchStage("exam");
+    beginTest("exam");
+  });
+
+  // Dock prev / next
+  $("btnPrevPart").addEventListener("click", () => {
+    if (S.stage === "cloze") { if (S.activeClozePart > 1) jumpClozePart(S.activeClozePart - 1); }
+    else { if (activePart > 1) jumpPart(activePart - 1); }
+  });
+  $("btnNextPart").addEventListener("click", () => {
+    if (S.stage === "cloze") { if (S.activeClozePart < PASSAGE_DATA.length) jumpClozePart(S.activeClozePart + 1); }
+    else { if (activePart < 4) jumpPart(activePart + 1); }
+  });
+
+  // Stage 2 actions
+  $("btnFinish").addEventListener("click", openFinishModal);
+  $("btnConfirmFinish").addEventListener("click", evaluateExam);
+  $("btnGotoReview").addEventListener("click", () => { closeModal("finishModal"); openReview(); });
+  $("btnReview").addEventListener("click", openReview);
+  $("btnReviewFinish").addEventListener("click", evaluateExam);
+  $("btnReset").addEventListener("click", () => openModal("resetModal"));
+  $("btnConfirmReset").addEventListener("click", resetTest);
+  $("btnHelp").addEventListener("click", () => openOverlay("helpOverlay"));
+  $("btnRetake").addEventListener("click", () => openModal("resetModal"));
+  $("autoscrollToggle").addEventListener("change", (e) => { autoScroll = e.target.checked; });
+  document.querySelectorAll("[data-close]").forEach(b => b.addEventListener("click", () => closeOverlay(b.dataset.close)));
+  document.querySelectorAll(".modal-backdrop").forEach(m => m.addEventListener("click", (e) => { if (e.target === m) m.classList.remove("open"); }));
+  document.querySelectorAll("[data-filter]").forEach(b => b.addEventListener("click", () => setFilter(b.dataset.filter)));
+
+  if (restored) {
+    showStartOverlay(true);
+    switchStage(S.stage || "cloze");
+    if (S.mode === "exam") document.body.classList.add("mode-exam");
+    else if (S.mode === "practice") document.body.classList.add("mode-practice");
+    if (S.mode === "exam" && !S.evaluated && S.furthest > 0) audio.currentTime = S.furthest;
+    if (S.evaluated) { updateReportUI(recomputeGrades()); renderPartView(); }
+  } else {
+    showStartOverlay(false);
+    switchStage("cloze");
+  }
+  applyQueryParams();
+  setInterval(() => { if (S.stage === "exam" && activePart === 5) syncTranscriptActive(audio.currentTime); }, 400);
+});
+</script>
+</body>
+</html>

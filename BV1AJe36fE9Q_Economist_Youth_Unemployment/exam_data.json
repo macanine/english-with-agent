@@ -1,0 +1,748 @@
+{
+  "title": "IELTS Academic Listening Simulation",
+  "subtitle": "The Economist · China's Youth Employment Crisis",
+  "total_questions": 40,
+  "time_limit_sec": 1800,
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part 1: Case Study — Downsizing at an Automotive Parts Manufacturer",
+      "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+      "audio_start": 60,
+      "sections": [
+        {
+          "title": "Company Profile & Background",
+          "time": 65,
+          "notes": [
+            {
+              "prefix": "Firm identity: Xingyu Automotive Lighting (based in Eastern China)"
+            },
+            {
+              "id": 1,
+              "prefix": "Core manufacturing: production of components and ",
+              "suffix": " for major automobile brands",
+              "time": 68
+            },
+            {
+              "id": 2,
+              "prefix": "Summer initiative: undertaken a massive ",
+              "suffix": " prior to abrupt contraction",
+              "time": 71
+            }
+          ]
+        },
+        {
+          "title": "The Layoff Ultimatum",
+          "time": 88,
+          "notes": [
+            {
+              "id": 3,
+              "prefix": "Targeted cohort: specifically affected approximately ",
+              "suffix": " recently hired university graduates",
+              "time": 88
+            },
+            {
+              "id": 4,
+              "prefix": "Option 1 (Voluntary Exit): immediate resignation compensated by only ",
+              "suffix": " in severance pay",
+              "time": 112
+            },
+            {
+              "id": 5,
+              "prefix": "Option 2 (Demotion): reassignment to manual labor using a ",
+              "suffix": " on the factory floor",
+              "time": 125
+            },
+            {
+              "id": 6,
+              "prefix": "Outcome: a total of ",
+              "suffix": " graduates opted to take the payout and leave",
+              "time": 150
+            }
+          ]
+        },
+        {
+          "title": "Public Outcry & Sanctions",
+          "time": 184,
+          "notes": [
+            {
+              "id": 7,
+              "prefix": "The People's Daily criticized the enterprise for trampling on ",
+              "suffix": ".",
+              "time": 184
+            },
+            {
+              "id": 8,
+              "prefix": "External scrutiny: German automaker ",
+              "suffix": " initiated a corporate inquiry",
+              "time": 208
+            },
+            {
+              "id": 9,
+              "prefix": "Corporate disciplinary action: formal dismissal of the ",
+              "suffix": ".",
+              "time": 236
+            },
+            {
+              "id": 10,
+              "prefix": "Financial penalties: substantial salary cuts imposed on top ",
+              "suffix": ".",
+              "time": 238
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "answers": [
+            "car parts",
+            "car-parts",
+            "automotive parts"
+          ],
+          "quote": "...major car-parts maker located in Eastern China.",
+          "analysis": "【核心产品】录音明确指出是 car-parts maker，不可写成汽车整车 (cars)。"
+        },
+        {
+          "id": 2,
+          "answers": [
+            "hiring spree",
+            "a hiring spree",
+            "massive hiring spree"
+          ],
+          "quote": "...over the summer, they went on this massive hiring spree.",
+          "analysis": "【地道搭配】hiring spree（招聘狂潮），与随后的闪电解约形成巨大反差。"
+        },
+        {
+          "id": 3,
+          "answers": [
+            "140",
+            "140 graduates",
+            "140 fresh graduates",
+            "about 140"
+          ],
+          "quote": "They specifically targeted about 140 fresh graduates.",
+          "analysis": "【数字陷阱】140 人是被通牒总人数；勿混淆后文实际拿补偿离职的 100 多人。"
+        },
+        {
+          "id": 4,
+          "answers": [
+            "half a month's salary",
+            "half a month's pay",
+            "half month salary",
+            "half month pay"
+          ],
+          "quote": "...give you half a month's salary as severance.",
+          "analysis": "【赔偿标准】half a month's salary，远低于法定 N+1 赔偿的惩罚性离职条件。"
+        },
+        {
+          "id": 5,
+          "answers": [
+            "screwdriver",
+            "a screwdriver"
+          ],
+          "quote": "Choice two was pick up a screwdriver and take a poorly paid manual labor job down on the factory floor.",
+          "analysis": "【具象化比喻】screwdriver（螺丝刀），生动比喻将白领工程师贬至流水线拧螺丝。"
+        },
+        {
+          "id": 6,
+          "answers": [
+            "more than 100",
+            "over 100",
+            ">100",
+            "100+"
+          ],
+          "quote": "More than 100 of those graduates chose to leave.",
+          "analysis": "【限定修饰词】必须包含 more than / over，若仅写 100 则遗漏限定副词。"
+        },
+        {
+          "id": 7,
+          "answers": [
+            "society's trust",
+            "the society's trust",
+            "societal trust"
+          ],
+          "quote": "They actually accused Xingyu of trampling on society's trust.",
+          "analysis": "【官方修辞】trampling on society's trust（践踏社会信任），官方社论标志性修辞。"
+        },
+        {
+          "id": 8,
+          "answers": [
+            "Volkswagen",
+            "VW"
+          ],
+          "quote": "...Volkswagen, the German car maker, stepped in.",
+          "analysis": "【跨国企业专名】Volkswagen（大众汽车），注意首字母大写与拼写正确性。"
+        },
+        {
+          "id": 9,
+          "answers": [
+            "head of human resources",
+            "HR director",
+            "head of HR"
+          ],
+          "quote": "...they fired their head of human resources...",
+          "analysis": "【人事处置辨析】高管层仅降薪，唯一被直接开除（fired）的是 head of human resources。"
+        },
+        {
+          "id": 10,
+          "answers": [
+            "executives",
+            "top executives",
+            "executive staff"
+          ],
+          "quote": "...and they even cut the salaries of their top executives...",
+          "analysis": "【高管降薪】top executives 接受降薪处分。"
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "title": "Part 2: Structural Economic Headwinds & Sector Realities",
+      "instruction": "Questions 11–14: Choose the correct letter, A, B, or C. Questions 15–20: Match each phenomenon to its corresponding sector (A–F).",
+      "audio_start": 188,
+      "mcq": [
+        {
+          "id": 11,
+          "time": 195,
+          "prompt": "Why did the dismissal of 140 graduates trigger nationwide outrage rather than passing unnoticed?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It was the first documented mass termination in automotive history."
+            },
+            {
+              "key": "B",
+              "text": "It breached an implicit social contract guaranteeing white-collar careers for degree holders."
+            },
+            {
+              "key": "C",
+              "text": "The company openly refused statutory arbitration mandated by labor tribunals."
+            }
+          ],
+          "answers": [
+            "B"
+          ],
+          "quote": "They broke an unwritten social contract: you get the degree, we provide the desk.",
+          "analysis": "【社会契约隐喻】事件刺痛了公众心中“大学文凭即换取体面工位”的不成文契约 (unwritten social contract)。"
+        },
+        {
+          "id": 12,
+          "time": 335,
+          "prompt": "How does the real estate slump directly eliminate white-collar employment?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Construction workers displace university graduates in hospitality jobs."
+            },
+            {
+              "key": "B",
+              "text": "A wide network of specialized white-collar professional roles has evaporated."
+            },
+            {
+              "key": "C",
+              "text": "Vacant office complexes are being physically converted to residential quarters."
+            }
+          ],
+          "answers": [
+            "B"
+          ],
+          "quote": "You have to think about the entire white-collar ecosystem built around real estate... architects, civil engineers, urban planners, marketing agencies, banks... that entire sprawling web of educated middle-class jobs just evaporates.",
+          "analysis": "【专业链条蒸发】房地产下行引爆的是建筑师、规划师、银行理财等庞大专业白领生态链的全面萎缩。"
+        },
+        {
+          "id": 13,
+          "time": 308,
+          "prompt": "What second stalling economic engine dampens entry-level hiring alongside property?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Flagging domestic consumption as anxious citizens tighten their belts."
+            },
+            {
+              "key": "B",
+              "text": "Aggressive central bank rate hikes restricting commercial credit lines."
+            },
+            {
+              "key": "C",
+              "text": "Harsh environmental penalties that closed coastal production hubs."
+            }
+          ],
+          "answers": [
+            "A"
+          ],
+          "quote": "...and second, flagging consumption. Basically, people are tightening their belts and spending much less money.",
+          "analysis": "【双引擎停滞】录音指出的双引擎是 property slump 与 flagging consumption（国内消费不振，勒紧裤腰带）。"
+        },
+        {
+          "id": 14,
+          "time": 450,
+          "prompt": "Why do leading tech corporations prefer 'quiet' shedding over loud mass layoffs?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Publicized mass layoffs damage corporate stock valuations and consumer sentiment."
+            },
+            {
+              "key": "B",
+              "text": "Union regulations mandate a 12-month notice period for announced reductions."
+            },
+            {
+              "key": "C",
+              "text": "They plan to rehire the identical engineers as overseas contractors next season."
+            }
+          ],
+          "answers": [
+            "A"
+          ],
+          "quote": "Because loud massive layoffs hurt stock prices and they damage consumer confidence. So they just quietly shed staff...",
+          "analysis": "【市值考量】高调裁员会直接打击股价估值 (stock prices) 与消费者信心，因此大厂选择隐蔽裁员。"
+        }
+      ],
+      "matching": {
+        "options": [
+          {
+            "key": "A",
+            "text": "Property Ecosystem"
+          },
+          {
+            "key": "B",
+            "text": "Tech Corporations"
+          },
+          {
+            "key": "C",
+            "text": "Gig Economy"
+          },
+          {
+            "key": "D",
+            "text": "Entertainment Industry"
+          },
+          {
+            "key": "E",
+            "text": "Full-Time Children"
+          },
+          {
+            "key": "F",
+            "text": "Pretend-to-Work Spaces"
+          }
+        ],
+        "items": [
+          {
+            "id": 15,
+            "time": 422,
+            "prompt": "Generative AI automated entry-level copywriters and background actors",
+            "answers": [
+              "D"
+            ],
+            "quote": "They are churning out shows using AI, which is basically removing the need for human actors or producers... The production assistants, the background actors, the junior copywriters.",
+            "analysis": "D: Entertainment Industry 传媒影视业 AI 替代初级文案与龙套演员。"
+          },
+          {
+            "id": 16,
+            "time": 450,
+            "prompt": "Stealthily freezing positions and shrinking headcount to stabilize equity values",
+            "answers": [
+              "B"
+            ],
+            "quote": "Because loud massive layoffs hurt stock prices and they damage consumer confidence. So they just quietly shed staff and freeze entry level roles without making a big announcement.",
+            "analysis": "B: Tech Corporations 科技大厂隐蔽缩编护盘。"
+          },
+          {
+            "id": 17,
+            "time": 340,
+            "prompt": "Ancillary network collapse destroying jobs for urban planners and mortgage analysts",
+            "answers": [
+              "A"
+            ],
+            "quote": "When developers aren't building, they aren't hiring architects or civil engineers or urban planners... The banks aren't hiring financial analysts to underwrite the mortgages, the interior design firms, the legal teams...",
+            "analysis": "A: Property Ecosystem 地产链条下挫牵连专业服务网络。"
+          },
+          {
+            "id": 18,
+            "time": 510,
+            "prompt": "Algorithmic auction mechanism suppressing payouts amid massive labor oversupply",
+            "answers": [
+              "C"
+            ],
+            "quote": "The algorithm basically sees that there are 100 drivers for 10 orders, right? So it drops the pay... It's an auction that punishes the worker.",
+            "analysis": "C: Gig Economy 零工平台算法竞价与劳动力严重饱和。"
+          },
+          {
+            "id": 19,
+            "time": 550,
+            "prompt": "Performing household duties in exchange for parental allowances to retain dignity",
+            "answers": [
+              "E"
+            ],
+            "quote": "It means young adults are staying home, cooking and cleaning for their parents in exchange for pocket money or a monthly allowance... a way to contribute and maintain some dignity within the family structure.",
+            "analysis": "E: Full-Time Children 全职儿女家务劳动换生活费以维系家庭尊严。"
+          },
+          {
+            "id": 20,
+            "time": 605,
+            "prompt": "Renting office desks by the day to simulate corporate routine and avoid family pressure",
+            "answers": [
+              "F"
+            ],
+            "quote": "For a small daily fee of about 30 yuan, which is roughly $4.50, young people rent a desk. They go in, they hang out by the water cooler... all to enjoy the routine of office life and avoid family pressure.",
+            "analysis": "F: Pretend-to-Work Spaces 装作上班公司提供的日常作息与心理避风港。"
+          }
+        ]
+      }
+    },
+    {
+      "part": 3,
+      "title": "Part 3: The Erosion of Safety Nets & Coping Mechanisms",
+      "instruction": "Questions 21–26: Complete the summary with letters A–J. Questions 27–30: Complete the sentences (NO MORE THAN THREE WORDS AND/OR A NUMBER).",
+      "audio_start": 495,
+      "word_bank": [
+        {
+          "key": "A",
+          "word": "reverse auction"
+        },
+        {
+          "key": "B",
+          "word": "buffer"
+        },
+        {
+          "key": "C",
+          "word": "plummeted"
+        },
+        {
+          "key": "D",
+          "word": "overstuffed"
+        },
+        {
+          "key": "E",
+          "word": "routine"
+        },
+        {
+          "key": "F",
+          "word": "evaporated"
+        },
+        {
+          "key": "G",
+          "word": "stagnant"
+        },
+        {
+          "key": "H",
+          "word": "dignity"
+        },
+        {
+          "key": "I",
+          "word": "monopoly"
+        },
+        {
+          "key": "J",
+          "word": "compensation"
+        }
+      ],
+      "summary_text": [
+        "In past economic cycles, platform delivery and ride-hailing functioned as a dependable ",
+        " for displaced workers. At present, however, the gig economy has become acutely ",
+        ", with labor supply far outstripping consumer orders. Automated dispatch algorithms function in practice like a ",
+        ", forcing workers to underbid each other. Consequently, average earnings have ",
+        ", driving workers to log grueling hours for meager pay. To avoid such precarious conditions, some graduates embrace the role of 'full-time children', performing household chores to preserve their personal ",
+        ". Others frequent pretend-to-work hubs specifically to regain the structure of a daily ",
+        "."
+      ],
+      "summary_questions": [
+        {
+          "id": 21,
+          "answers": [
+            "B"
+          ],
+          "time": 500,
+          "quote": "It used to be that the gig economy served as an effective buffer...",
+          "analysis": "【安全网隐喻】B (buffer 缓冲池/减震器)。"
+        },
+        {
+          "id": 22,
+          "answers": [
+            "D"
+          ],
+          "time": 502,
+          "quote": "Right now, the gig economy is completely overstuffed.",
+          "analysis": "【饱和描写】D (overstuffed 极度塞满/严重饱和)。"
+        },
+        {
+          "id": 23,
+          "answers": [
+            "A"
+          ],
+          "time": 516,
+          "quote": "The algorithm essentially acts like a reverse auction.",
+          "analysis": "【反向竞价】A (reverse auction 逆向拍卖)。平台压价算法。"
+        },
+        {
+          "id": 24,
+          "answers": [
+            "C"
+          ],
+          "time": 508,
+          "quote": "Average wages in the sector have completely plummeted.",
+          "analysis": "【暴跌动词】C (plummeted 骤降)。描述薪资雪崩。"
+        },
+        {
+          "id": 25,
+          "answers": [
+            "H"
+          ],
+          "time": 555,
+          "quote": "...maintain some dignity within the family structure.",
+          "analysis": "【尊严维系】H (dignity 尊严)。全职儿女在家庭内部的尊严。"
+        },
+        {
+          "id": 26,
+          "answers": [
+            "E"
+          ],
+          "time": 605,
+          "quote": "...enjoy the routine of office life and avoid family pressure.",
+          "analysis": "【日常规矩】E (routine 规律日常)。失业青年最渴望的上班节奏。"
+        }
+      ],
+      "sentence_questions": [
+        {
+          "id": 27,
+          "prefix": "Desks in pretend-to-work facilities can be rented for a daily charge of around ",
+          "suffix": ".",
+          "answers": [
+            "30 yuan",
+            "about 30 yuan",
+            "roughly 30 yuan",
+            "30 RMB",
+            "$4.50"
+          ],
+          "time": 590,
+          "quote": "For a small daily fee of about 30 yuan, which is roughly $4.50...",
+          "analysis": "【事实数字】30 yuan 每天租工位开销。"
+        },
+        {
+          "id": 28,
+          "prefix": "At municipal libraries, individuals updating CVs sit next to peers spending hours playing ",
+          "suffix": " on laptops.",
+          "answers": [
+            "computer games",
+            "games",
+            "video games"
+          ],
+          "time": 650,
+          "quote": "...you have people just playing computer games on their laptops for hours...",
+          "analysis": "【荒诞反差】刷简历与通宵打电脑游戏的讽刺并存。"
+        },
+        {
+          "id": 29,
+          "prefix": "Rather than confronting systemic rejection, an unemployed engineer described his situation as a ",
+          "suffix": ".",
+          "answers": [
+            "voluntary break",
+            "a voluntary break"
+          ],
+          "time": 675,
+          "quote": "...he called it a voluntary break to protect his sanity.",
+          "analysis": "【心理重塑】voluntary break（自愿休假）。"
+        },
+        {
+          "id": 30,
+          "prefix": "This cognitive reframing was deliberately designed to protect personal sanity and reclaim ",
+          "suffix": ".",
+          "answers": [
+            "personal agency",
+            "agency",
+            "a sense of agency",
+            "some agency"
+          ],
+          "time": 678,
+          "quote": "...to protect your own sanity and try to take back some agency.",
+          "analysis": "【主体能动性】personal agency（个人能动性/自主掌控感）。"
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "title": "Part 4: Macroeconomic Divergence & Generational Redefinition",
+      "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+      "audio_start": 263,
+      "sections": [
+        {
+          "title": "Demographic Milestone & Market Divergence",
+          "time": 265,
+          "notes": [
+            {
+              "id": 31,
+              "prefix": "A record ",
+              "suffix": " students graduated from Chinese universities this year",
+              "time": 265
+            },
+            {
+              "id": 32,
+              "prefix": "The annual output of tertiary degree holders has exactly ",
+              "suffix": " compared to a decade ago",
+              "time": 280
+            },
+            {
+              "id": 33,
+              "prefix": "In stark contrast to surging supply, corporate demand for graduates has completely ",
+              "suffix": ".",
+              "time": 295
+            }
+          ]
+        },
+        {
+          "title": "The Erosion of Traditional Certainties",
+          "time": 660,
+          "notes": [
+            {
+              "id": 34,
+              "prefix": "Historic societal pact: 'Complete your degree, and society provides a ",
+              "suffix": "'",
+              "time": 200
+            },
+            {
+              "id": 35,
+              "prefix": "Unemployed graduates frequent municipal libraries searching for a shared sense of ",
+              "suffix": ".",
+              "time": 660
+            },
+            {
+              "id": 36,
+              "prefix": "Identity crisis arises when generational self-worth was anchored to an ",
+              "suffix": " that no longer exists",
+              "time": 740
+            },
+            {
+              "id": 37,
+              "prefix": "The Xingyu dispute gained national traction because it mirrored the widespread ",
+              "suffix": " of youth",
+              "time": 700
+            }
+          ]
+        },
+        {
+          "title": "Cultural Meaning & Future Directions",
+          "time": 730,
+          "notes": [
+            {
+              "id": 38,
+              "prefix": "The office workstation has transformed from simple furniture into a middle-class ",
+              "suffix": ".",
+              "time": 730
+            },
+            {
+              "id": 39,
+              "prefix": "With historical career roadmaps incinerated, graduates are compelled to draw a ",
+              "suffix": ".",
+              "time": 750
+            },
+            {
+              "id": 40,
+              "prefix": "Ultimately, modern youth are forced to fundamentally ",
+              "suffix": " what a successful life looks like",
+              "time": 742
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 31,
+          "answers": [
+            "12.7 million",
+            "12.7m",
+            "twelve point seven million"
+          ],
+          "quote": "This year, a record 12.7 million students graduated from university.",
+          "analysis": "【历史新高数据】12.7 million（1270万人）毕业大军。"
+        },
+        {
+          "id": 32,
+          "answers": [
+            "doubled",
+            "been doubled",
+            "exactly doubled"
+          ],
+          "quote": "12.7 million is exactly double the number of students a decade ago.",
+          "analysis": "【翻倍数据】doubled（相比十年前翻了一番）。"
+        },
+        {
+          "id": 33,
+          "answers": [
+            "plummeted",
+            "completely plummeted",
+            "collapsed"
+          ],
+          "quote": "But demand for those workers has completely plummeted.",
+          "analysis": "【剧烈下跌】plummeted / collapsed 需求断崖下跌。"
+        },
+        {
+          "id": 34,
+          "answers": [
+            "desk",
+            "office desk"
+          ],
+          "quote": "The unwritten rule was always: you get the degree, we provide the desk.",
+          "analysis": "【契约工位】desk / office desk。"
+        },
+        {
+          "id": 35,
+          "answers": [
+            "belonging",
+            "a place to belong"
+          ],
+          "quote": "It sounds like they just need a place to belong.",
+          "analysis": "【归属感】belonging / a place to belong。"
+        },
+        {
+          "id": 36,
+          "answers": [
+            "office chair",
+            "chair",
+            "office desk"
+          ],
+          "quote": "If a whole generation's identity is tied to an office chair that no longer exists...",
+          "analysis": "【物理隐喻】office chair 办公椅。"
+        },
+        {
+          "id": 37,
+          "answers": [
+            "anxiety",
+            "the anxiety",
+            "collective anxiety"
+          ],
+          "quote": "...because it mirrors the anxiety of 12.7 million graduates.",
+          "analysis": "【集体心理】anxiety 时代普遍焦虑。"
+        },
+        {
+          "id": 38,
+          "answers": [
+            "symbol",
+            "a symbol",
+            "status symbol"
+          ],
+          "quote": "It's not just furniture anymore... Right, it's a symbol.",
+          "analysis": "【文化符号】symbol / status symbol 阶层象征。"
+        },
+        {
+          "id": 39,
+          "answers": [
+            "completely new one",
+            "new roadmap",
+            "new one"
+          ],
+          "quote": "If the old roadmap is burned, they are going to have to draw a completely new one.",
+          "analysis": "【重绘地图】completely new one / new roadmap。"
+        },
+        {
+          "id": 40,
+          "answers": [
+            "redefine",
+            "redefine what"
+          ],
+          "quote": "...how will they ultimately redefine what a successful life actually looks like...",
+          "analysis": "【终极重塑】redefine 重新定义人生。"
+        }
+      ]
+    }
+  ]
+}

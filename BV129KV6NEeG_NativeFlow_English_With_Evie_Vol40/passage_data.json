@@ -1,0 +1,1098 @@
+[
+  {
+    "part": 1,
+    "title": "Part 1: Vlog Creator Milestone & Background Profile",
+    "audio_start": 0.0,
+    "audio_end": 122.97,
+    "sentences": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.88,
+        "speaker": "Host 1",
+        "text": "Hello.",
+        "cloze_text": "Hello.",
+        "blanks": []
+      },
+      {
+        "id": 2,
+        "start": 2.88,
+        "end": 11.36,
+        "speaker": "Host 1",
+        "text": "My name is Evie and this is a video at native speed English to help you practice your listening comprehension.",
+        "cloze_text": "My name is Evie and this is a video at [[native speed]] English to help you practice your [[listening comprehension]].",
+        "blanks": [
+          {
+            "id": 1,
+            "answer": "native speed",
+            "hint": "n_____ s____"
+          },
+          {
+            "id": 2,
+            "answer": "listening comprehension",
+            "hint": "l________ c____________"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "start": 11.36,
+        "end": 21.47,
+        "speaker": "Host 1",
+        "text": "It feels funny to say that at normal speed, but this is the 100,000 subscriber special, so I thought maybe I should mix it up a little bit.",
+        "cloze_text": "It feels funny to say that at normal speed, but this is the [[100,000 subscriber special]], so I thought maybe I should [[mix it up]] a little bit.",
+        "blanks": [
+          {
+            "id": 3,
+            "answer": "100,000 subscriber special",
+            "hint": "1_____ s_________ s______"
+          },
+          {
+            "id": 4,
+            "answer": "mix it up",
+            "hint": "m__ i_ u_"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "start": 21.47,
+        "end": 26.64,
+        "speaker": "Host 1",
+        "text": "Yeah, this is going to be eight minutes of me speaking at native speed.",
+        "cloze_text": "Yeah, this is going to be [[eight minutes]] of me speaking at [[native speed]].",
+        "blanks": [
+          {
+            "id": 5,
+            "answer": "eight minutes",
+            "hint": "e____ m______"
+          },
+          {
+            "id": 6,
+            "answer": "native speed",
+            "hint": "n_____ s____"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "start": 26.64,
+        "end": 36.28,
+        "speaker": "Host 1",
+        "text": "I would love to know how much you can understand, so watch the whole thing and comment down below if you could understand me or not.",
+        "cloze_text": "I would love to know how much you can understand, so watch the whole thing and comment down below if you could understand me or not.",
+        "blanks": []
+      },
+      {
+        "id": 6,
+        "start": 36.38,
+        "end": 43.32,
+        "speaker": "Host 1",
+        "text": "So I am making this video because I am about to hit 100,000 subscribers.",
+        "cloze_text": "So I am making this video because I am about to hit [[100,000 subscribers]].",
+        "blanks": [
+          {
+            "id": 7,
+            "answer": "100,000 subscribers",
+            "hint": "1_____ s__________"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "start": 43.32,
+        "end": 50.63,
+        "speaker": "Host 1",
+        "text": "I'm about 1,000 away right now, but I wanted this video to be filmed and ready so that I could upload it.",
+        "cloze_text": "I'm about [[1,000 away]] right now, but I wanted this video to be filmed and ready so that I could upload it.",
+        "blanks": [
+          {
+            "id": 8,
+            "answer": "1,000 away",
+            "hint": "1___ a___"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "start": 50.74,
+        "end": 57.0,
+        "speaker": "Host 1",
+        "text": "Upload it for when I hit 100k because that is so freaking cool.",
+        "cloze_text": "Upload it for when I hit [[100k]] because that is so freaking cool.",
+        "blanks": [
+          {
+            "id": 9,
+            "answer": "100k",
+            "hint": "1___"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "start": 57.0,
+        "end": 60.04,
+        "speaker": "Host 1",
+        "text": "I've been running my channel now for about four months.",
+        "cloze_text": "I've been running my channel now for about [[four months]].",
+        "blanks": [
+          {
+            "id": 10,
+            "answer": "four months",
+            "hint": "f___ m_____"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "start": 60.04,
+        "end": 71.16,
+        "speaker": "Host 1",
+        "text": "I think it's actually four months today since my first upload and this is the exact beach that I filmed in my very, very first vlog and I was so nervous.",
+        "cloze_text": "I think it's actually [[four months]] today since my first upload and this is the [[exact beach]] that I filmed in my very, very [[first vlog]] and I was so nervous.",
+        "blanks": [
+          {
+            "id": 11,
+            "answer": "four months",
+            "hint": "f___ m_____"
+          },
+          {
+            "id": 12,
+            "answer": "exact beach",
+            "hint": "e____ b____"
+          },
+          {
+            "id": 13,
+            "answer": "first vlog",
+            "hint": "f____ v___"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "start": 71.16,
+        "end": 72.8,
+        "speaker": "Host 1",
+        "text": "I was so nervous in that video.",
+        "cloze_text": "I was so nervous in that video.",
+        "blanks": []
+      },
+      {
+        "id": 12,
+        "start": 72.8,
+        "end": 80.4,
+        "speaker": "Host 1",
+        "text": "I was like, my voice was shaking and I had to keep retaking the video because I was so scared and that was just four months ago.",
+        "cloze_text": "I was like, my [[voice was shaking]] and I had to keep [[retaking the video]] because I was so scared and that was just [[four months]] ago.",
+        "blanks": [
+          {
+            "id": 14,
+            "answer": "voice was shaking",
+            "hint": "v____ w__ s______"
+          },
+          {
+            "id": 15,
+            "answer": "retaking the video",
+            "hint": "r_______ t__ v____"
+          },
+          {
+            "id": 16,
+            "answer": "four months",
+            "hint": "f___ m_____"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "start": 80.4,
+        "end": 89.28,
+        "speaker": "Host 1",
+        "text": "So it feels pretty cool to be here now and hopefully I come across a little bit more relaxed.",
+        "cloze_text": "So it feels pretty cool to be here now and hopefully I come across a little bit more [[relaxed]].",
+        "blanks": [
+          {
+            "id": 17,
+            "answer": "relaxed",
+            "hint": "r______"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "start": 89.28,
+        "end": 92.15,
+        "speaker": "Host 1",
+        "text": "In this video I wanted to talk about a couple things.",
+        "cloze_text": "In this video I wanted to talk about a couple things.",
+        "blanks": []
+      },
+      {
+        "id": 15,
+        "start": 92.16,
+        "end": 105.79,
+        "speaker": "Host 1",
+        "text": "One, I wanted to speak about the difference between advanced, like how I speak to an advanced English learner and how I speak to a native and I wanted to speak a little bit about the future of this channel as well.",
+        "cloze_text": "One, I wanted to speak about the difference between advanced, like how I speak to an [[advanced English learner]] and how I speak to a native and I wanted to speak a little bit about the [[future of this channel]] as well.",
+        "blanks": [
+          {
+            "id": 18,
+            "answer": "advanced English learner",
+            "hint": "a_______ E______ l______"
+          },
+          {
+            "id": 19,
+            "answer": "future of this channel",
+            "hint": "f_____ o_ t___ c______"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "start": 106.02,
+        "end": 110.51,
+        "speaker": "Host 1",
+        "text": "So, you know, see if you can follow it.",
+        "cloze_text": "So, you know, see if you can follow it.",
+        "blanks": []
+      },
+      {
+        "id": 17,
+        "start": 110.51,
+        "end": 122.97,
+        "speaker": "Host 1",
+        "text": "So the first thing I wanted to talk about was the difference between the way I speak to an advanced English learner and the way I speak to a native because these are actually two different things.",
+        "cloze_text": "So the first thing I wanted to talk about was the difference between the way I speak to an [[advanced English learner]] and the way I speak to a native because these are actually two different things.",
+        "blanks": [
+          {
+            "id": 20,
+            "answer": "advanced English learner",
+            "hint": "a_______ E______ l______"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "title": "Part 2: The Linguistic Divide: Advanced Learners vs. Native Peers",
+    "audio_start": 123.0,
+    "audio_end": 213.04,
+    "sentences": [
+      {
+        "id": 18,
+        "start": 123.0,
+        "end": 133.03,
+        "speaker": "Host 1",
+        "text": "When I speak to an advanced English speaker, like even somebody who's like C1, C2, they're basically fluent, they can work in English, I do still change my language.",
+        "cloze_text": "When I speak to an advanced English speaker, like even somebody who's like C1, C2, they're [[basically fluent]], they can work in English, I do still [[change my language]].",
+        "blanks": [
+          {
+            "id": 21,
+            "answer": "basically fluent",
+            "hint": "b________ f_____"
+          },
+          {
+            "id": 22,
+            "answer": "change my language",
+            "hint": "c_____ m_ l_______"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "start": 133.03,
+        "end": 137.95,
+        "speaker": "Host 1",
+        "text": "Even when I've made friends with people from other countries, my English is completely different.",
+        "cloze_text": "Even when I've made friends with people from other countries, my English is [[completely different]].",
+        "blanks": [
+          {
+            "id": 23,
+            "answer": "completely different",
+            "hint": "c_________ d________"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "start": 137.95,
+        "end": 141.65,
+        "speaker": "Host 1",
+        "text": "Oh Christ, that dog scared me.",
+        "cloze_text": "Oh Christ, that dog scared me.",
+        "blanks": []
+      },
+      {
+        "id": 21,
+        "start": 141.65,
+        "end": 157.92,
+        "speaker": "Host 1",
+        "text": "My English is completely different compared to how I would speak with a native speaker and the main difference is not necessarily the speed but like the words that I choose and the words that I use.",
+        "cloze_text": "My English is [[completely different]] compared to how I would speak with a native speaker and the main difference is not necessarily the speed but like the [[words that I choose]] and the words that I use.",
+        "blanks": [
+          {
+            "id": 24,
+            "answer": "completely different",
+            "hint": "c_________ d________"
+          },
+          {
+            "id": 25,
+            "answer": "words that I choose",
+            "hint": "w____ t___ I c_____"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "start": 157.92,
+        "end": 164.3,
+        "speaker": "Host 1",
+        "text": "So when I speak to an advanced English speaker, I will avoid like really heavy slang.",
+        "cloze_text": "So when I speak to an advanced English speaker, I will avoid like really [[heavy slang]].",
+        "blanks": [
+          {
+            "id": 26,
+            "answer": "heavy slang",
+            "hint": "h____ s____"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "start": 164.3,
+        "end": 173.28,
+        "speaker": "Host 1",
+        "text": "I'll avoid heavy slang, I'll avoid using too many expressions or colloquialisms or kind of leaning too much into the sarcasm.",
+        "cloze_text": "I'll avoid [[heavy slang]], I'll avoid using too many expressions or [[colloquialisms]] or kind of leaning too much into the [[sarcasm]].",
+        "blanks": [
+          {
+            "id": 27,
+            "answer": "heavy slang",
+            "hint": "h____ s____"
+          },
+          {
+            "id": 28,
+            "answer": "colloquialisms",
+            "hint": "c_____________"
+          },
+          {
+            "id": 29,
+            "answer": "sarcasm",
+            "hint": "s______"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "start": 173.28,
+        "end": 177.68,
+        "speaker": "Host 1",
+        "text": "For example, like if I'm speaking to another Brit, I will literally be like shut up.",
+        "cloze_text": "For example, like if I'm speaking to another Brit, I will literally be like [[shut up]].",
+        "blanks": [
+          {
+            "id": 30,
+            "answer": "shut up",
+            "hint": "s___ u_"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "start": 177.68,
+        "end": 183.88,
+        "speaker": "Host 1",
+        "text": "I'll just be like your banter, like your Brits are very sarcastic, we're very dry.",
+        "cloze_text": "I'll just be like your [[banter]], like your Brits are [[very sarcastic]], we're [[very dry]].",
+        "blanks": [
+          {
+            "id": 31,
+            "answer": "banter",
+            "hint": "b_____"
+          },
+          {
+            "id": 32,
+            "answer": "very sarcastic",
+            "hint": "v___ s________"
+          },
+          {
+            "id": 33,
+            "answer": "very dry",
+            "hint": "v___ d__"
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "start": 183.89,
+        "end": 186.5,
+        "speaker": "Host 1",
+        "text": "Like we like to take the piss out of each other.",
+        "cloze_text": "Like we like to [[take the piss out of each other]].",
+        "blanks": [
+          {
+            "id": 34,
+            "answer": "take the piss out of each other",
+            "hint": "t___ t__ p___ o__ o_ e___ o____"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "start": 186.51,
+        "end": 198.76,
+        "speaker": "Host 1",
+        "text": "Sometimes I speak to like my advanced students and they might even find this video a bit difficult because I'm speaking faster and I'm using more specific words and phrases in here as well.",
+        "cloze_text": "Sometimes I speak to like my advanced students and they might even find this video a bit difficult because I'm speaking faster and I'm using more specific words and phrases in here as well.",
+        "blanks": []
+      },
+      {
+        "id": 28,
+        "start": 198.76,
+        "end": 213.04,
+        "speaker": "Host 1",
+        "text": "Now, I don't know if any of you have moved abroad at some point in your life to an English speaking country because I think this is one of the main times that people really feel that difference between an advanced English speaker and a native speaker.",
+        "cloze_text": "Now, I don't know if any of you have [[moved abroad]] at some point in your life to an English speaking country because I think this is one of the main times that people really feel that difference between an advanced English speaker and a native speaker.",
+        "blanks": [
+          {
+            "id": 35,
+            "answer": "moved abroad",
+            "hint": "m____ a_____"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "title": "Part 3: Group Social Dynamics & The Reality TV Strategy",
+    "audio_start": 213.04,
+    "audio_end": 337.16,
+    "sentences": [
+      {
+        "id": 29,
+        "start": 213.04,
+        "end": 236.87,
+        "speaker": "Host 1",
+        "text": "In particular, if you make friends with natives, it's fine when you're one on one but the minute that you end up going into like a bar or a group or like a big social event where there's lots of natives who are speaking to each other, that's actually when a lot of people find that their listening comprehension drops a lot even though they're like C1s, maybe like C1 speakers, like super advanced speakers, B2C1.",
+        "cloze_text": "In particular, if you make friends with natives, it's fine when you're [[one on one]] but the minute that you end up going into like a bar or a group or like a [[big social event]] where there's lots of natives who are speaking to each other, that's actually when a lot of people find that their [[listening comprehension]] drops a lot even though they're like C1s, maybe like C1 speakers, like super advanced speakers, B2C1.",
+        "blanks": [
+          {
+            "id": 36,
+            "answer": "one on one",
+            "hint": "o__ o_ o__"
+          },
+          {
+            "id": 37,
+            "answer": "big social event",
+            "hint": "b__ s_____ e____"
+          },
+          {
+            "id": 38,
+            "answer": "listening comprehension",
+            "hint": "l________ c____________"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "start": 237.09,
+        "end": 241.65,
+        "speaker": "Host 1",
+        "text": "And the biggest problem there is a lack of cultural understanding.",
+        "cloze_text": "And the biggest problem there is a [[lack of cultural understanding]].",
+        "blanks": [
+          {
+            "id": 39,
+            "answer": "lack of cultural understanding",
+            "hint": "l___ o_ c_______ u____________"
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "start": 241.83,
+        "end": 256.4,
+        "speaker": "Host 1",
+        "text": "You need to understand like the jokes and the culture and the background of the country that you're in, I think, in order to necessarily like pick up on the jokes on the intonation, on the kind of banter that goes back and forth between people.",
+        "cloze_text": "You need to understand like the jokes and the culture and the background of the country that you're in, I think, in order to necessarily like pick up on the jokes on the [[intonation]], on the kind of [[banter]] that goes back and forth between people.",
+        "blanks": [
+          {
+            "id": 40,
+            "answer": "intonation",
+            "hint": "i_________"
+          },
+          {
+            "id": 41,
+            "answer": "banter",
+            "hint": "b_____"
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "start": 256.4,
+        "end": 261.64,
+        "speaker": "Host 1",
+        "text": "And I think the UK is particularly bad for this because we're very dry, we're very sarcastic, like I said.",
+        "cloze_text": "And I think the UK is particularly bad for this because we're [[very dry]], we're [[very sarcastic]], like I said.",
+        "blanks": [
+          {
+            "id": 42,
+            "answer": "very dry",
+            "hint": "v___ d__"
+          },
+          {
+            "id": 43,
+            "answer": "very sarcastic",
+            "hint": "v___ s________"
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "start": 261.64,
+        "end": 275.31,
+        "speaker": "Host 1",
+        "text": "So my advice for people who struggle with this or if you are like an advanced speaker, maybe my videos are too slow for you or you want something more challenging, you need to watch reality TV.",
+        "cloze_text": "So my advice for people who struggle with this or if you are like an advanced speaker, maybe my videos are too slow for you or you want something more challenging, you need to watch [[reality TV]].",
+        "blanks": [
+          {
+            "id": 44,
+            "answer": "reality TV",
+            "hint": "r______ T_"
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "start": 275.31,
+        "end": 280.57,
+        "speaker": "Host 1",
+        "text": "And I know it's not for everyone, like people don't always enjoy reality TV like dating shows.",
+        "cloze_text": "And I know it's not for everyone, like people don't always enjoy [[reality TV]] like [[dating shows]].",
+        "blanks": [
+          {
+            "id": 45,
+            "answer": "reality TV",
+            "hint": "r______ T_"
+          },
+          {
+            "id": 46,
+            "answer": "dating shows",
+            "hint": "d_____ s____"
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "start": 280.57,
+        "end": 297.0,
+        "speaker": "Host 1",
+        "text": "But they are so important to watch because that is one of the only times that you will hear natives speaking to each other, particularly in these like small-talky, getting-to-know-each-other context without having like their language changed at all.",
+        "cloze_text": "But they are so important to watch because that is one of the only times that you will hear natives speaking to each other, particularly in these like [[small-talky, getting-to-know-each-other context]] without having like their language changed at all.",
+        "blanks": [
+          {
+            "id": 47,
+            "answer": "small-talky, getting-to-know-each-other context",
+            "hint": "s_________ g_____________________ c______"
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "start": 297.0,
+        "end": 306.68,
+        "speaker": "Host 1",
+        "text": "So watch reality TV, if you want to be like conversational, making friends in English, watch reality TV, no subtitles, you already know the drill.",
+        "cloze_text": "So watch [[reality TV]], if you want to be like conversational, making friends in English, watch [[reality TV]], [[no subtitles]], you already know the drill.",
+        "blanks": [
+          {
+            "id": 48,
+            "answer": "reality TV",
+            "hint": "r______ T_"
+          },
+          {
+            "id": 49,
+            "answer": "reality TV",
+            "hint": "r______ T_"
+          },
+          {
+            "id": 50,
+            "answer": "no subtitles",
+            "hint": "n_ s________"
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "start": 306.68,
+        "end": 310.52,
+        "speaker": "Host 1",
+        "text": "If there's like a word or a phrase that you don't get, then just turn them on then.",
+        "cloze_text": "If there's like a word or a phrase that you don't get, then just turn them on then.",
+        "blanks": []
+      },
+      {
+        "id": 38,
+        "start": 310.52,
+        "end": 312.72,
+        "speaker": "Host 1",
+        "text": "So that would be my advice.",
+        "cloze_text": "So that would be my advice.",
+        "blanks": []
+      },
+      {
+        "id": 39,
+        "start": 312.72,
+        "end": 329.79,
+        "speaker": "Host 1",
+        "text": "If you want to make friends or if you're trying to go from that kind of advanced to like kind of native level, like banter, watch reality TV, once you're comfortable with that, then start watching comedies because that will give you like the kind of cultural understanding to, if you can get the joke, you're going to be fine.",
+        "cloze_text": "If you want to make friends or if you're trying to go from that kind of advanced to like kind of native level, like [[banter]], watch [[reality TV]], once you're comfortable with that, then start watching [[comedies]] because that will give you like the kind of [[cultural understanding]] to, if you can get the joke, you're going to be fine.",
+        "blanks": [
+          {
+            "id": 51,
+            "answer": "banter",
+            "hint": "b_____"
+          },
+          {
+            "id": 52,
+            "answer": "reality TV",
+            "hint": "r______ T_"
+          },
+          {
+            "id": 53,
+            "answer": "comedies",
+            "hint": "c_______"
+          },
+          {
+            "id": 54,
+            "answer": "cultural understanding",
+            "hint": "c_______ u____________"
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "start": 329.83,
+        "end": 333.18,
+        "speaker": "Host 1",
+        "text": "You're going to be like C2, no worries.",
+        "cloze_text": "You're going to be like C2, no worries.",
+        "blanks": []
+      },
+      {
+        "id": 41,
+        "start": 333.18,
+        "end": 337.16,
+        "speaker": "Host 1",
+        "text": "Okay, it's now about six minutes.",
+        "cloze_text": "Okay, it's now about six minutes.",
+        "blanks": []
+      }
+    ]
+  },
+  {
+    "part": 4,
+    "title": "Part 4: Language Acquisition Methodology & Channel Evolution",
+    "audio_start": 337.16,
+    "audio_end": 514.28,
+    "sentences": [
+      {
+        "id": 42,
+        "start": 337.16,
+        "end": 345.0,
+        "speaker": "Host 1",
+        "text": "So I want to talk a little bit for the last couple minutes here, just kind of reflect on my channel and everything that's gone on in the last few months.",
+        "cloze_text": "So I want to talk a little bit for the last couple minutes here, just kind of reflect on my channel and everything that's gone on in the last few months.",
+        "blanks": []
+      },
+      {
+        "id": 43,
+        "start": 345.0,
+        "end": 355.64,
+        "speaker": "Host 1",
+        "text": "So I started this back in January because I noticed that a lot of videos that help you learn English are very educational.",
+        "cloze_text": "So I started this back in January because I noticed that a lot of videos that help you learn English are very [[educational]].",
+        "blanks": [
+          {
+            "id": 55,
+            "answer": "educational",
+            "hint": "e__________"
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "start": 355.79,
+        "end": 358.49,
+        "speaker": "Host 1",
+        "text": "And by that I mean, there's nothing wrong with this.",
+        "cloze_text": "And by that I mean, there's nothing wrong with this.",
+        "blanks": []
+      },
+      {
+        "id": 45,
+        "start": 358.5,
+        "end": 369.84,
+        "speaker": "Host 1",
+        "text": "Okay, if you're a creator that does this or you like channels that do this, I noticed that they do a lot of stuff like, Oh, let's go to a supermarket, and I'm going to like tell you what all of these words are.",
+        "cloze_text": "Okay, if you're a creator that does this or you like channels that do this, I noticed that they do a lot of stuff like, Oh, let's go to a [[supermarket]], and I'm going to like tell you what all of these words are.",
+        "blanks": [
+          {
+            "id": 56,
+            "answer": "supermarket",
+            "hint": "s__________"
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "start": 369.84,
+        "end": 371.37,
+        "speaker": "Host 1",
+        "text": "And that's fine.",
+        "cloze_text": "And that's fine.",
+        "blanks": []
+      },
+      {
+        "id": 47,
+        "start": 371.4,
+        "end": 373.12,
+        "speaker": "Host 1",
+        "text": "And it's very useful, right?",
+        "cloze_text": "And it's very useful, right?",
+        "blanks": []
+      },
+      {
+        "id": 48,
+        "start": 373.12,
+        "end": 374.48,
+        "speaker": "Host 1",
+        "text": "You need that sort of content.",
+        "cloze_text": "You need that sort of content.",
+        "blanks": []
+      },
+      {
+        "id": 49,
+        "start": 374.49,
+        "end": 384.67,
+        "speaker": "Host 1",
+        "text": "But I am of the opinion that if you want amazing English or to learn any language, it needs to become a part of your life.",
+        "cloze_text": "But I am of the opinion that if you want amazing English or to learn any language, it needs to become a [[part of your life]].",
+        "blanks": [
+          {
+            "id": 57,
+            "answer": "part of your life",
+            "hint": "p___ o_ y___ l___"
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "start": 384.68,
+        "end": 398.78,
+        "speaker": "Host 1",
+        "text": "If you need to be every single morning, watching whatever you would normally watch in Spanish or Korean or Portuguese, you need to be watching that in English.",
+        "cloze_text": "If you need to be every single morning, watching whatever you would normally watch in Spanish or Korean or Portuguese, you need to be watching that in English.",
+        "blanks": []
+      },
+      {
+        "id": 51,
+        "start": 398.8,
+        "end": 406.32,
+        "speaker": "Host 1",
+        "text": "And as soon as you start like replacing all of your habits with habits in English, your fluency is going to go through the roof.",
+        "cloze_text": "And as soon as you start like [[replacing all of your habits]] with [[habits in English]], your fluency is going to go [[through the roof]].",
+        "blanks": [
+          {
+            "id": 58,
+            "answer": "replacing all of your habits",
+            "hint": "r________ a__ o_ y___ h_____"
+          },
+          {
+            "id": 59,
+            "answer": "habits in English",
+            "hint": "h_____ i_ E______"
+          },
+          {
+            "id": 60,
+            "answer": "through the roof",
+            "hint": "t______ t__ r___"
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "start": 406.35,
+        "end": 413.64,
+        "speaker": "Host 1",
+        "text": "Like, because your brain needs to be kind of immersed, it's immersed, sorry, it's like this kind of immersion.",
+        "cloze_text": "Like, because your brain needs to be kind of [[immersed]], it's [[immersed]], sorry, it's like this kind of [[immersion]].",
+        "blanks": [
+          {
+            "id": 61,
+            "answer": "immersed",
+            "hint": "i_______"
+          },
+          {
+            "id": 62,
+            "answer": "immersed",
+            "hint": "i_______"
+          },
+          {
+            "id": 63,
+            "answer": "immersion",
+            "hint": "i________"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "start": 413.64,
+        "end": 420.64,
+        "speaker": "Host 1",
+        "text": "So, you know, I wanted to make content that you would actually want to sit and watch after a day of work.",
+        "cloze_text": "So, you know, I wanted to make content that you would actually want to sit and watch after a day of work.",
+        "blanks": []
+      },
+      {
+        "id": 54,
+        "start": 420.64,
+        "end": 426.98,
+        "speaker": "Host 1",
+        "text": "Like, at least for me, when I finished work, I like watching vlogs or I like watching lifestyle content.",
+        "cloze_text": "Like, at least for me, when I finished work, I like watching vlogs or I like watching [[lifestyle content]].",
+        "blanks": [
+          {
+            "id": 64,
+            "answer": "lifestyle content",
+            "hint": "l________ c______"
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "start": 426.98,
+        "end": 427.99,
+        "speaker": "Host 1",
+        "text": "That's just me.",
+        "cloze_text": "That's just me.",
+        "blanks": []
+      },
+      {
+        "id": 56,
+        "start": 428.03,
+        "end": 433.24,
+        "speaker": "Host 1",
+        "text": "So I tried to make content like that in English, but just for people who are learning.",
+        "cloze_text": "So I tried to make content like that in English, but just for people who are learning.",
+        "blanks": []
+      },
+      {
+        "id": 57,
+        "start": 433.24,
+        "end": 436.98,
+        "speaker": "Host 1",
+        "text": "And that was kind of my idea behind, behind my channel.",
+        "cloze_text": "And that was kind of my idea behind, behind my channel.",
+        "blanks": []
+      },
+      {
+        "id": 58,
+        "start": 436.98,
+        "end": 443.23,
+        "speaker": "Host 1",
+        "text": "And, you know, that's why I've not done any like vocabulary builds or videos or anything like this.",
+        "cloze_text": "And, you know, that's why I've not done any like [[vocabulary builds]] or videos or anything like this.",
+        "blanks": [
+          {
+            "id": 65,
+            "answer": "vocabulary builds",
+            "hint": "v_________ b_____"
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "start": 443.29,
+        "end": 448.64,
+        "speaker": "Host 1",
+        "text": "I'm more trying to make native content that's accessible, basically.",
+        "cloze_text": "I'm more trying to make native content that's [[accessible]], basically.",
+        "blanks": [
+          {
+            "id": 66,
+            "answer": "accessible",
+            "hint": "a_________"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "start": 448.64,
+        "end": 455.99,
+        "speaker": "Host 1",
+        "text": "And, you know, I'm trying to make one video a week at the minute, so I just don't have time to do anything else at the moment.",
+        "cloze_text": "And, you know, I'm trying to make [[one video a week]] at the minute, so I just don't have time to do anything else at the moment.",
+        "blanks": [
+          {
+            "id": 67,
+            "answer": "one video a week",
+            "hint": "o__ v____ a w___"
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "start": 456.21,
+        "end": 462.28,
+        "speaker": "Host 1",
+        "text": "But yeah, in the future, it would be great to do a little bit more.",
+        "cloze_text": "But yeah, in the future, it would be great to do a little bit more.",
+        "blanks": []
+      },
+      {
+        "id": 62,
+        "start": 462.28,
+        "end": 464.42,
+        "speaker": "Host 1",
+        "text": "I have lots of plans for the future.",
+        "cloze_text": "I have lots of plans for the future.",
+        "blanks": []
+      },
+      {
+        "id": 63,
+        "start": 464.42,
+        "end": 469.56,
+        "speaker": "Host 1",
+        "text": "I'll keep them quiet for now, because I don't know if I can pull them off.",
+        "cloze_text": "I'll keep them quiet for now, because I don't know if I can [[pull them off]].",
+        "blanks": [
+          {
+            "id": 68,
+            "answer": "pull them off",
+            "hint": "p___ t___ o__"
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "start": 469.71,
+        "end": 472.83,
+        "speaker": "Host 1",
+        "text": "But I just really wanted to say thanks to you guys.",
+        "cloze_text": "But I just really wanted to say thanks to you guys.",
+        "blanks": []
+      },
+      {
+        "id": 65,
+        "start": 473.05,
+        "end": 480.8,
+        "speaker": "Host 1",
+        "text": "I mean, this has been really, really quick growth in four months, and I know that a lot of my videos suck.",
+        "cloze_text": "I mean, this has been really, really [[quick growth in four months]], and I know that a lot of my videos suck.",
+        "blanks": [
+          {
+            "id": 69,
+            "answer": "quick growth in four months",
+            "hint": "q____ g_____ i_ f___ m_____"
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "start": 480.8,
+        "end": 482.08,
+        "speaker": "Host 1",
+        "text": "But they're getting better.",
+        "cloze_text": "But they're getting better.",
+        "blanks": []
+      },
+      {
+        "id": 67,
+        "start": 482.18,
+        "end": 485.48,
+        "speaker": "Host 1",
+        "text": "I try and make every video a little bit better than the last.",
+        "cloze_text": "I try and make every video a little bit [[better than the last]].",
+        "blanks": [
+          {
+            "id": 70,
+            "answer": "better than the last",
+            "hint": "b_____ t___ t__ l___"
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "start": 485.48,
+        "end": 488.48,
+        "speaker": "Host 1",
+        "text": "And I hope you can see that and you can feel that.",
+        "cloze_text": "And I hope you can see that and you can feel that.",
+        "blanks": []
+      },
+      {
+        "id": 69,
+        "start": 488.48,
+        "end": 494.13,
+        "speaker": "Host 1",
+        "text": "And I just really appreciate your patience and all of your comments and all of your support.",
+        "cloze_text": "And I just really appreciate your patience and all of your comments and all of your support.",
+        "blanks": []
+      },
+      {
+        "id": 70,
+        "start": 494.2,
+        "end": 504.92,
+        "speaker": "Host 1",
+        "text": "It really means a lot to me, and, you know, just thanks so much for watching and for subscribing and for getting me to 100,000 subscribers.",
+        "cloze_text": "It really means a lot to me, and, you know, just thanks so much for watching and for subscribing and for getting me to [[100,000 subscribers]].",
+        "blanks": [
+          {
+            "id": 71,
+            "answer": "100,000 subscribers",
+            "hint": "1_____ s__________"
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "start": 505.07,
+        "end": 506.7,
+        "speaker": "Host 1",
+        "text": "How much could you understand?",
+        "cloze_text": "How much could you understand?",
+        "blanks": []
+      },
+      {
+        "id": 72,
+        "start": 506.78,
+        "end": 508.04,
+        "speaker": "Host 1",
+        "text": "Let me know.",
+        "cloze_text": "Let me know.",
+        "blanks": []
+      },
+      {
+        "id": 73,
+        "start": 508.04,
+        "end": 512.76,
+        "speaker": "Host 1",
+        "text": "But that is everything from me today, and I will see you in the next video.",
+        "cloze_text": "But that is everything from me today, and I will see you in the next video.",
+        "blanks": []
+      },
+      {
+        "id": 74,
+        "start": 512.76,
+        "end": 514.28,
+        "speaker": "Host 1",
+        "text": "Bye!",
+        "cloze_text": "Bye!",
+        "blanks": []
+      }
+    ]
+  }
+]

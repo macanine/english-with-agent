@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS on Computer · 雅思听力双阶训练系统</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-subtle: #f8fafc;
+    --line: #e2e8f0;
+    --line-strong: #cbd5e1;
+    --ink: #0f172a;
+    --ink-2: #334155;
+    --ink-3: #64748b;
+    --ink-4: #94a3b8;
+    --primary: #0f172a;
+    --primary-hover: #1e293b;
+    --red: #e11d48;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --radius: 12px;
+    --shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    --shadow-hover: 0 6px 16px -2px rgba(15, 23, 42, 0.06);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 14.5px;
+    line-height: 1.6;
+    padding: 36px 20px 52px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* ============ Header ============ */
+  .header {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .ielts-badge {
+    background: var(--red);
+    color: #fff;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-style: italic;
+  }
+  .brand h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.2px;
+  }
+  .brand p {
+    font-size: 12.5px;
+    color: var(--ink-3);
+  }
+  .header-stats {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    font-family: var(--mono);
+    flex-wrap: wrap;
+  }
+  .stat-badge {
+    background: var(--surface-subtle);
+    border: 1px solid var(--line);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+
+  /* ============ Card Grid ============ */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 540px) {
+    .grid { grid-template-columns: 1fr; }
+    body { padding: 18px 14px 36px; }
+    .header { padding: 18px 20px; }
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--line-strong);
+  }
+
+  .card-tags {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .tag {
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+    background: var(--surface-subtle);
+    border: 1px solid var(--line);
+    color: var(--ink-3);
+  }
+  .tag-mono { font-family: var(--mono); }
+  .tag-accent { color: var(--ink); font-weight: 700; }
+
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.35;
+    margin-bottom: 4px;
+  }
+  .card-sub {
+    font-size: 13px;
+    color: var(--ink-3);
+    margin-bottom: 16px;
+  }
+
+  .parts-box {
+    background: var(--surface-subtle);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--ink-2);
+  }
+  .part-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .part-idx {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-3);
+    min-width: 44px;
+  }
+
+  /* ============ Merged Action Bar ============ */
+  .card-action-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+  .launch-segmented {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--surface);
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .launch-segmented:hover {
+    border-color: var(--ink-3);
+    box-shadow: var(--shadow);
+  }
+  .launch-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    transition: all 0.12s;
+  }
+  .launch-stage1 {
+    background: #f8fafc;
+    color: var(--ink);
+    border-right: 1px solid var(--line-strong);
+  }
+  .launch-stage1:hover {
+    background: #f1f5f9;
+  }
+  .launch-stage2 {
+    background: var(--primary);
+    color: #ffffff;
+  }
+  .launch-stage2:hover {
+    background: var(--primary-hover);
+  }
+  .launch-title {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .launch-count {
+    font-size: 11px;
+    font-family: var(--mono);
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+  .launch-stage1 .launch-count {
+    background: #e2e8f0;
+    color: var(--ink-2);
+  }
+  .launch-stage2 .launch-count {
+    background: rgba(255, 255, 255, 0.18);
+    color: #f8fafc;
+  }
+
+  .doc-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    overflow: hidden;
+  }
+  .doc-link {
+    flex: 1;
+    text-align: center;
+    padding: 7px 6px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--ink-3);
+    border-right: 1px solid var(--line);
+    transition: background 0.12s, color 0.12s;
+  }
+  .doc-link:last-child {
+    border-right: none;
+  }
+  .doc-link:hover {
+    background: var(--surface-subtle);
+    color: var(--ink);
+  }
+
+  /* ============ Tips Bar ============ */
+  .tips-bar {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    box-shadow: var(--shadow);
+  }
+  @media (max-width: 640px) {
+    .tips-bar { grid-template-columns: 1fr; }
+    .launch-segmented { flex-direction: column; }
+    .launch-stage1 { border-right: none; border-bottom: 1px solid var(--line-strong); }
+  }
+  .tip-item strong {
+    color: var(--ink);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+
+  /* ============ Footer ============ */
+  .footer {
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+    color: var(--ink-4);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="brand">
+        <span class="ielts-badge">IELTS</span>
+        <div>
+          <h1>雅思听力双阶训练系统</h1>
+          <p>Cambridge Computer-Delivered Standard · 离线全真模拟</p>
+        </div>
+      </div>
+      <div class="header-stats">
+        <span class="stat-badge">2 套精选原声</span>
+        <span class="stat-badge">158 处整段听写空</span>
+        <span class="stat-badge">80 道全真机考题</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Card Grid -->
+  <main class="grid">
+
+    <!-- Card 1: Economist -->
+    <article class="card">
+      <div>
+        <div class="card-tags">
+          <span class="tag tag-accent">The Economist</span>
+          <span class="tag tag-mono">BV1AJe36fE9Q</span>
+          <span class="tag">12:43</span>
+          <span class="tag">双人对谈</span>
+          <span class="tag">Band 7.5 – 8.5</span>
+        </div>
+        <h2 class="card-title">青年失业成为生活常态</h2>
+        <div class="card-sub">China's Youth Employment Crisis · 深度研判与白领心理图景</div>
+        <div class="parts-box">
+          <div class="part-row"><span class="part-idx">Part 1</span><span>星宇车灯闪电裁撤应届生案例 (Q1–10)</span></div>
+          <div class="part-row"><span class="part-idx">Part 2</span><span>地产链萎缩与科技大厂隐蔽缩编 (Q11–20)</span></div>
+          <div class="part-row"><span class="part-idx">Part 3</span><span>零工反向竞价与“假装上班”现象 (Q21–30)</span></div>
+          <div class="part-row"><span class="part-idx">Part 4</span><span>1270万毕业生供给翻番与人生重塑 (Q31–40)</span></div>
+        </div>
+      </div>
+      <div class="card-action-bar">
+        <div class="launch-segmented">
+          <a class="launch-item launch-stage1" href="./BV1AJe36fE9Q_Economist_Youth_Unemployment/ielts_listening_interactive.html?stage=1">
+            <span class="launch-title">环节一 · 原文精听复现</span>
+            <span class="launch-count">87 空</span>
+          </a>
+          <a class="launch-item launch-stage2" href="./BV1AJe36fE9Q_Economist_Youth_Unemployment/ielts_listening_interactive.html?stage=2">
+            <span class="launch-title">环节二 · 雅思全真模考</span>
+            <span class="launch-count">40 题</span>
+          </a>
+        </div>
+        <nav class="doc-nav">
+          <a class="doc-link" href="./BV1AJe36fE9Q_Economist_Youth_Unemployment/ielts_listening_practice.md" target="_blank">真题试卷</a>
+          <a class="doc-link" href="./BV1AJe36fE9Q_Economist_Youth_Unemployment/ielts_listening_passage_reproduction.md" target="_blank">原文复现</a>
+          <a class="doc-link" href="./BV1AJe36fE9Q_Economist_Youth_Unemployment/ielts_listening_answers_and_analysis.md" target="_blank">答案解析</a>
+          <a class="doc-link" href="./BV1AJe36fE9Q_Economist_Youth_Unemployment/transcript_annotated.md" target="_blank">精听讲义</a>
+        </nav>
+      </div>
+    </article>
+
+    <!-- Card 2: Evie Vol 40 -->
+    <article class="card">
+      <div>
+        <div class="card-tags">
+          <span class="tag tag-accent">English with Evie</span>
+          <span class="tag tag-mono">BV129KV6NEeG</span>
+          <span class="tag">08:34</span>
+          <span class="tag">原声独白</span>
+          <span class="tag">Band 7.0 – 8.0</span>
+        </div>
+        <h2 class="card-title">8分钟纯正母语语速狂飙</h2>
+        <div class="card-sub">10万粉特辑：Native Speed Challenge · 真人秀与习惯浸润法</div>
+        <div class="parts-box">
+          <div class="part-row"><span class="part-idx">Part 1</span><span>十万粉特辑与首支Vlog回溯 (Q1–10)</span></div>
+          <div class="part-row"><span class="part-idx">Part 2</span><span>语言鸿沟：英式冷幽默与 banter 调侃 (Q11–20)</span></div>
+          <div class="part-row"><span class="part-idx">Part 3</span><span>群体社交听力跌落与真人秀处方 (Q21–30)</span></div>
+          <div class="part-row"><span class="part-idx">Part 4</span><span>习惯置换理念与流利度飞跃机制 (Q31–40)</span></div>
+        </div>
+      </div>
+      <div class="card-action-bar">
+        <div class="launch-segmented">
+          <a class="launch-item launch-stage1" href="./BV129KV6NEeG_NativeFlow_English_With_Evie_Vol40/ielts_listening_interactive.html?stage=1">
+            <span class="launch-title">环节一 · 原文精听复现</span>
+            <span class="launch-count">71 空</span>
+          </a>
+          <a class="launch-item launch-stage2" href="./BV129KV6NEeG_NativeFlow_English_With_Evie_Vol40/ielts_listening_interactive.html?stage=2">
+            <span class="launch-title">环节二 · 雅思全真模考</span>
+            <span class="launch-count">40 题</span>
+          </a>
+        </div>
+        <nav class="doc-nav">
+          <a class="doc-link" href="./BV129KV6NEeG_NativeFlow_English_With_Evie_Vol40/ielts_listening_practice.md" target="_blank">真题试卷</a>
+          <a class="doc-link" href="./BV129KV6NEeG_NativeFlow_English_With_Evie_Vol40/ielts_listening_passage_reproduction.md" target="_blank">原文复现</a>
+          <a class="doc-link" href="./BV129KV6NEeG_NativeFlow_English_With_Evie_Vol40/ielts_listening_answers_and_analysis.md" target="_blank">答案解析</a>
+          <a class="doc-link" href="./BV129KV6NEeG_NativeFlow_English_With_Evie_Vol40/transcript_annotated.md" target="_blank">精听讲义</a>
+        </nav>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Training Method -->
+  <section class="tips-bar">
+    <div class="tip-item">
+      <strong>环节一：整段原文精听复现 (Stage 1)</strong>
+      降低难度门槛。边听边补全段落核心短语与高频搭配，点击单句循环播放，影子跟读（Shadowing）攻克连读弱读。
+    </div>
+    <div class="tip-item">
+      <strong>环节二：雅思全真40题模考 (Stage 2)</strong>
+      严格遵循剑桥机考规范。支持练习模式（即时回溯）与考试模式（30分钟单次播放倒计时），出具官方 Band 9 诊断报告。
+    </div>
+    <div class="tip-item">
+      <strong>纸质打印与精听文档 (Print & Study)</strong>
+      每套试卷均配齐：真题卷、原文复现卷、标准答案与干扰项陷阱解析、全句对齐讲义四份 Markdown 文档。
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>IELTS on Computer · Academic Listening Training Portal · 零外部依赖 · 本地离线即用</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
